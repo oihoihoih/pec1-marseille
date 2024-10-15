@@ -21,5 +21,8 @@
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
   }
 }
