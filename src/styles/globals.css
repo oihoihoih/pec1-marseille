@@ -10,13 +10,6 @@
   --text-base-size: 1em;
   --text-scale-ratio: 1.2;
   --line-height-base: 1.6;
-
-  /* TYPE SCALE - MINOR THIRD */
-  --text-s: calc(var(--text-base-size) / var(--text-scale-ratio));
-  --text-m: var(--text-base-size);
-  --text-l: calc(var(--text-base-size) * var(--text-scale-ratio));
-  --text-xl: calc(var(--text-l) * var(--text-scale-ratio));
-  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
 }
 
 @media (min-width: 64rem) {
@@ -41,21 +34,40 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,
-h2,
-p {
-  font-family: var(--font-family-base);
-}
+/* 16*(1,2)2 */
+
 h1 {
-  font-size: calc(var(--text-xxl) * pow(var(--text-scale-ratio), 2));
-  line-height: var(--line-height-base);
+  --font-increase: 6;
 }
 
 h2 {
-  font-size: var(--text-xxl);
-  line-height: var(--line-height-base);
+  --font-increase: 5;
 }
-p {
-  font-size: var(--text-base-size);
-  line-height: var(--line-height-base);
+
+h3 {
+  --font-increase: 4;
+}
+
+h4 {
+  --font-increase: 3;
+}
+
+h5 {
+  --font-increase: 2;
+}
+
+h6 {
+  --font-increase: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: calc(
+    var(--text-base-size) * (pow(var(--text-scale-ratio), var(--font-increase)))
+  );
 }
