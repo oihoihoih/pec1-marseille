@@ -9,3 +9,37 @@
   object-fit: cover;
   z-index: -1;
 }
+
+.header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  color: var(--color-white);
+  font-weight: 700;
+  text-align: center;
+}
+
+.header__title--big {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 10rem;
+  display: block;
+}
+
+.header__link {
+  position: absolute;
+  bottom: 2rem;
+  font-size: var(--text-base-size);
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}

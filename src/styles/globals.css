@@ -1,5 +1,6 @@
 :root {
   /* TODO: ESTABLECER COLORES */
+  --color-white: #fff;
   /* --primary-color: #007bff;
   --secondary-color: #6c757d;
   --background-color: #f8f9fa;
@@ -67,6 +68,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--font-family-base);
   font-size: calc(
     var(--text-base-size) * (pow(var(--text-scale-ratio), var(--font-increase)))
   );

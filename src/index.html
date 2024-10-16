@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <script type="module" src="app.js"></script>
     <!-- Typography -->
+    <!-- ROBOTO FLEX -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <h1>Marseille, tres itinerarios</h1>
+    <header class="header">
+      <h1 class="header__title">
+        <span class="header__title--big">Marseille</span> tres itinerarios
+      </h1>
+      <a class="header__link" href="#main">Scroll</a>
+
       <!-- Vídeo -->
       <video autoplay controls loop class="bg-video">
         <source src="assets/6183626-uhd_3840_2160_30fps.mp4" />
@@ -31,7 +37,7 @@
     <!-- Recordatorio para hacer scroll -->
 
     <!-- Main section -->
-    <main>
+    <main id="main">
       <section>
         <h2>Itinerario 1: La Canebière</h2>
         <p>
