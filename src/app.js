@@ -7,3 +7,7 @@ gsap.to(".box", {
   rotation: 360,
   scale: 2,
 });
+
+function mirar() {
+  console.log("Mirar");
+}

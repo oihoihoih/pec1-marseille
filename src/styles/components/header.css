@@ -8,18 +8,19 @@
 }
 
 .header__title {
+  font-family: var(--font-family-accent);
   color: var(--color-white);
-  font-weight: 600;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: clamp(3.5em, 10vw, 30em);
+  display: block;
   text-align: center;
 }
 
-.header__title--big {
-  font-family: "the-seasons", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+.header__subtitle {
+  color: var(--color-white);
   text-transform: uppercase;
-  font-size: 10rem;
-  display: block;
+  font-variation-settings: "wght" 400, "wdth" 151, "opsz" 94;
 }
 
 .header__link {

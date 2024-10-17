@@ -1,22 +1,40 @@
 :root {
   /* TODO: ESTABLECER COLORES */
   --color-white: #fff;
+  --primary: #91cef1;
+  --primary-dark: #4d6d80;
   /* --primary-color: #007bff;
     --secondary-color: #6c757d;
     --background-color: #f8f9fa;
     --text-color: #212529;
     --heading-color: #343a40; */
   --font-family-base: "Roboto Flex", sans-serif;
+  --font-family-accent: "the-seasons", serif;
 
   --text-base-size: 1em;
   --text-scale-ratio: 1.2;
   --line-height-base: 1.6;
+
+  /* Spacing */
+  --spacing-xxl: 4em;
+  --spacing-xl: 3em;
+  --spacing-l: 2em;
+  --spacing-m: 1em;
+  --spacing-s: 0.5em;
+  --spacing-xs: 0.25em;
 }
 
 @media (min-width: 64rem) {
-  /* responsive decision applied to all text elements */
+  /* responsive decision applied to all text elements min-width 1024px */
   :root {
     --text-base-size: 1.25em;
     --text-scale-ratio: 1.25;
+  }
+}
+
+@media (max-width: 48rem) {
+  /* responsive decision applied to all text elements min-width 1024px */
+  :root {
+    --text-scale-ratio: 1.1;
   }
 }
