@@ -1,0 +1,36 @@
+h1 {
+  --font-increase: 6;
+}
+
+h2 {
+  --font-increase: 5;
+}
+
+h3 {
+  --font-increase: 4;
+}
+
+h4 {
+  --font-increase: 3;
+}
+
+h5 {
+  --font-increase: 2;
+}
+
+h6 {
+  --font-increase: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-base);
+  font-size: calc(
+    var(--text-base-size) * (pow(var(--text-scale-ratio), var(--font-increase)))
+  );
+}

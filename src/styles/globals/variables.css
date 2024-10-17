@@ -1,0 +1,22 @@
+:root {
+  /* TODO: ESTABLECER COLORES */
+  --color-white: #fff;
+  /* --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --heading-color: #343a40; */
+  --font-family-base: "Roboto Flex", sans-serif;
+
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+  --line-height-base: 1.6;
+}
+
+@media (min-width: 64rem) {
+  /* responsive decision applied to all text elements */
+  :root {
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
+  }
+}
