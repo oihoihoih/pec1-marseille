@@ -3,11 +3,9 @@
   --color-white: #fff;
   --primary: #91cef1;
   --primary-dark: #4d6d80;
-  /* --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --background-color: #f8f9fa;
-    --text-color: #212529;
-    --heading-color: #343a40; */
+  --accent-color: #febd8c;
+  --accent-color-dark: #755741;
+
   --font-family-base: "Roboto Flex", sans-serif;
   --font-family-accent: "the-seasons", serif;
 

@@ -90,15 +90,27 @@
   transition: all 0.3s ease;
 }
 
-.nav__menu--items {
+.nav__items {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.nav__menu--item {
+.nav__item {
   margin: var(--spacing-m);
+}
+
+.nav__link {
+  font-family: var(--font-family-accent);
+  color: var(--primary-dark);
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+/* TODO: BUSCAR UNA ANIMACIÓN PARA EL HOVER */
+
+.nav__link:hover {
+  font-style: italic;
 }
 
 .nav__checkbox:checked ~ .nav__menu {
