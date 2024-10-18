@@ -1,16 +1,20 @@
-// import { gsap } from "gsap";
-//
-// console.log("Hello world!");
-//
-// gsap.to(".box", {
-//   duration: 3,
-//   rotation: 360,
-//   scale: 2,
-// });
-//
-// function mirar() {
-//   console.log("Mirar");
-// }
+import { gsap } from "gsap";
+
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
+// SCROLL TO MAIN
+const scrollButton = document.querySelector("#scroll-button");
+const main = document.querySelector(".main");
+
+scrollButton.addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: main,
+    ease: "power2",
+  });
+});
 
 // INDEX CARDS IMAGES
 

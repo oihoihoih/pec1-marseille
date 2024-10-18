@@ -31,6 +31,7 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
 }
 
 .header__video {
