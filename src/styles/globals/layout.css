@@ -1,0 +1,12 @@
+.main {
+  padding: var(--spacing-m);
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  margin: var(--spacing-m) 0;
+}

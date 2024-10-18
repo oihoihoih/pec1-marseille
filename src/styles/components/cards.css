@@ -1,21 +1,68 @@
-.main {
+.section__hero {
+  position: relative;
+  border-radius: var(--border-l);
+  overflow: hidden;
+  height: 70vh;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.card {
-  background-color: var(--color-white);
-  width: 30%;
-}
-
-.card__figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-}
-.cardd__image {
+/* Para conseguir el filtro únicamente en la imagen de fondo */
+.section__hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-image: url("../../assets/elisa-schmidt--jGQaEA3YC0-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(2px);
+  border-radius: var(--border-l);
+}
+
+.hero__card {
+  position: relative;
+  margin: var(--spacing-m);
+  width: 500px;
+  height: 70%;
+  background-color: var(--accent-color-light);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  outline: 4px double var(--primary-color-dark);
+  outline-offset: -20px;
+  transform: translate(5%, 0%) rotate(-4deg);
+}
+
+.hero__card--item {
+  border-top: 1px solid var(--primary-color-dark);
+  padding: var(--spacing-m);
+}
+
+.hero__card--item:last-child {
+  border-bottom: 1px solid var(--primary-color-dark);
+}
+
+.hero__card--link {
+  font-size: 1.8em;
+  color: var(--primary-color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__card--link svg {
+  margin-left: var(--spacing-m);
+}
+
+.hero__card--item:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.hero__card--link:hover {
+  color: var(--accent-color-light);
 }

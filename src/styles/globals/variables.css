@@ -1,9 +1,10 @@
 :root {
   /* TODO: ESTABLECER COLORES */
   --color-white: #fff;
-  --primary: #91cef1;
-  --primary-dark: #4d6d80;
+  --primary-color: #91cef1;
+  --primary-color-dark: #4d6d80;
   --accent-color: #febd8c;
+  --accent-color-light: #fee5d3;
   --accent-color-dark: #755741;
 
   --font-family-base: "Roboto Flex", sans-serif;
@@ -20,6 +21,10 @@
   --spacing-m: 1em;
   --spacing-s: 0.5em;
   --spacing-xs: 0.25em;
+
+  /* Border-radius */
+  --border-l: 2em;
+  --border-m: 1em;
 }
 
 @media (min-width: 64rem) {

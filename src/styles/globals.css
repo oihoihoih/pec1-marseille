@@ -1,3 +1,4 @@
 @import "globals/reset.css"; /* Reset */
 @import "globals/variables.css"; /* Variables */
 @import "globals/typography.css"; /* Typography */
+@import "globals/layout.css"; /* Layout */
