@@ -1,6 +1,8 @@
 {
   "plugins": {
-    "posthtml-include": {},
+    "posthtml-include": {
+      "root": "./src/common"
+    },
     "posthtml-doctype": {
       "doctype": "HTML 5"
     }
