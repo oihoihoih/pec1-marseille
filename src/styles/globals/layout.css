@@ -10,3 +10,12 @@
   width: 100%;
   margin: var(--spacing-m) 0;
 }
+
+/* .s-heading {
+  height: 20vh;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */

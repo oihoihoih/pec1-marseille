@@ -1,0 +1,21 @@
+.marquee {
+  position: relative;
+  color: var(--primary-color-dark);
+  padding: var(--spacing-m);
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  display: flex;
+  width: fit-content;
+  flex: auto;
+}
+
+.marquee__part {
+  font-size: 6em;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 4px;
+}

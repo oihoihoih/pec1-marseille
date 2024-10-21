@@ -1,8 +1,9 @@
 import { gsap } from "gsap";
 
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 // SCROLL TO MAIN
 const scrollButton = document.querySelector("#scroll-button");
@@ -12,10 +13,37 @@ scrollButton.addEventListener("click", () => {
   gsap.to(window, {
     duration: 1,
     scrollTo: main,
-    ease: "power2",
+    ease: "power2"
   });
 });
 
+// MARQUEE ANIMATION
+
+const currentScroll = 0;
+let isScrollingDown = true;
+
+const tween = gsap
+  .to(".marquee__part", {
+    xPercent: -100,
+    repeat: -1,
+    duration: 8,
+    ease: "linear"
+  })
+  .totalProgress(0.5);
+
+gsap.set(".marquee__inner", { xPercent: -50 });
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > currentScroll) {
+    isScrollingDown = true;
+  } else {
+    isScrollingDown = false;
+  }
+
+  gsap.to(tween, {
+    timeScale: isScrollingDown ? 1 : -1
+  });
+});
 // INDEX CARDS IMAGES
 
 document.querySelectorAll(".hero__card--item").forEach((item) => {
@@ -24,18 +52,16 @@ document.querySelectorAll(".hero__card--item").forEach((item) => {
     console.log(imageName);
 
     // Mostrar imagen que coincida el nombre del archivo con imageName
-    const prueba = document
-      .querySelectorAll(".card__figure")
-      .forEach((figure) => {
-        const img = figure.childNodes.item(1);
+    const prueba = document.querySelectorAll(".card__figure").forEach((figure) => {
+      const img = figure.childNodes.item(1);
 
-        if (img && img.tagName === "IMG" && img.src.includes(imageName)) {
-          figure.style.display = "block";
-          figure.style.transition = "all 5s";
-          figure.style.opacity = 1;
-          figure.style.transform = "translateX(300px)";
-        }
-      });
+      if (img && img.tagName === "IMG" && img.src.includes(imageName)) {
+        figure.style.display = "block";
+        figure.style.transition = "all 5s";
+        figure.style.opacity = 1;
+        figure.style.transform = "translateX(300px)";
+      }
+    });
   });
 
   // To remove image
