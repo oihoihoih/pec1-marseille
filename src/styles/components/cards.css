@@ -7,7 +7,8 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-/* Para conseguir el filtro únicamente en la imagen de fondo */
+
+/* Imagen de fondo con filtro de desenfoque */
 .hero::before {
   content: "";
   position: absolute;
@@ -25,20 +26,20 @@
 }
 
 .hero__card {
-  position: relative;
   margin: var(--spacing-m);
   width: 500px;
   height: 70%;
   background-color: var(--accent-color-light);
   display: flex;
   flex-direction: column;
+  position: relative;
   padding: var(--spacing-xxl) var(--spacing-xl);
   outline: 4px double var(--primary-color-dark);
   outline-offset: -20px;
   transform: translate(5%, 0%) rotate(-4deg);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
 .hero__card--title {
   font-family: var(--font-family-accent);
   color: var(--primary-color-dark);
@@ -49,15 +50,23 @@
 .hero__card--item {
   border-top: 1px solid var(--primary-color-dark);
   padding: var(--spacing-m);
+  cursor: pointer;
+  color: var(--primary-color-dark);
 }
 
 .hero__card--item:last-child {
   border-bottom: 1px solid var(--primary-color-dark);
 }
 
+.hero__card--item:hover {
+  background-color: var(--primary-color-dark);
+  color: var(--accent-color-light);
+}
+
 .hero__card--link {
   font-size: 1.8em;
-  color: var(--primary-color-dark);
+  font-variation-settings: "wght" 500, "slnt" -15, "CASL" 0.4, "CRSV" 1;
+  color: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,40 +76,15 @@
   margin-left: var(--spacing-m);
 }
 
-.hero__card--item:hover {
-  background-color: var(--primary-color-dark);
-}
-
-.hero__card--link:hover {
-  color: var(--accent-color-light);
-}
-
-.card__figure {
-  position: absolute;
-  left: 10%;
-  bottom: 10%;
-  width: 400px;
-  height: 400px;
-  background-color: var(--color-white);
-  display: none;
-  opacity: 0;
-}
-
-.card__figure--display {
-  display: block;
-  position: absolute;
-  right: 10%;
-  bottom: 30%;
-  width: 400px;
-  height: 400px;
-  transform: rotate(30deg);
-  transition: ease-in-out 0.5s;
-}
 .card__image {
   position: absolute;
-  top: 2%;
-  left: 2%;
-  width: 96%;
-  height: 96%;
+  top: 5%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  transform: rotateZ(4deg);
   object-fit: cover;
+  border: 6px solid var(--color-white);
+  opacity: 0;
+  visibility: hidden;
 }

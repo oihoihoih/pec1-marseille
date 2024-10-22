@@ -18,7 +18,6 @@ scrollButton.addEventListener("click", () => {
 });
 
 // MARQUEE ANIMATION
-
 const currentScroll = 0;
 let isScrollingDown = true;
 
@@ -44,30 +43,50 @@ window.addEventListener("scroll", () => {
     timeScale: isScrollingDown ? 1 : -1
   });
 });
+
 // INDEX CARDS IMAGES
+// document.querySelectorAll(".hero__card--item").forEach((item) => {
+//   item.addEventListener("mouseover", function () {
+//     const imageName = this.getAttribute("data-image");
+//     console.log(imageName);
+//
+//     // Mostrar imagen que coincida el nombre del archivo con imageName
+//     const prueba = document.querySelectorAll(".card__figure").forEach((figure) => {
+//       const img = figure.childNodes.item(1);
+//
+//       if (img && img.tagName === "IMG" && img.src.includes(imageName)) {
+//         figure.style.display = "block";
+//         figure.style.transition = "all 5s";
+//         figure.style.opacity = 1;
+//         figure.style.transform = "translateX(300px)";
+//       }
+//     });
+//   });
+//
+//   // To remove image
+//   item.addEventListener("mouseout", function () {
+//     document.querySelectorAll(".card__figure").forEach((figure) => {
+//       figure.style.display = "none";
+//     });
+//   });
+// });
 
-document.querySelectorAll(".hero__card--item").forEach((item) => {
-  item.addEventListener("mouseover", function () {
-    const imageName = this.getAttribute("data-image");
-    console.log(imageName);
+// INDEX ARDS IMAGES WITH GSAP
+const listItems = document.querySelectorAll(".hero__card--item");
+const t = gsap.fromTo(
+  "card__image",
+  { immediateRender: false, rotation: -10, scale: 0.3 },
+  { rotation: 10, paused: true }
+);
 
-    // Mostrar imagen que coincida el nombre del archivo con imageName
-    const prueba = document.querySelectorAll(".card__figure").forEach((figure) => {
-      const img = figure.childNodes.item(1);
+listItems.forEach((item) => {
+  const image = item.querySelector(".card__image");
 
-      if (img && img.tagName === "IMG" && img.src.includes(imageName)) {
-        figure.style.display = "block";
-        figure.style.transition = "all 5s";
-        figure.style.opacity = 1;
-        figure.style.transform = "translateX(300px)";
-      }
-    });
+  item.addEventListener("mouseenter", () => {
+    gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10 });
   });
 
-  // To remove image
-  item.addEventListener("mouseout", function () {
-    document.querySelectorAll(".card__figure").forEach((figure) => {
-      figure.style.display = "none";
-    });
+  item.addEventListener("mouseleave", () => {
+    gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
   });
 });
