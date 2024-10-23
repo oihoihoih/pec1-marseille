@@ -1,0 +1,32 @@
+/* SIZES */
+.h-100 {
+  height: 100vh;
+}
+
+/* SPACING */
+.p-m {
+  padding: var(--spacing-m);
+}
+.p-l {
+  padding: var(--spacing-l);
+}
+.p-xl {
+  padding: var(--spacing-xl);
+}
+
+/* FLEX */
+/* FLEX JUSTIFICATION */
+.fjc-star {
+  justify-content: flex-start;
+}
+.fjc-center {
+  justify-content: center;
+}
+.fjc-end {
+  justify-content: flex-end;
+}
+
+/* FLEX ALIGN */
+.fai-center {
+  align-items: center;
+}

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marseille, tres itinerarios</title>
+    <meta
+      name="description"
+      content="Un recorrido personal por Marsella, presentado a través de tres itinerarios diferentes"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- Typography -->
     <!-- ROBOTO FLEX -->
@@ -17,7 +21,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header h-100">
       <h1 class="header__title">Marseille</h1>
       <h2 class="header__subtitle">tres itinerarios</h2>
 
@@ -34,18 +38,20 @@
     <include src="navigation.html"></include>
 
     <!-- TODO: Valorar si poner algún icono para hacer scroll -->
+
+    <!-- Marquee -->
+    <section class="marquee">
+      <div class="marquee__inner">
+        <div class="marquee__part">Marseille connection&nbsp;</div>
+        <div class="marquee__part">Marseille connection&nbsp;</div>
+        <div class="marquee__part">Marseille connection&nbsp;</div>
+      </div>
+    </section>
+
+    <!-- Main section -->
     <main id="main" class="main">
-      <!-- Catchy phrase -->
-      <section class="marquee">
-        <div class="marquee__inner">
-          <div class="marquee__part">Marseille connection&nbsp;</div>
-          <div class="marquee__part">Marseille connection&nbsp;</div>
-          <div class="marquee__part">Marseille connection&nbsp;</div>
-        </div>
-      </section>
-      <!-- Main section -->
       <section class="section">
-        <div class="hero">
+        <div class="hero hero--img-index fjc-end">
           <article class="hero__card">
             <h3 class="hero__card--title">Nos itinéraires</h3>
             <ul class="hero__card--list">

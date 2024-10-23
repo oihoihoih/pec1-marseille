@@ -1,5 +1,4 @@
 .main {
-  padding: var(--spacing-m);
   background-color: var(--accent-color);
   display: flex;
   flex-direction: column;
@@ -7,6 +6,7 @@
 }
 
 .section {
+  padding: var(--spacing-m);
   width: 100%;
   margin: var(--spacing-m) 0;
 }

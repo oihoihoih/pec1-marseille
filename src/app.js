@@ -73,11 +73,6 @@ window.addEventListener("scroll", () => {
 
 // INDEX ARDS IMAGES WITH GSAP
 const listItems = document.querySelectorAll(".hero__card--item");
-const t = gsap.fromTo(
-  "card__image",
-  { immediateRender: false, rotation: -10, scale: 0.3 },
-  { rotation: 10, paused: true }
-);
 
 listItems.forEach((item) => {
   const image = item.querySelector(".card__image");
