@@ -61,3 +61,32 @@
   opacity: 0;
   visibility: hidden;
 }
+
+/* ITINERARIES */
+
+.card-list {
+  display: flex;
+  gap: var(--spacing-l);
+}
+.card-list__container {
+  display: flex;
+  gap: var(--spacing-l);
+}
+
+.card-list__image {
+  width: 100%;
+  height: auto;
+}
+
+.card-list__image--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-l);
+  border: 2px solid black;
+}
+
+.card-list__content {
+  display: none;
+  background-color: white;
+}

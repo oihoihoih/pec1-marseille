@@ -1,5 +1,7 @@
 h1 {
   --font-increase: 6;
+  font-variation-settings: "wght" 600, "wdth" 151, "GRAD" -78, "XTRA" 551, "YTUC" 651;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -30,7 +32,11 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-base);
-  font-size: calc(
-    var(--text-base-size) * (pow(var(--text-scale-ratio), var(--font-increase)))
-  );
+  font-size: calc(var(--text-base-size) * (pow(var(--text-scale-ratio), var(--font-increase))));
+}
+
+p {
+  font-size: var(--text-base-size);
+  font-variation-settings: "wght" 450, "wdth" 100;
+  line-height: 1.5;
 }
