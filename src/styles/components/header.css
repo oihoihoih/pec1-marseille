@@ -47,3 +47,16 @@
   overflow-clip-margin: 0px;
   overflow: hidden;
 }
+
+.section__title {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.section__text {
+  font-size: calc(var(--text-base-size) * (pow(var(--text-scale-ratio), 2)));
+  /* font-size: 2em; */
+}
