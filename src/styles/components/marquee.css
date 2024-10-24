@@ -1,5 +1,4 @@
 .marquee {
-  background-color: var(--accent-color);
   position: relative;
   color: var(--primary-color-dark);
   padding: var(--spacing-m);
