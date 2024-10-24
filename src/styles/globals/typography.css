@@ -14,6 +14,7 @@ h3 {
 
 h4 {
   --font-increase: 3;
+  font-variation-settings: "wght" 400, "wdth" 112.5;
 }
 
 h5 {
@@ -22,8 +23,6 @@ h5 {
 
 h6 {
   --font-increase: 1;
-  /* font-variation-settings: "wght" 600, "wdth" 112.5, "GRAD" -78, 
-  "XTRA" 551, "YTUC" 651; */
   font-variation-settings: "wght" 400, "wdth" 112.5;
 }
 

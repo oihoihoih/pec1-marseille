@@ -30,3 +30,17 @@
 .fai-center {
   align-items: center;
 }
+
+/* OTHERS */
+
+.u-circle {
+  font-size: 1em;
+  font-variation-settings: "wght" 400, "wdth" 112.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 50%;
+}
