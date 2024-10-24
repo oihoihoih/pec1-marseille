@@ -58,5 +58,4 @@
 
 .section__text {
   font-size: calc(var(--text-base-size) * (pow(var(--text-scale-ratio), 1.5)));
-  /* font-size: 2em; */
 }

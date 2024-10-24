@@ -1,21 +1,23 @@
 import { gsap } from "gsap";
 
-import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
+import { ScrollToPlugin, ScrollTrigger, TextPlugin } from "gsap/all";
 
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(TextPlugin);
 
 // SCROLL TO MAIN
 const scrollButton = document.querySelector("#scroll-button");
 const main = document.querySelector(".main");
-
-scrollButton.addEventListener("click", () => {
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: main,
-    ease: "power2"
+if (scrollButton) {
+  scrollButton.addEventListener("click", () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: main,
+      ease: "power2"
+    });
   });
-});
+}
 
 // MARQUEE ANIMATION
 const currentScroll = 0;
@@ -44,33 +46,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// INDEX CARDS IMAGES
-// document.querySelectorAll(".hero__card--item").forEach((item) => {
-//   item.addEventListener("mouseover", function () {
-//     const imageName = this.getAttribute("data-image");
-//     console.log(imageName);
-//
-//     // Mostrar imagen que coincida el nombre del archivo con imageName
-//     const prueba = document.querySelectorAll(".card__figure").forEach((figure) => {
-//       const img = figure.childNodes.item(1);
-//
-//       if (img && img.tagName === "IMG" && img.src.includes(imageName)) {
-//         figure.style.display = "block";
-//         figure.style.transition = "all 5s";
-//         figure.style.opacity = 1;
-//         figure.style.transform = "translateX(300px)";
-//       }
-//     });
-//   });
-//
-//   // To remove image
-//   item.addEventListener("mouseout", function () {
-//     document.querySelectorAll(".card__figure").forEach((figure) => {
-//       figure.style.display = "none";
-//     });
-//   });
-// });
-
 // INDEX ARDS IMAGES WITH GSAP
 const listItems = document.querySelectorAll(".hero__card--item");
 
@@ -83,5 +58,31 @@ listItems.forEach((item) => {
 
   item.addEventListener("mouseleave", () => {
     gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
+  });
+});
+
+// ITINERARIES ANIMATIONS
+gsap
+  .timeline()
+  .from(".prueba", { xPercent: -100, duration: 0.3 })
+  .from(".section__text", { xPercent: -100, duration: 0.3 }, "-=.15");
+
+// Hover in itineraries cards
+const cardFront = document.querySelectorAll(".card-list__front");
+const cardBack = document.querySelectorAll(".card-list__back");
+const cardImage = document.querySelectorAll(".card-list__front--img");
+const container = document.querySelector(".card-list__container");
+let cardTl;
+
+cardImage.forEach((image, index) => {
+  image.addEventListener("mouseenter", () => {
+    cardTl = gsap
+      .timeline()
+      .to(cardFront[index], { display: "none", duration: 0.3 })
+      .fromTo(
+        cardBack[index],
+        { display: "none", yPercent: -100, opacity: 1 },
+        { display: "flex", yPercent: 0, opacity: 1 }
+      );
   });
 });
