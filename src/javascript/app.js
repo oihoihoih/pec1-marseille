@@ -60,31 +60,3 @@ listItems.forEach((item) => {
     gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
   });
 });
-
-// ITINERARIES ANIMATIONS
-const card = document.querySelectorAll(".card-list__content");
-const cardText = document.querySelectorAll(".card-list__content--text");
-
-card.forEach((item, index) => {
-  item.addEventListener("mouseenter", () => {
-    gsap.fromTo(
-      cardText[index],
-      {
-        opacity: 1,
-        yPercent: 100
-      },
-      {
-        opacity: 1,
-        yPercent: 0,
-        duration: 0.3
-      }
-    );
-
-    item.addEventListener("mouseleave", () => {
-      gsap.to(cardText[index], {
-        yPercent: 100,
-        duration: 0.3
-      });
-    });
-  });
-});
