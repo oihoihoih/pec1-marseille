@@ -62,27 +62,29 @@ listItems.forEach((item) => {
 });
 
 // ITINERARIES ANIMATIONS
-gsap
-  .timeline()
-  .from(".prueba", { xPercent: -100, duration: 0.3 })
-  .from(".section__text", { xPercent: -100, duration: 0.3 }, "-=.15");
+const card = document.querySelectorAll(".card-list__content");
+const cardText = document.querySelectorAll(".card-list__content--text");
 
-// Hover in itineraries cards
-const cardFront = document.querySelectorAll(".card-list__front");
-const cardBack = document.querySelectorAll(".card-list__back");
-const cardImage = document.querySelectorAll(".card-list__front--img");
-const container = document.querySelector(".card-list__container");
-let cardTl;
+card.forEach((item, index) => {
+  item.addEventListener("mouseenter", () => {
+    gsap.fromTo(
+      cardText[index],
+      {
+        opacity: 1,
+        yPercent: 100
+      },
+      {
+        opacity: 1,
+        yPercent: 0,
+        duration: 0.3
+      }
+    );
 
-cardImage.forEach((image, index) => {
-  image.addEventListener("mouseenter", () => {
-    cardTl = gsap
-      .timeline()
-      .to(cardFront[index], { display: "none", duration: 0.3 })
-      .fromTo(
-        cardBack[index],
-        { display: "none", yPercent: -100, opacity: 1 },
-        { display: "flex", yPercent: 0, opacity: 1 }
-      );
+    item.addEventListener("mouseleave", () => {
+      gsap.to(cardText[index], {
+        yPercent: 100,
+        duration: 0.3
+      });
+    });
   });
 });

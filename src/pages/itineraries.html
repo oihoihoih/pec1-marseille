@@ -40,73 +40,69 @@
     <main class="card-list p-m">
       <!-- Panier -->
       <section class="card-list__container">
-        <article class="card-list__front">
-          <div class="card-list__front--top">
+        <article class="card-list__content">
+
+          <!-- Tiene que desaparecer la imagen en hover -->
+          <div class="card-list__content--img">
+            <img
+              src="../assets/manel-sean-nntdlUK-S4s-unsplash.jpg"
+              alt="Escaleras y puerta de callejuela del Panier"
+            />
+          </div>
+
+          <!-- Y aparecer este texto -->
+          <p class="card-list__content--text">
+            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
+            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
+            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
+          </p>
+
+          <div class="card-list__content--top">
             <h4>Le Panier</h4>
             <span class="u-circle">1</span>
           </div>
-          <!-- Tiene que desaparecer la imagen en hover -->
-          <img
-            class="card-list__front--img"
-            src="../assets/manel-sean-nntdlUK-S4s-unsplash.jpg"
-            alt="Escaleras y puerta de callejuela del Panier"
-          />
         </article>
 
-        <article class="card-list__back">
-          <!-- Y aparecer este texto -->
-          <p>
-            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
-            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
-            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
-          </p>
-        </article>
-      </section>
 
       <!-- Vieux Port -->
-      <section class="card-list__container">
-        <article class="card-list__front">
-          <div class="card-list__front--top">
-            <h4>Vieux Port</h4>
-            <span class="u-circle">2</span>
-          </div>
-          <img
-            class="card-list__front--img"
-            src="../assets/vieux-port.jpg"
-            alt="Puesto de vendedora de pescado en el Vieux Port"
-          />
-        </article>
 
-        <article class="card-list__back">
-          <p>
-            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
-            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
-            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
-          </p>
-        </article>
-      </section>
+      <article class="card-list__content">
+        <div class="card-list__content--top">
+          <h4>Vieux Port</h4>
+          <span class="u-circle">2</span>
+        </div>
+        <img
+          class="card-list__content--img"
+          src="../assets/vieux-port.jpg"
+          alt="Puesto de vendedora de pescado en el Vieux Port"
+        />
+
+        <p class="card-list__content--text">
+          Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
+        </p>
+      </article>
+
 
       <!-- Corniche -->
-      <section class="card-list__container">
-        <article class="card-list__front">
-          <div class="card-list__front--top">
+
+      <article class="card-list__content">
+        <div class="card-list__content--top">
             <h4>La corniche</h4>
             <span class="u-circle">3</span>
           </div>
           <img
-            class="card-list__front--img"
+            class="card-list__content--img"
             src="../assets/corniche.jpg"
             alt="Pequeño puerto con barcos y un puente de fondo"
           />
-        </article>
-        <article class="card-list__back">
-          <p>
+
+          <p class="card-list__content--text">
             Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
             la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
             de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
           </p>
         </article>
-      </section>
+
     </main>
 
     <script type="module" src="../app.js"></script>
