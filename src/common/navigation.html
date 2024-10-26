@@ -1,28 +1,46 @@
 <nav class="nav">
-  <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
-  <div class="nav__hamburger">
-    <div class="nav__hamburger--line"></div>
-    <div class="nav__hamburger--line"></div>
-    <div class="nav__hamburger--line"></div>
-    <div class="nav__hamburger--line"></div>
+  <div class="nav__logo">  
+    <a href="./index.html"> Marseille, <span>tres itinerarios</span> </a>
   </div>
-  <div class="nav__menu">
-    <ul class="nav__items">
-      <li class="nav__item">
-        <a class="nav__link" href="./html/itineraries.html" data-replace="Itinerariosss"
-          >Itinerarios</a
+
+  <div class="nav__toggle-button">
+    <button class="burguer" onClick="this.classList.toggle('active')"></button>
+  </div>
+
+</nav>
+
+<div class="nav__overlay">
+  <ul class="nav__overlay--menu">
+    <li class="nav__overlay--menu-item">
+      <p>
+        <a class="nav__link" href="./index.html" data-replace="Index">Home</a>
+      </p>
+    </li>
+
+    <li class="nav__overlay--menu-item">
+      <p>
+        <a class="nav__link" href="./itineraries.html" data-replace="Itinerarios"
+              >Itinerarios</a
+            >
+      </p>
+    </li>
+
+    <li class="nav__overlay--menu-item">
+      <p>
+        <a class="nav__link" href="./about.html" data-replace="Sobre este sitio"
+              >Sobre este sitio</a
         >
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="./html/about.html" data-replace="Sobre este sitioss"
-          >Sobre este sitio</a
-        >
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="./html/documentation.html" data-replace="Documentaciónss"
+      </p>
+    </li>
+
+    <li class="nav__overlay--menu-item">
+      <p>
+        <a class="nav__link" href="./documentation.html" data-replace="Documentaciónss"
           >Documentación</a
         >
-      </li>
-    </ul>
+      </p>
+    </li>
+  </ul>
+</div>
   </div>
 </nav>

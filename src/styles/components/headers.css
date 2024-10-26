@@ -1,4 +1,5 @@
 .header {
+  padding-top: 5em;
   position: relative;
   max-width: 100vw;
   display: flex;

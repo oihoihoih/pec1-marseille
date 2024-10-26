@@ -46,7 +46,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// INDEX ARDS IMAGES WITH GSAP
+// INDEX CARDS IMAGES WITH GSAP
 const listItems = document.querySelectorAll(".hero__card--item");
 
 listItems.forEach((item) => {
