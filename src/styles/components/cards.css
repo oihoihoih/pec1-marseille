@@ -65,7 +65,7 @@
 /* ITINERARIES */
 
 .card-list {
-  margin-top: var(--spacing-xxl);
+  margin-top: var(--spacing-l);
   display: flex;
   gap: var(--spacing-m);
   justify-content: space-between;

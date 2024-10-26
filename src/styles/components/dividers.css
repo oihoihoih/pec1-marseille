@@ -6,3 +6,7 @@
   padding: var(--spacing-m);
   text-transform: uppercase;
 }
+
+.spacer {
+  height: var(--spacing-xxl);
+}
