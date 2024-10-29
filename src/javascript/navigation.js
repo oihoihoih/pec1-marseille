@@ -1,8 +1,9 @@
 import { gsap } from "gsap";
+import barba from "@barba/core";
 
 const toggleButton = document.querySelector(".burguer");
 const menuItems = document.querySelectorAll(".nav__overlay--menu-item");
-export let isOpen = false;
+let isOpen = false;
 
 gsap.set(".nav__overlay--menu-item p", { y: 225 });
 

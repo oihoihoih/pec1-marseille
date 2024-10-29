@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   overflow: hidden;
 }
 
@@ -23,11 +23,14 @@
   color: var(--color-white);
   text-transform: uppercase;
   font-variation-settings: "wght" 400, "wdth" 151, "opsz" 94;
+  text-align: center;
 }
 
 .header__link {
   position: absolute;
+  width: 100%;
   bottom: 2rem;
+  text-align: center;
   font-size: var(--text-base-size);
   color: var(--color-white);
   text-decoration: none;
@@ -51,12 +54,12 @@
 
 .section__title {
   height: 40%;
+  max-width: 70%;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
   margin-bottom: var(--spacing-xxl);
   color: var(--primary-color-dark);
-  padding-right: 30vw;
 }
 
 .section__text {
