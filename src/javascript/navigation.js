@@ -1,10 +1,8 @@
 import { gsap } from "gsap";
-import CSSRulePlugin from "gsap/CSSRulePlugin";
-
-gsap.registerPlugin(CSSRulePlugin);
 
 const toggleButton = document.querySelector(".burguer");
-let isOpen = false;
+const menuItems = document.querySelectorAll(".nav__overlay--menu-item");
+export let isOpen = false;
 
 gsap.set(".nav__overlay--menu-item p", { y: 225 });
 
@@ -36,4 +34,16 @@ toggleButton.addEventListener("click", () => {
   }
 
   isOpen = !isOpen;
+});
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    event.preventDefault();
+    const url = event.target.attributes.href.value;
+    timeline.reverse();
+
+    // TODO: No capta bien al hacer click en la raya naranja
+    //
+    window.location.href = url;
+  });
 });

@@ -82,6 +82,17 @@
   z-index: 1;
 }
 
+.nav__preview-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  opacity: 0; /* inicialmente invisible */
+}
+
 .nav__overlay--menu {
   position: fixed;
   top: 0;

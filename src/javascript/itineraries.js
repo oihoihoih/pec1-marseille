@@ -1,5 +1,7 @@
 import { gsap } from "gsap";
 
+console.log("itineraries", isOpen);
+
 // ITINERARIES CARD ENTER ANIMATION
 gsap.fromTo(
   ".card-list__content",
