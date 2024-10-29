@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-m) var(--spacing-m);
-  z-index: 2;
+  padding: var(--spacing-m);
+  z-index: 3;
 }
 
 .nav > div {
@@ -63,10 +63,12 @@
 
 .active.burguer::before {
   transform: translateY(0) rotate(45deg);
+  background-color: var(--primary-color);
 }
 
 .active.burguer::after {
   transform: translateY(0) rotate(-45deg);
+  background-color: var(--primary-color);
 }
 
 .nav__overlay {

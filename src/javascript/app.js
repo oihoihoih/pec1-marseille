@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import barba from "@barba/core";
 
 import { ScrollToPlugin, ScrollTrigger, TextPlugin } from "gsap/all";
 

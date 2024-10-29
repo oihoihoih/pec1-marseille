@@ -2,7 +2,6 @@ import { gsap } from "gsap";
 import barba from "@barba/core";
 
 const toggleButton = document.querySelector(".burguer");
-const menuItems = document.querySelectorAll(".nav__overlay--menu-item");
 let isOpen = false;
 
 gsap.set(".nav__overlay--menu-item p", { y: 225 });
@@ -19,7 +18,7 @@ timeline.to(".nav__overlay", {
 timeline.to(
   ".nav__overlay--menu-item p",
   {
-    duration: 1.5,
+    duration: 1.3,
     y: 0,
     stagger: 0.2,
     ease: "power4.inOut"
@@ -37,14 +36,40 @@ toggleButton.addEventListener("click", () => {
   isOpen = !isOpen;
 });
 
-menuItems.forEach((item) => {
-  item.addEventListener("click", (event) => {
-    event.preventDefault();
-    const url = event.target.attributes.href.value;
-    timeline.reverse();
+barba.init({
+  sync: true,
+  transitions: [
+    {
+      beforeLeave() {
+        toggleButton.classList.remove("active");
+        if (isOpen) {
+          timeline.reverse();
+          isOpen = false;
+        }
+      },
+      async leave(data) {
+        const done = this.async();
+        timeline.reverse();
+        await delay(1500);
+        done();
+      },
 
-    // TODO: No capta bien al hacer click en la raya naranja
-    //
-    window.location.href = url;
-  });
+      async enter(data) {
+        gsap.from(data.next.container, {
+          duration: 0.5,
+          opacity: 0,
+          ease: "power2.inOut"
+        });
+      }
+    }
+  ]
 });
+
+function delay(n) {
+  n = n || 2000;
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n);
+  });
+}

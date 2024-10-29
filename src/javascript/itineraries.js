@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
-
-console.log("itineraries", isOpen);
+import barba from "@barba/core";
 
 // ITINERARIES CARD ENTER ANIMATION
 gsap.fromTo(
