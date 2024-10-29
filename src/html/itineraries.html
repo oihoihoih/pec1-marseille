@@ -17,36 +17,34 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
   </head>
-  
-  <body>
+
+  <body data-barba="wrapper">
     <!-- Navigation -->
     <include src="navigation.html"></include>
 
     <div class="spacer"></div>
-    
-    <header class="header p-m">
-      <section class="section__title">
-        <h1>Itinerarios</h1>
-        <p class="section__text">
-          Marsella es una ciudad llena de contrastes que cuenta con paisajes naturales y humanos
-          diversos. Te proponemos 3 itinerarios donde poder descubrir la ciudad desde la óptica
-          personal de alguien que ha disfrutado mucho de ella. ¡Buen viaje!
-        </p>
-      </section>
-    </header>
 
-    <!-- Section Divider -->
-    <div class="section-divider">
-      <h6>Itinerarios</h6>
-    </div>
+    <main data-barba="container" data-barba-namespace="itineraries">
+      <header class="header p-m">
+        <section class="section__title">
+          <h1>Itinerarios</h1>
+          <p class="section__text">
+            Marsella es una ciudad llena de contrastes que cuenta con paisajes naturales y humanos
+            diversos. Te proponemos 3 itinerarios donde poder descubrir la ciudad desde la óptica
+            personal de alguien que ha disfrutado mucho de ella. ¡Buen viaje!
+          </p>
+        </section>
+      </header>
 
-    <!-- Listado de itinerarios -->
-    <main class="card-list p-m">
+      <!-- Section Divider -->
+      <div class="section-divider">
+        <h6>Itinerarios</h6>
+      </div>
 
-      <!-- Panier -->
-      <section class="card-list__container">
+      <!-- Listado de itinerarios -->
+      <section class="card-list p-m">
+        <!-- Panier -->
         <article class="card-list__content">
-
           <!-- Card image -->
           <div class="card-list__content--img">
             <img
@@ -69,58 +67,61 @@
           </div>
         </article>
 
+        <!-- Vieux Port -->
+        <article class="card-list__content">
+          <!-- Card image -->
+          <div class="card-list__content--img">
+            <img
+              src="../assets/vieux-port.jpg"
+              alt="Puesto de vendedora de pescado en el Vieux Port"
+            />
+          </div>
 
-      <!-- Vieux Port -->
-      <article class="card-list__content">
-       
-        <!-- Card image -->
-        <div class="card-list__content--img">
-          <img
-            src="../assets/vieux-port.jpg"
-            alt="Puesto de vendedora de pescado en el Vieux Port"
-          />
-        </div>
-       
+          <!-- Card text -->
+          <p class="card-list__content--text">
+            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
+            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
+            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
+          </p>
 
-        <!-- Card text -->
-        <p class="card-list__content--text">
-          Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
-        </p>
+          <!-- Card content top -->
+          <div class="card-list__content--top">
+            <h4>Vieux Port</h4>
+            <span class="u-circle">2</span>
+          </div>
+        </article>
 
-        <!-- Card content top -->
-        <div class="card-list__content--top">
-          <h4>Vieux Port</h4>
-          <span class="u-circle">2</span>
-        </div>
-      </article>
+        <!-- Corniche -->
 
+        <article class="card-list__content">
+          <!-- Card image -->
+          <div class="card-list__content--img">
+            <img
+              src="../assets/corniche.jpg"
+              alt="Pequeño puerto con barcos y un puente de fondo"
+            />
+          </div>
 
-      <!-- Corniche -->
+          <!-- Card text -->
+          <p class="card-list__content--text">
+            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
+            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
+            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
+          </p>
 
-      <article class="card-list__content">
-        
-        <!-- Card image -->
-        <div class="card-list__content--img">
-          <img
-            src="../assets/corniche.jpg"
-            alt="Pequeño puerto con barcos y un puente de fondo"
-          />
-        </div>
-
-        <!-- Card text -->
-        <p class="card-list__content--text">
-          Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
-        </p>
-
-        <!-- Card top content -->
-        <div class="card-list__content--top">
-          <h4>La corniche</h4>
-          <span class="u-circle">3</span>
-        </div>
-      </article>
-
+          <!-- Card top content -->
+          <div class="card-list__content--top">
+            <h4>La corniche</h4>
+            <span class="u-circle">3</span>
+          </div>
+        </article>
+      </section>
     </main>
 
+    <!-- Footer -->
+    <include src="footer.html"></include>
+
+    <!-- Scripts -->
     <script type="module" src="../javascript/itineraries.js"></script>
     <script type="module" src="../javascript/navigation.js"></script>
   </body>

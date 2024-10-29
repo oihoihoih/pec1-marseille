@@ -19,116 +19,120 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
   </head>
-  <body>
+  <body data-barba="wrapper">
     <!-- Header -->
     <!-- Navigation -->
     <include src="navigation.html"></include>
 
-    <header class="header h-100">
-      <h1 class="header__title">Marseille</h1>
-      <h2 class="header__subtitle">tres itinerarios</h2>
+    <main data-barba="container" data-barba-namespace="home">
+      <header class="header h-100">
+        <h1 class="header__title">Marseille</h1>
+        <h2 class="header__subtitle">tres itinerarios</h2>
 
-      <a class="header__link" id="scroll-button">Scroll</a>
+        <a class="header__link" id="scroll-button">Scroll</a>
 
-      <!-- Vídeo -->
-      <video autoplay controls loop class="header__video">
-        <source src="../assets/6183626-uhd_3840_2160_30fps.mp4" />
-        Tu navegador no soporta el formato de video.
-      </video>
-    </header>
+        <!-- Vídeo -->
+        <video autoplay controls loop class="header__video">
+          <source src="../assets/6183626-uhd_3840_2160_30fps.mp4" />
+          Tu navegador no soporta el formato de video.
+        </video>
+      </header>
 
-    <!-- TODO: Valorar si poner algún icono para hacer scroll -->
+      <!-- TODO: Valorar si poner algún icono para hacer scroll -->
 
-    <!-- Marquee -->
-    <section class="marquee">
-      <div class="marquee__inner">
-        <div class="marquee__part">Marseille connection&nbsp;</div>
-        <div class="marquee__part">Marseille connection&nbsp;</div>
-        <div class="marquee__part">Marseille connection&nbsp;</div>
-      </div>
-    </section>
-
-    <!-- Main section -->
-    <main id="main" class="main">
-      <section class="section">
-        <div class="hero hero__index fjc-end">
-          <article class="hero__card">
-            <h3 class="hero__card--title">Nos itinéraires</h3>
-            <ul class="hero__card--list">
-              <li class="hero__card--item" data-image="panier">
-                <a class="hero__card--link" href="./panier.html"
-                  >Le Panier
-                  <!-- Flecha -->
-                  <svg
-                    width="28"
-                    height="17"
-                    viewBox="0 0 28 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
-                      stroke="currentColor"
-                    ></path>
-                  </svg>
-                </a>
-                <figure class="card__figure">
-                  <img class="card__image" src="../assets/panier.jpg" alt="Panier" />
-                </figure>
-              </li>
-
-              <li class="hero__card--item" data-image="vieux-port">
-                <a class="hero__card--link" href="./vieux-port.html"
-                  >Le Vieux Port
-                  <svg
-                    width="28"
-                    height="17"
-                    viewBox="0 0 28 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
-                      stroke="currentColor"
-                    ></path>
-                  </svg>
-                </a>
-
-                <figure class="card__figure">
-                  <img class="card__image" src="../assets/vieux-port.jpg" alt="Vieux Port" />
-                </figure>
-              </li>
-
-              <li class="hero__card--item" data-image="corniche">
-                <a class="hero__card--link" href="./corniche.html"
-                  >La corniche
-                  <svg
-                    width="28"
-                    height="17"
-                    viewBox="0 0 28 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
-                      stroke="currentColor"
-                    ></path>
-                  </svg>
-                </a>
-
-                <figure class="card__figure">
-                  <img class="card__image" src="../assets/corniche.jpg" alt="La Canebière" />
-                </figure>
-              </li>
-            </ul>
-          </article>
+      <!-- Marquee -->
+      <section class="marquee">
+        <div class="marquee__inner">
+          <div class="marquee__part">Marseille connection&nbsp;</div>
+          <div class="marquee__part">Marseille connection&nbsp;</div>
+          <div class="marquee__part">Marseille connection&nbsp;</div>
         </div>
       </section>
+
+      <!-- Main section -->
+      <div class="main">
+        <section class="section">
+          <div class="hero hero__index fjc-end">
+            <article class="hero__card">
+              <h3 class="hero__card--title">Nos itinéraires</h3>
+              <ul class="hero__card--list">
+                <li class="hero__card--item" data-image="panier">
+                  <a class="hero__card--link" href="./panier.html"
+                    >Le Panier
+                    <!-- Flecha -->
+                    <svg
+                      width="28"
+                      height="17"
+                      viewBox="0 0 28 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
+                        stroke="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <figure class="card__figure">
+                    <img class="card__image" src="../assets/panier.jpg" alt="Panier" />
+                  </figure>
+                </li>
+
+                <li class="hero__card--item" data-image="vieux-port">
+                  <a class="hero__card--link" href="./vieux-port.html"
+                    >Le Vieux Port
+                    <svg
+                      width="28"
+                      height="17"
+                      viewBox="0 0 28 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
+                        stroke="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <figure class="card__figure">
+                    <img class="card__image" src="../assets/vieux-port.jpg" alt="Vieux Port" />
+                  </figure>
+                </li>
+
+                <li class="hero__card--item" data-image="corniche">
+                  <a class="hero__card--link" href="./corniche.html"
+                    >La corniche
+                    <svg
+                      width="28"
+                      height="17"
+                      viewBox="0 0 28 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
+                        stroke="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+
+                  <figure class="card__figure">
+                    <img class="card__image" src="../assets/corniche.jpg" alt="La Canebière" />
+                  </figure>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
+
+    <!-- Footer -->
+    <include src="footer.html"></include>
+
+    <!-- Scripts -->
     <script type="module" src="../javascript/app.js"></script>
     <script type="module" src="../javascript/navigation.js"></script>
   </body>
-
-  <!-- Footer -->
-  <include src="footer.html"></include>
 </html>
