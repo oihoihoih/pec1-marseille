@@ -1,10 +1,50 @@
-.wrapper {
+.itinerary {
+  margin: var(--spacing-xxl) 0;
+}
+.itinerary__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 100%;
   height: auto;
   overflow-x: hidden;
-  background-color: #fffbf1;
+}
+
+.itinerary__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: var(--spacing-m) 0;
+  align-self: center;
+}
+
+.itinerary__left,
+.itinerary__right {
+  display: flex;
+  width: 90%;
+  margin: var(--spacing-xxl) 0;
+}
+
+.itinerary__left--images,
+.itinerary__right--images {
+  width: 100%;
+  background-color: white;
+}
+
+.itinerary__right--images {
+  order: -1;
+}
+
+.itinerary__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Typography */
+.itinerary__header--title {
+  margin-bottom: var(--spacing-s);
 }

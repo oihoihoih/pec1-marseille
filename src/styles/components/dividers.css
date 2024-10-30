@@ -4,6 +4,7 @@
   border-top: 1px solid black;
   margin: var(--spacing-xxl) var(--spacing-m) 0;
   padding: var(--spacing-m);
+  padding-left: 0;
   text-transform: uppercase;
 }
 

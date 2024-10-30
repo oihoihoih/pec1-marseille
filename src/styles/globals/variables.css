@@ -31,7 +31,7 @@
   /* responsive decision applied to all text elements min-width 1024px */
   :root {
     --text-base-size: 1.25em;
-    --text-scale-ratio: 1.33;
+    --text-scale-ratio: 1.2;
   }
 }
 

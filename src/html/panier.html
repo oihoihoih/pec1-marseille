@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
   </head>
 
-  <body data-barba="wrapper" class="detail__wrapper">
+  <body data-barba="wrapper" >
     <!-- Navigation -->
     <include src="navigation.html"></include>
 
@@ -41,29 +41,57 @@
         <h6>Le Panier</h6>
       </div>
 
-      <article class="itinerary">
+      <article class="itinerary__wrapper p-m">
         <!-- Vieux Port CENTRADO-->
-        <section class="itinerary__header">
-          <h2>Le Vieux Port</h2>
-          <p>
-            Este itinerario comenzará en el Vieux Port, uno de los lugares más emblemáticos de
-            Marsella y origen de su creación cuando llegaron los griegos y la nombraron como
-            Massalia.
-          </p>
+        <section class="itinerary itinerary__header">
+          <div class="itinerary__header--images">
+            <picture>
+              <!-- 3 imágenes del Vieux Port -->
+            </picture>
+          </div>
+
+          <div class="itinerary__content">
+            <h2 class="itinerary__header--title">Le Vieux Port</h2>
+            <p class="itinerary__header--text">
+              Este itinerario comenzará en el Vieux Port, uno de los lugares más emblemáticos de Marsella y origen de su creación cuando llegaron los griegos y la nombraron como Massalia.
+            </p>
+          </div>
+
+          
         </section>
 
         <!-- Rue de la Republique -->
-        <section class="itinerary__left">
-          <h2>Rue de la République</h2>
-          <p>
-            Desde el Vieux Port, cruzaremos el boulevard haussmaniano de la République, una calle
-            que ha sufrido una profunda transformación en los últimos años, donde el proyecto
-            Euromeditarranée echó a gran parte de los inquilinos que la habitaban (en su mayoría de
-            origen humilde) para dar paso a una nueva clase de habitantes y comercios.
-          </p>
+        <section class="itinerary itinerary__left">
+          <div class="itinerary__content">
+           <h2 class="itinerary__header--title">Rue de la République</h2>
+            <p class="itinerary__header--text">
+                Desde el Vieux Port, cruzaremos el boulevard haussmaniano de la République, una calle que ha sufrido una profunda transformación en los últimos años, donde el proyecto Euromeditarranée echó a gran parte de los inquilinos que la habitaban (en su mayoría de origen humilde) para dar paso a una nueva clase de habitantes y comercios.
+            </p>
+          </div>  
+
           <div class="itinerary__left--images">
             <picture>
-              <!-- 3 imágenes de la rue de la republique -->
+              <source media="(min-width: 1025px)" srcset="../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg 1x,../assets/itineraries/12835712273_f119c75b2b_z_640x640_2x.jpg 2x"/>
+              <source media="(min-width: 769px)" srcset="../assets/itineraries/12835712273_f119c75b2b_z_320x320.jpg 1x, ../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg 2x">
+              <source media="(min-width: 0px)" srcset="
+              ../assets/itineraries/12835712273_f119c75b2b_z_320x320.jpg">
+              <img src="../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg" alt="Edificios de la Rue de la République de Marsella">
+            </picture>
+
+            <picture>
+              <source media="(min-width: 1025px)" srcset="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg 1x,../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_2x.jpg 2x"/>
+              <source media="(min-width: 769px)" srcset="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_300x450.jpg 1x, ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg 2x">
+              <source media="(min-width: 0px)" srcset="
+              ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_300x450.jpg">
+              <img src="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg" alt="Edificios de la Rue de la République de Marsella">
+            </picture>
+
+            <picture>
+              <source media="(min-width: 1025px)" srcset="../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg 1x,../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d_2x.jpg 2x"/>
+              <source media="(min-width: 769px)" srcset="../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d_0,5x.jpg 1x, ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg 2x">
+              <source media="(min-width: 0px)" srcset="
+              ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg">
+              <img src="../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg" alt="Edificios de la Rue de la République de Marsella">
             </picture>
           </div>
         </section>
@@ -78,62 +106,71 @@
           </p>
           <div class="itinerary__left--images">
             <picture>
+              IMAGEN
               <!-- 3 imágenes de la rue de la republique -->
             </picture>
         </section>
 
         <!-- Panier -->
         <section class="itinerary__right">
-          <h2>Le Panier</h2>
-          <p>
-            El Panier es la parte más antigua de la ciudad donde conviven habitantes de origen
-            corso, italiano y magrebí con artistas y artesanos de más reciente llegada. Sus
-            estrechas y pintorescas calles son un remanso de paz en el ritmo más ajetreado de la
-            ciudad.
-          </p>
+          <div class="itinerary__content">
+            <h2 class="itinerary__header--title">Le Panier</h2>
+            <p class="itinerary__header--text">
+              El Panier es la parte más antigua de la ciudad donde conviven habitantes de origen corso, italiano y magrebí con artistas y artesanos de más reciente llegada. Sus estrechas y pintorescas calles son un remanso de paz en el ritmo más ajetreado de la ciudad.
+            </p>
+          </div>
+
           <div class="itinerary__right--images">
             <picture>
+              IMAGEN
               <!-- 3 imágenes del Panier -->
             </picture>
         </section>
 
         <!-- La vieille charité -->
         <section class="itinerary__transversal">
-          <h2>La Vieille Charité</h2>
-          <p>
-            Este edificio fue construido en el siglo XVII para albergar a los pobres de la ciudad.
-            Actualmente es un centro cultural que alberga exposiciones y eventos culturales.
-          </p>
+          <div class="itinerary__content">
+            <h2 class="itinerary__header--title">La Vieille Charité</h2>
+            <p class="itinerary__header--text">
+              Este edificio fue construido en el siglo XVII para albergar a los pobres de la ciudad. Actualmente es un centro cultural que alberga exposiciones y eventos culturales.
+            </p>
+          </div>
+
           <div class="itinerary__transversal--images">
             <picture>
+              IMAGEN
               <!-- 1 imagen de la Vieille Charité -->
             </picture>
         </section>
 
         <!-- Mucem -->
         <section class="itinerary__left">
-          <h2>Mucem</h2>
-          <p>
-            El Museo de las Civilizaciones de Europa y el Mediterráneo es una de las construcciones
-            más emblemáticas de la ciudad. Un edificio de líneas modernas que contrasta con la
-            arquitectura tradicional del Panier.
-          </p>
+          <div class="itinerary__content">
+            <h2 class="itinerary__header--title">Mucem</h2>
+            <p class="itinerary__header--text">
+              El Museo de las Civilizaciones de Europa y el Mediterráneo es una de las construcciones más emblemáticas de la ciudad. Un edificio de líneas modernas que contrasta con la arquitectura tradicional del Panier.
+            </p>
+          </div>
+
           <div class="itinerary__left--images">
             <picture>
+              IMAGEN
               <!-- 3 imágenes del Mucem -->
             </picture>
         </section>
 
         <!-- Fort de Saint Jean -->
         <section class="itinerary__right">
-          <h2>Fort de Saint Jean</h2>
-          <p>
-            Este fuerte fue construido en el siglo XVII para proteger la ciudad de los ataques
-            marítimos. Actualmente es un lugar de visita obligada para disfrutar de las vistas de la
-            ciudad y del mar.
+          <div class="itinerary__content">
+            <h2 class="itinerary__header--title">Fort de Saint Jean</h2>
+            <p class="itinerary__header--text">
+              Este fuerte fue construido en el siglo XVII para proteger la ciudad de los ataques marítimos. Actualmente es un lugar de visita obligada para disfrutar de las vistas de la ciudad y del mar.
           </p>
+          </div>
+
           <div class="itinerary__right--images">
             <picture>
+              IMAGEN
               <!-- 3 imágenes del fort de Saint Jean -->
             </picture>
       </article>

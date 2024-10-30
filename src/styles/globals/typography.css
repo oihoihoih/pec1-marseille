@@ -6,6 +6,7 @@ h1 {
 
 h2 {
   --font-increase: 5;
+  font-variation-settings: "wght" 450, "wdth" 110;
 }
 
 h3 {
