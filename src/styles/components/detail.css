@@ -9,11 +9,13 @@
   align-items: center;
   width: 100%;
   height: auto;
-  overflow-x: hidden;
+  overflow: hidden;
+  gap: 16vh;
 }
 
 .itinerary__header {
   display: flex;
+  gap: var(--spacing-xl);
   flex-direction: column;
   align-items: center;
   width: 80%;
@@ -21,20 +23,73 @@
   align-self: center;
 }
 
+.itinerary__header--images {
+  width: 100%;
+  max-height: 40vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.itinerary__header--images img {
+  width: 100%;
+  height: auto;
+}
+
 .itinerary__left,
 .itinerary__right {
   display: flex;
   width: 90%;
   margin: var(--spacing-xxl) 0;
+  gap: var(--spacing-xl);
 }
 
-.itinerary__left--images,
-.itinerary__right--images {
+.itinerary__images {
+  position: relative;
+  width: 50%;
+}
+
+.itinerary__image1 img,
+.itinerary__image2 img,
+.itinerary__image3 img {
+  width: 22vw;
+  border: 6px solid var(--accent-color-light);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.vertical-img img {
+  height: 22vw;
+  width: auto;
+}
+
+.itinerary__image1,
+.itinerary__image2,
+.itinerary__image3 {
+  position: absolute;
+}
+
+.itinerary__image1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  rotate: -5deg;
+}
+
+.itinerary__image2 {
+  top: 5%;
+  left: 50%;
+  z-index: 2;
+  rotate: 3deg;
+}
+
+.itinerary__image3 {
   width: 100%;
-  background-color: white;
+  top: 60%;
+  left: 15%;
+  z-index: 3;
 }
 
-.itinerary__right--images {
+.img-right {
   order: -1;
 }
 
@@ -42,6 +97,50 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  flex: 1;
+}
+
+.itinerary__content span {
+  color: var(--secondary-accent-color);
+  font-size: 0.8em;
+  margin-bottom: var(--spacing-m);
+  font-variation-settings: "wght" 400, "wdth" 100;
+  text-transform: uppercase;
+}
+
+.itinerary__transversal {
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+
+.itinerary__transversal--card {
+  margin: var(--spacing-m);
+  width: 50vw;
+  background-color: var(--accent-color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+  position: relative;
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  outline: 4px double var(--primary-color-dark);
+  outline-offset: -20px;
+  transform: translate(5%, 0%) rotate(-2deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  color: var(--primary-color-dark);
+}
+
+.itinerary__transversal--image {
+  max-width: 30vw;
+  max-height: 30vw;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.itinerary__transversal--image img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Typography */

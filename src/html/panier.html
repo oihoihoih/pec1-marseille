@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
   </head>
 
-  <body data-barba="wrapper" >
+  <body data-barba="wrapper">
     <!-- Navigation -->
     <include src="navigation.html"></include>
 
@@ -38,141 +38,508 @@
 
       <!-- Section Divider -->
       <div class="section-divider">
-        <h6>Le Panier</h6>
+        <h6>Itinerario por Le Panier</h6>
       </div>
 
       <article class="itinerary__wrapper p-m">
         <!-- Vieux Port CENTRADO-->
         <section class="itinerary itinerary__header">
           <div class="itinerary__header--images">
-            <picture>
-              <!-- 3 imágenes del Vieux Port -->
+            <picture class="itinerary__header--img">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/Marseille_Quai_des_Belges_3.jpg    1x,
+                  ../assets/itineraries/Marseille_Quai_des_Belges_3_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/Marseille_Quai_des_Belges_3_0.5x.jpg 1x,
+                  ../assets/itineraries/Marseille_Quai_des_Belges_3.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="
+              ../assets/itineraries/Marseille_Quai_des_Belges_3_0.5x.jpg 1px"
+              />
+              <img
+                src="../assets/itineraries/Marseille_Quai_des_Belges_3.jpg"
+                alt="Edificios de la Rue de la République de Marsella"
+              />
             </picture>
           </div>
 
           <div class="itinerary__content">
+            <span>Etapa 1</span>
             <h2 class="itinerary__header--title">Le Vieux Port</h2>
             <p class="itinerary__header--text">
-              Este itinerario comenzará en el Vieux Port, uno de los lugares más emblemáticos de Marsella y origen de su creación cuando llegaron los griegos y la nombraron como Massalia.
+              Este itinerario comenzará en el Vieux Port, uno de los lugares más emblemáticos de
+              Marsella y origen de su creación cuando llegaron los griegos y la nombraron como
+              Massalia.
             </p>
           </div>
-
-          
         </section>
 
         <!-- Rue de la Republique -->
-        <section class="itinerary itinerary__left">
+        <section class="itinerary__left">
           <div class="itinerary__content">
-           <h2 class="itinerary__header--title">Rue de la République</h2>
+            <span>Etapa 2</span>
+
+            <h2 class="itinerary__header--title">Rue de la République</h2>
             <p class="itinerary__header--text">
-                Desde el Vieux Port, cruzaremos el boulevard haussmaniano de la République, una calle que ha sufrido una profunda transformación en los últimos años, donde el proyecto Euromeditarranée echó a gran parte de los inquilinos que la habitaban (en su mayoría de origen humilde) para dar paso a una nueva clase de habitantes y comercios.
+              Desde el Vieux Port, cruzaremos el boulevard haussmaniano de la République, una calle
+              que ha sufrido una profunda transformación en los últimos años, donde el proyecto
+              Euromeditarranée echó a gran parte de los inquilinos que la habitaban (en su mayoría
+              de origen humilde) para dar paso a una nueva clase de habitantes y comercios.
             </p>
-          </div>  
+          </div>
 
-          <div class="itinerary__left--images">
-            <picture>
-              <source media="(min-width: 1025px)" srcset="../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg 1x,../assets/itineraries/12835712273_f119c75b2b_z_640x640_2x.jpg 2x"/>
-              <source media="(min-width: 769px)" srcset="../assets/itineraries/12835712273_f119c75b2b_z_320x320.jpg 1x, ../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg 2x">
-              <source media="(min-width: 0px)" srcset="
-              ../assets/itineraries/12835712273_f119c75b2b_z_320x320.jpg">
-              <img src="../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg" alt="Edificios de la Rue de la République de Marsella">
+          <div class="itinerary__images">
+            <picture class="itinerary__image1">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg    1x,
+                  ../assets/itineraries/12835712273_f119c75b2b_z_640x640_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/12835712273_f119c75b2b_z_320x320.jpg 1x,
+                  ../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="
+              ../assets/itineraries/12835712273_f119c75b2b_z_320x320.jpg 1px"
+              />
+              <img
+                src="../assets/itineraries/12835712273_f119c75b2b_z_640x640.jpg"
+                alt="Edificios de la Rue de la République de Marsella"
+              />
             </picture>
 
-            <picture>
-              <source media="(min-width: 1025px)" srcset="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg 1x,../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_2x.jpg 2x"/>
-              <source media="(min-width: 769px)" srcset="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_300x450.jpg 1x, ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg 2x">
-              <source media="(min-width: 0px)" srcset="
-              ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_300x450.jpg">
-              <img src="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg" alt="Edificios de la Rue de la République de Marsella">
+            <picture class="itinerary__image2 vertical-img">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg    1x,
+                  ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_300x450.jpg 1x,
+                  ../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg         2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash_300x450.jpg 1x"
+              />
+              <img
+                src="../assets/itineraries/lien-van-win-0k6tIpEtDT4-unsplash.jpg"
+                alt="Edificios de la Rue de la République de Marsella"
+              />
             </picture>
 
-            <picture>
-              <source media="(min-width: 1025px)" srcset="../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg 1x,../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d_2x.jpg 2x"/>
-              <source media="(min-width: 769px)" srcset="../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d_0,5x.jpg 1x, ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg 2x">
-              <source media="(min-width: 0px)" srcset="
-              ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg">
-              <img src="../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg" alt="Edificios de la Rue de la République de Marsella">
+            <picture class="itinerary__image3">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg    1x,
+                  ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d_0.5x.jpg 1x,
+                  ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="
+                  ../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg 1x
+                "
+              />
+
+              <img
+                src="../assets/itineraries/hotel-des-messageries-maritimes-place-sadi-carnot-marseille-carte-postale-11242d.jpg"
+                alt="Edificios de la Rue de la République de Marsella"
+              />
             </picture>
           </div>
         </section>
 
-        <!-- Passage de la Joliette -->
+        <!-- Passage de la Lorette -->
         <section class="itinerary__transversal">
-          <h2>Passage de la Joliette</h2>
-          <p>
-            Este pasaje une la rue de la République con la rue de la Joliette, en el barrio del
-            Panier. Un pasaje estrecho y lleno de vida donde las ropas tendidas entre edificio y
-            edificio nos transportan a un paisaje urbano muy mediterráneo.
-          </p>
-          <div class="itinerary__left--images">
-            <picture>
-              IMAGEN
-              <!-- 3 imágenes de la rue de la republique -->
-            </picture>
+          <article class="itinerary__transversal--card">
+            <div class="itinerary__transversal--image">
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="
+                    ../assets/itineraries/90265526_8e3e70037d_o.jpg    1x,
+                    ../assets/itineraries/90265526_8e3e70037d_o_2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    ../assets/itineraries/90265526_8e3e70037d_o_0,5x.jpg 1x,
+                    ../assets/itineraries/90265526_8e3e70037d_o.jpg      2x
+                  "
+                />
+                <source
+                  media="(min-width: 0px)"
+                  srcset="../assets/itineraries/90265526_8e3e70037d_o_0,5x.jpg 1x"
+                />
+                <img
+                  src="../assets/itineraries/90265526_8e3e70037d_o.jpg"
+                  alt="Edificios de la Rue de la République de Marsella"
+                />
+              </picture>
+            </div>
+
+            <div class="itinerary__transversal--content">
+              <h3 class="hero__card--title">Passage de la Lorette</h3>
+              <p class="itinerary__header--text">
+                Este pasaje une la rue de la République con el barrio del Panier. Un pasaje estrecho
+                y lleno de vida donde las ropas tendidas entre edificio y edificio nos transportan a
+                un paisaje urbano muy mediterráneo.
+              </p>
+            </div>
+          </article>
         </section>
 
         <!-- Panier -->
         <section class="itinerary__right">
           <div class="itinerary__content">
+            <span>Etapa 3</span>
+
             <h2 class="itinerary__header--title">Le Panier</h2>
             <p class="itinerary__header--text">
-              El Panier es la parte más antigua de la ciudad donde conviven habitantes de origen corso, italiano y magrebí con artistas y artesanos de más reciente llegada. Sus estrechas y pintorescas calles son un remanso de paz en el ritmo más ajetreado de la ciudad.
+              El Panier es la parte más antigua de la ciudad donde conviven habitantes de origen
+              corso, italiano y magrebí con artistas y artesanos de más reciente llegada. Sus
+              estrechas y pintorescas calles son un remanso de paz en el ritmo más ajetreado de la
+              ciudad.
             </p>
           </div>
 
-          <div class="itinerary__right--images">
-            <picture>
-              IMAGEN
-              <!-- 3 imágenes del Panier -->
+          <div class="itinerary__images img-right">
+            <picture class="itinerary__image1">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/marseille-la-cathedrale-et-les-cordiers-metier-296e46.jpg    1x,
+                  ../assets/itineraries/marseille-la-cathedrale-et-les-cordiers-metier-296e46_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/marseille-la-cathedrale-et-les-cordiers-metier-296e46_0.5x.jpg 1x,
+                  ../assets/itineraries/marseille-la-cathedrale-et-les-cordiers-metier-296e46.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="
+                  ../assets/itineraries/marseille-la-cathedrale-et-les-cordiers-metier-296e46_0.5x.jpg 1x
+                "
+              />
+              <img
+                src="../assets/itineraries/marseille-la-cathedrale-et-les-cordiers-metier-296e46.jpg"
+                alt="Fotografía antigua de la catedral de la Major en Marsella con gente paseando por la calle"
+              />
             </picture>
+
+            <picture class="itinerary__image2 vertical-img">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash.jpg    1x,
+                  ../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash_0.5x.jpg 1x,
+                  ../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash_0.5x.jpg 1x"
+              />
+              <img
+                src="../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash.jpg"
+                alt="Edificios de la Rue de la République de Marsella"
+              />
+            </picture>
+
+            <picture class="itinerary__image3">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/andrei-koscina-Syxjd6sKMD4-unsplash.jpg    1x,
+                  ../assets/itineraries/andrei-koscina-Syxjd6sKMD4-unsplash_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/andrei-koscina-Syxjd6sKMD4-unsplash_0.5x.jpg 1x,
+                  ../assets/itineraries/andrei-koscina-Syxjd6sKMD4-unsplash_0.5x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash_0.5x.jpg 1x"
+              />
+              <img
+                src="../assets/itineraries/andrei-koscina-Qn_ot1LHFng-unsplash.jpg"
+                alt="Edificios de la Rue de la République de Marsella"
+              />
+            </picture>
+          </div>
         </section>
 
         <!-- La vieille charité -->
         <section class="itinerary__transversal">
-          <div class="itinerary__content">
-            <h2 class="itinerary__header--title">La Vieille Charité</h2>
-            <p class="itinerary__header--text">
-              Este edificio fue construido en el siglo XVII para albergar a los pobres de la ciudad. Actualmente es un centro cultural que alberga exposiciones y eventos culturales.
-            </p>
-          </div>
+          <article class="itinerary__transversal--card">
+            <div class="itinerary__transversal--image">
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="
+                    ../assets/itineraries/33138668011_32c48f5383_c.jpg   1x,
+                    ../assets/itineraries/33138668011_32c48f5383_c2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    ../assets/itineraries/33138668011_32c48f5383_c_0.5x.jpg 1x,
+                    ../assets/itineraries/33138668011_32c48f5383_c.jpg      2x
+                  "
+                />
+                <source
+                  media="(min-width: 0px)"
+                  srcset="../assets/itineraries/33138668011_32c48f5383_c_0.5x.jpg 1x"
+                />
+                <img
+                  src="../assets/itineraries/33138668011_32c48f5383_c.jpg"
+                  alt="Edificios de la Rue de la République de Marsella"
+                />
+              </picture>
+            </div>
 
-          <div class="itinerary__transversal--images">
-            <picture>
-              IMAGEN
-              <!-- 1 imagen de la Vieille Charité -->
-            </picture>
+            <div class="itinerary__transversal--content">
+              <h3 class="hero__card--title">La Vieille Charité</h3>
+              <p class="itinerary__header--text">
+                Este edificio fue construido en el siglo XVII para albergar a los pobres de la
+                ciudad. Actualmente es un centro cultural que alberga exposiciones y eventos
+                culturales.
+              </p>
+            </div>
+          </article>
         </section>
 
         <!-- Mucem -->
         <section class="itinerary__left">
           <div class="itinerary__content">
+            <span>Etapa 4</span>
+
             <h2 class="itinerary__header--title">Mucem</h2>
             <p class="itinerary__header--text">
-              El Museo de las Civilizaciones de Europa y el Mediterráneo es una de las construcciones más emblemáticas de la ciudad. Un edificio de líneas modernas que contrasta con la arquitectura tradicional del Panier.
+              El Museo de las Civilizaciones de Europa y el Mediterráneo es una de las
+              construcciones más emblemáticas de la ciudad. Un edificio de líneas modernas que
+              contrasta con la arquitectura tradicional del Panier.
             </p>
           </div>
 
-          <div class="itinerary__left--images">
-            <picture>
-              IMAGEN
-              <!-- 3 imágenes del Mucem -->
+          <div class="itinerary__images">
+            <picture class="itinerary__image1">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/mucem-marseille-sea-e50f1a.jpg    1x,
+                  ../assets/itineraries/mucem-marseille-sea-e50f1a_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/mucem-marseille-sea-e50f1a_0.5x.jpg 1x,
+                  ../assets/itineraries/mucem-marseille-sea-e50f1a.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/itineraries/mucem-marseille-sea-e50f1a_0.5x.jpg 1x"
+              />
+              <img
+                src="../assets/itineraries/mucem-marseille-sea-e50f1a.jpg"
+                alt="El museo Mucem con la catedral de la Major de fondo"
+              />
             </picture>
+
+            <picture class="itinerary__image2">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121156.jpg    1x,
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121156_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121156_0.5x.jpg 1x,
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121156.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/itineraries/pexels-nadine-ginzel-80607840-20121156_0.5x.jpg 1x"
+              />
+              <img
+                src="../assets/itineraries/pexels-nadine-ginzel-80607840-20121156.jpg"
+                alt="Esquina del museo Mucem y el mar"
+              />
+            </picture>
+
+            <picture class="itinerary__image3">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121147.jpg    1x,
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121147_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121147_0.5x.jpg 1x,
+                  ../assets/itineraries/pexels-nadine-ginzel-80607840-20121147.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/itineraries/pexels-nadine-ginzel-80607840-20121147_0.5x.jpg 1x"
+              />
+              <img
+                src="../assets/itineraries/pexels-nadine-ginzel-80607840-20121147.jpg"
+                alt="Juego de luces y sombras con la dentelle del museo Mucem"
+              />
+            </picture>
+          </div>
         </section>
 
         <!-- Fort de Saint Jean -->
         <section class="itinerary__right">
           <div class="itinerary__content">
+            <span>Etapa 3</span>
+
             <h2 class="itinerary__header--title">Fort de Saint Jean</h2>
             <p class="itinerary__header--text">
-              Este fuerte fue construido en el siglo XVII para proteger la ciudad de los ataques marítimos. Actualmente es un lugar de visita obligada para disfrutar de las vistas de la ciudad y del mar.
-          </p>
+              Este fuerte fue construido en el siglo XVII para proteger la ciudad de los ataques
+              marítimos. Actualmente es un lugar de visita obligada para disfrutar de las vistas de
+              la ciudad y del mar.
+            </p>
           </div>
 
-          <div class="itinerary__right--images">
-            <picture>
-              IMAGEN
-              <!-- 3 imágenes del fort de Saint Jean -->
+          <div class="itinerary__images img-right">
+            <picture class="itinerary__image1">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/fort-saint-jean-a34e35.jpg    1x,
+                  ../assets/itineraries/fort-saint-jean-a34e35_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/fort-saint-jean-a34e35_0.5x.jpg 1x,
+                  ../assets/itineraries/fort-saint-jean-a34e35.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/itineraries/fort-saint-jean-a34e35_0.5x.jpg 1x"
+              />
+              <img
+                src="../assets/itineraries/fort-saint-jean-a34e35.jpg"
+                alt="Fotografía antigua del Fort de Saint Jean en Marsella"
+              />
             </picture>
+
+            <picture class="itinerary__image2">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/fort-saint-jean-marseille-france-january-2017-280-31338518344-9e6aff.jpg    1x,
+                  ../assets/itineraries/fort-saint-jean-marseille-france-january-2017-280-31338518344-9e6aff_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/fort-saint-jean-marseille-france-january-2017-280-31338518344-9e6aff_0.5x.jpg 1x,
+                  ../assets/itineraries/fort-saint-jean-marseille-france-january-2017-280-31338518344-9e6aff.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="
+                  ../assets/itineraries/fort-saint-jean-marseille-france-january-2017-280-31338518344-9e6aff_0.5x.jpg 1x
+                "
+              />
+              <img
+                src="../assets/itineraries/fort-saint-jean-marseille-france-january-2017-280-31338518344-9e6aff.jpg"
+                alt="Fotografía a color del Fort de Saint Jean de Marsella visto desde el puerto"
+              />
+            </picture>
+
+            <picture class="itinerary__image3">
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/itineraries/saint-jean-marseille-castle-architecture-buildings-ebd182.jpg    1x,
+                  ../assets/itineraries/saint-jean-marseille-castle-architecture-buildings-ebd182_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/itineraries/saint-jean-marseille-castle-architecture-buildings-ebd182_0.5x.jpg 1x,
+                  ../assets/itineraries/saint-jean-marseille-castle-architecture-buildings-ebd182.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="
+                  ../assets/itineraries/saint-jean-marseille-castle-architecture-buildings-ebd182_0.5x.jpg 1x
+                "
+              />
+              <img
+                src="../assets/itineraries/saint-jean-marseille-castle-architecture-buildings-ebd182.jpg"
+                alt="Fotografía lateral del Fort de Saint Jean con el mar de fondo"
+              />
+            </picture>
+          </div>
+        </section>
       </article>
     </main>
   </body>

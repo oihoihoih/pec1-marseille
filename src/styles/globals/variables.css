@@ -1,11 +1,13 @@
 :root {
   /* TODO: ESTABLECER COLORES */
   --color-white: #fff;
+  --color-black: #222222;
   --primary-color: #91cef1;
   --primary-color-dark: rgb(25, 82, 128);
   --accent-color: #febd8c;
   --accent-color-light: #fee5d3;
   --accent-color-dark: #755741;
+  --secondary-accent-color: #d74c4c;
 
   --font-family-base: "Roboto Flex", sans-serif;
   --font-family-accent: "the-seasons", serif;
