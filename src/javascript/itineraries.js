@@ -45,3 +45,16 @@ card.forEach((item, index) => {
     });
   });
 });
+
+// LINKS TO DETAIL PAGE
+
+document.querySelectorAll(".card-list__content").forEach((cardItem) => {
+  cardItem.addEventListener("click", (event) => {
+    event.preventDefault();
+    const link = cardItem.getAttribute("data-link");
+
+    if (link) {
+      window.location.href = link;
+    }
+  });
+});
