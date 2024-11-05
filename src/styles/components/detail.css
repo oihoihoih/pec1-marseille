@@ -1,106 +1,45 @@
-.itinerary {
-  margin: var(--spacing-xxl) 0;
-}
 .itinerary__wrapper {
-  position: relative;
+  padding: var(--spacing-m);
   display: flex;
   flex-direction: column;
+}
+
+.etape__wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: var(--spacing-xxl);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
+}
+
+.etape__postcard {
+  background-color: var(--accent-color-xlight);
   width: 100%;
-  height: auto;
-  overflow: hidden;
-  gap: 16vh;
-}
-
-.itinerary__header {
+  height: 80%;
   display: flex;
-  gap: var(--spacing-xl);
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: var(--spacing-m) 0;
-  align-self: center;
-}
-
-.itinerary__header--images {
-  width: 100%;
-  max-height: 40vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-.itinerary__header--images img {
-  width: 100%;
-  height: auto;
-}
-
-.itinerary__left,
-.itinerary__right {
-  display: flex;
-  width: 90%;
-  margin: var(--spacing-xxl) 0;
-  gap: var(--spacing-xl);
-}
-
-.itinerary__images {
-  position: relative;
-  width: 50%;
-}
-
-.itinerary__image1 img,
-.itinerary__image2 img,
-.itinerary__image3 img {
-  width: 22vw;
-  border: 6px solid var(--accent-color-light);
+  flex-direction: row-reverse;
+  padding: var(--spacing-m);
+  border-radius: var(--border-m);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
 
-.vertical-img img {
-  height: 22vw;
-  width: auto;
+  /* transform: rotate(2deg); */
 }
-
-.itinerary__image1,
-.itinerary__image2,
-.itinerary__image3 {
-  position: absolute;
-}
-
-.itinerary__image1 {
-  top: 0;
-  left: 0;
-  z-index: 1;
-  rotate: -5deg;
-}
-
-.itinerary__image2 {
-  top: 5%;
-  left: 50%;
-  z-index: 2;
-  rotate: 3deg;
-}
-
-.itinerary__image3 {
-  width: 100%;
-  top: 60%;
-  left: 15%;
-  z-index: 3;
-}
-
-.img-right {
-  order: -1;
-}
-
-.itinerary__content {
+.etape__content {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  flex: 1;
+  padding: var(--spacing-l);
+  padding-bottom: 0;
+  width: 50%;
+  border-left: 2px solid var(--primary-color-dark);
 }
 
-.itinerary__content span {
+.etape__content--header {
+  padding: var(--spacing-m) var(--spacing-s);
+}
+
+.detail {
+  display: block;
   color: var(--secondary-accent-color);
   font-size: 0.8em;
   margin-bottom: var(--spacing-m);
@@ -108,42 +47,60 @@
   text-transform: uppercase;
 }
 
-.itinerary__transversal {
-  width: 50%;
-  display: block;
-  text-align: center;
+.etape__content--description {
+  padding: var(--spacing-l) var(--spacing-s);
+  flex-grow: 2;
+  border-top: 2px solid var(--primary-color-dark);
+  border-bottom: 2px solid var(--primary-color-dark);
 }
 
-.itinerary__transversal--card {
-  margin: var(--spacing-m);
-  width: 50vw;
-  background-color: var(--accent-color-light);
+.etape__content--footer {
+  padding: var(--spacing-m) var(--spacing-s);
+  padding-bottom: 0;
+  font-size: 0.8em;
+}
+
+.detail--link {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-xl);
+  justify-content: space-between;
+  margin-top: var(--spacing-m);
+}
+
+.detail--link a {
+  display: inline-block;
   position: relative;
-  padding: var(--spacing-xxl) var(--spacing-xl);
-  outline: 4px double var(--primary-color-dark);
-  outline-offset: -20px;
-  transform: translate(5%, 0%) rotate(-2deg);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  color: var(--primary-color-dark);
-}
-
-.itinerary__transversal--image {
-  max-width: 30vw;
-  max-height: 30vw;
+  color: var(--secondary-accent-color);
   overflow: hidden;
-  border: 5px solid white;
 }
 
-.itinerary__transversal--image img {
+.detail--link a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--secondary-accent-color);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.detail--link a:hover::before {
+  transform: translateX(0%);
+}
+
+.etape__image {
+  position: relative;
+  overflow: hidden;
+  margin-right: var(--spacing-m);
+  width: 50%;
+  border-radius: var(--border-m);
+  mix-blend-mode: multiply;
+}
+
+.etape__image img {
+  display: block;
   width: 100%;
   height: 100%;
-}
-
-/* Typography */
-.itinerary__header--title {
-  margin-bottom: var(--spacing-s);
+  object-fit: cover;
 }
