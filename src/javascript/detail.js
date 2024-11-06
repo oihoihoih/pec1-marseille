@@ -4,36 +4,44 @@ import barba from "@barba/core";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const etapes = document.querySelectorAll(".itinerary");
+// const animation = gsap
+//   .timeline({})
+//   .from(".etape__wrapper", { transform: "rotate(0deg)" })
+//   .to(".etape__wrapper", { transform: "rotate(5deg)" });
 
-gsap.from(".itinerary__header", {
-  opacity: 0,
-  yPercent: 50,
-  duration: 1,
-  ease: "power2"
-});
+// gsap.utils.toArray(".etape__wrapper").forEach((postcard, index) => {
+//   ScrollTrigger.create({
+//     trigger: postcard,
+//     start: "top top",
+//     pin: true,
+//     markers: true,
+//     pinSpacing: false,
+//     animation: animation
+//   });
+// });
+const postcards = document.querySelectorAll(".etape__wrapper");
+const postcardHeight = postcards[0].offsetHeight;
 
-function delay(n) {
-  n = n || 2000;
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
+postcards.forEach((postcard, index) => {
+  // animation.clear();
 
-etapes.forEach((etape) => {
-  console.log(etape);
-
-  const tl = gsap.timeline().from(etape, {
-    opacity: 0,
-    yPercent: 20
-  });
+  const tl = gsap
+    .timeline()
+    .from(postcard, {
+      rotation: 0
+    })
+    .to(postcard, {
+      rotation: gsap.utils.random(-8, 8),
+      duration: 0.3
+    });
 
   ScrollTrigger.create({
-    trigger: etape,
-    start: "top 90%",
-    toggleActions: "play none none reverse",
-    animation: tl
+    trigger: postcard,
+    start: "top top",
+    pin: true,
+    end: () => `+=${(postcards.length - index) * postcardHeight}`,
+    scrub: true,
+    animation: tl,
+    pinSpacing: false
   });
 });
