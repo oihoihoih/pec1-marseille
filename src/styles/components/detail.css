@@ -25,6 +25,7 @@
 
   /* transform: rotate(2deg); */
 }
+
 .etape__content {
   display: flex;
   flex-direction: column;
@@ -103,4 +104,21 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Responsive card */
+@media screen and (max-width: 1024px) {
+  .etape__postcard {
+    flex-direction: column-reverse;
+  }
+
+  .etape__content {
+    padding: var(--spacing-m) 0;
+  }
+
+  .etape__content,
+  .etape__image {
+    width: 100%;
+    border-left: none;
+  }
 }
