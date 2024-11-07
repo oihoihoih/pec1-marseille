@@ -50,7 +50,7 @@ barba.init({
       async leave(data) {
         const done = this.async();
         timeline.reverse();
-        await delay(1500);
+        await delay(1000);
         done();
       },
 
@@ -60,6 +60,25 @@ barba.init({
           opacity: 0,
           ease: "power2.inOut"
         });
+      },
+
+      async afterEnter(data) {
+        if (namespace === "itineraries") {
+          gsap.fromTo(
+            ".card-list__content",
+            {
+              opacity: 0,
+              yPercent: 50
+            },
+            {
+              opacity: 1,
+              yPercent: 0,
+              duration: 0.4,
+              ease: "power2",
+              stagger: 0.1
+            }
+          );
+        }
       }
     }
   ]

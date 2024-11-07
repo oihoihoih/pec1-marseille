@@ -1,10 +1,8 @@
 import { gsap } from "gsap";
-import barba from "@barba/core";
 
-import { ScrollToPlugin, ScrollTrigger, TextPlugin } from "gsap/all";
+import { ScrollToPlugin, TextPlugin } from "gsap/all";
 
 gsap.registerPlugin(ScrollToPlugin);
-gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
 
 // SCROLL TO MAIN

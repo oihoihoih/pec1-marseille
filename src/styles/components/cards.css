@@ -70,10 +70,16 @@
   gap: var(--spacing-m);
   justify-content: space-between;
 }
+/* 
+.card-list__grid {
+  display: grid;
+  grid-template-columns: ;
+} */
 
 .card-list__content {
   position: relative;
   width: 100%;
+  width: 33vw;
   height: 45vh;
   overflow: hidden;
   cursor: pointer;

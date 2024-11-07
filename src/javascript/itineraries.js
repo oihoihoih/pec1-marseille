@@ -18,6 +18,7 @@ gsap.fromTo(
 );
 
 // ITINERARIES ANIMATIONS
+
 const card = document.querySelectorAll(".card-list__content");
 const cardText = document.querySelectorAll(".card-list__content--text");
 

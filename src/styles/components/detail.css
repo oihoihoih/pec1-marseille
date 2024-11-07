@@ -106,6 +106,14 @@
   object-fit: cover;
 }
 
+.links__wrapper {
+  padding: var(--spacing-m);
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  margin-top: var(--spacing-xl);
+}
+
 /* Responsive card */
 @media screen and (max-width: 1024px) {
   .etape__postcard {

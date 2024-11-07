@@ -39,7 +39,7 @@ postcards.forEach((postcard, index) => {
     trigger: postcard,
     start: "top top",
     pin: true,
-    end: () => `+=${(postcards.length - index) * postcardHeight}`,
+    end: () => `+=${(postcards.length - index) * postcardHeight - postcardHeight}`,
     scrub: true,
     animation: tl,
     pinSpacing: false
