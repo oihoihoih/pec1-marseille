@@ -8,6 +8,10 @@
   z-index: 3;
 }
 
+.nav__bg {
+  background-color: var(--accent-color-light);
+}
+
 .nav > div {
   flex: 1;
 }
@@ -28,7 +32,7 @@
   justify-content: flex-end;
 }
 
-.burguer {
+.burger {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +46,8 @@
   cursor: pointer;
 }
 
-.burguer::before,
-.burguer::after {
+.burger::before,
+.burger::after {
   content: "";
   width: 40px;
   height: 2px;
@@ -53,20 +57,20 @@
   will-change: transform;
 }
 
-.burguer::before {
+.burger::before {
   transform: translateY(-3px);
 }
 
-.burguer::after {
+.burger::after {
   transform: translateY(3px);
 }
 
-.active.burguer::before {
+.active.burger::before {
   transform: translateY(0) rotate(45deg);
   background-color: var(--primary-color);
 }
 
-.active.burguer::after {
+.active.burger::after {
   transform: translateY(0) rotate(-45deg);
   background-color: var(--primary-color);
 }

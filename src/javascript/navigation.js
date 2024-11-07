@@ -1,7 +1,10 @@
 import { gsap } from "gsap";
 import barba from "@barba/core";
+import { ScrollTrigger } from "gsap/all";
 
-const toggleButton = document.querySelector(".burguer");
+gsap.registerPlugin(ScrollTrigger);
+
+const toggleButton = document.querySelector(".burger");
 let isOpen = false;
 
 gsap.set(".nav__overlay--menu-item p", { y: 225 });
@@ -29,8 +32,10 @@ timeline.to(
 toggleButton.addEventListener("click", () => {
   if (isOpen) {
     timeline.reverse();
+    toggleButton.setAttribute("aria-expanded", "false");
   } else {
     timeline.play();
+    toggleButton.setAttribute("aria-expanded", "true");
   }
 
   isOpen = !isOpen;
@@ -82,6 +87,35 @@ barba.init({
       }
     }
   ]
+});
+
+// Navigation scroll
+
+const navBar = document.querySelector(".nav");
+
+const up = gsap.timeline({ paused: true });
+const down = gsap.timeline({ paused: true });
+
+up.to(navBar, {
+  yPercent: -100,
+  duration: 0.3,
+  ease: "power2.inOut"
+});
+
+ScrollTrigger.create({
+  trigger: document.body,
+  start: "top top",
+  end: "bottom bottom",
+  toggleClass: { className: ".nav__bg" },
+  onUpdate: (self) => {
+    if (self.direction === 1) {
+      up.play();
+    } else {
+      // Scroll hacia arriba
+      up.reverse();
+    }
+  },
+  markers: true
 });
 
 function delay(n) {

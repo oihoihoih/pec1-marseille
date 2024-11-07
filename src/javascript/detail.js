@@ -4,21 +4,6 @@ import barba from "@barba/core";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// const animation = gsap
-//   .timeline({})
-//   .from(".etape__wrapper", { transform: "rotate(0deg)" })
-//   .to(".etape__wrapper", { transform: "rotate(5deg)" });
-
-// gsap.utils.toArray(".etape__wrapper").forEach((postcard, index) => {
-//   ScrollTrigger.create({
-//     trigger: postcard,
-//     start: "top top",
-//     pin: true,
-//     markers: true,
-//     pinSpacing: false,
-//     animation: animation
-//   });
-// });
 const postcards = document.querySelectorAll(".etape__wrapper");
 const postcardHeight = postcards[0].offsetHeight;
 
