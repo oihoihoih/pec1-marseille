@@ -114,8 +114,7 @@ ScrollTrigger.create({
       // Scroll hacia arriba
       up.reverse();
     }
-  },
-  markers: true
+  }
 });
 
 function delay(n) {
