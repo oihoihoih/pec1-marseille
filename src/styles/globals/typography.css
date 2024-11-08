@@ -11,6 +11,7 @@ h2 {
 
 h3 {
   --font-increase: 4;
+  font-variation-settings: "wght" 450, "wdth" 110;
 }
 
 h4 {

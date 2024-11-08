@@ -35,3 +35,15 @@
 }
 
 /* ITINERARIES */
+.hero__secondary {
+  margin: var(--spacing-l);
+  height: 50vh;
+  overflow: none;
+}
+
+.hero__secondary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-m);
+}

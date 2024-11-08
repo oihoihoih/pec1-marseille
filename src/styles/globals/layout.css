@@ -10,11 +10,22 @@
   margin: var(--spacing-m) 0;
 }
 
-/* .s-heading {
-  height: 20vh;
-  white-space: nowrap;
+/* ABOUT PAGE */
+
+.presentation__wrapper {
+  display: grid;
+  padding: var(--spacing-m);
+  gap: var(--spacing-l);
+  grid-template-columns: repeat(auto-fill, minmax(max(300px, 100%/ (3 + 1) + 0.1%), 1fr));
+}
+
+.presentation__article {
+  margin-top: var(--spacing-xl);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-} */
+  flex-direction: column;
+  color: var(--primary-color-dark);
+}
+
+.presentation__article--header {
+  margin: var(--spacing-m) 0;
+}

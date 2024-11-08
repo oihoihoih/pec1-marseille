@@ -76,7 +76,7 @@ center {
 
 body {
   line-height: 1;
-  background: var(--accent-color-light);
+  background: var(--accent-color-xlight);
   color: var(--color-black);
 }
 
