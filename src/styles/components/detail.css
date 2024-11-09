@@ -14,7 +14,7 @@
 }
 
 .etape__postcard {
-  background-color: var(--accent-color-xlight);
+  background-color: var(--color-white);
   width: 100%;
   height: 80%;
   display: flex;

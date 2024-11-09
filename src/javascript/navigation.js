@@ -6,10 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const toggleButton = document.querySelector(".burger");
 let isOpen = false;
+const timeline = gsap.timeline({ paused: true });
 
 gsap.set(".nav__overlay--menu-item p", { y: 225 });
-
-const timeline = gsap.timeline({ paused: true });
 
 timeline.to(".nav__overlay", {
   duration: 1.5,
@@ -46,6 +45,7 @@ barba.init({
   transitions: [
     {
       beforeLeave() {
+        console.log("beforeLeave");
         toggleButton.classList.remove("active");
         if (isOpen) {
           timeline.reverse();
@@ -68,7 +68,8 @@ barba.init({
       },
 
       async afterEnter(data) {
-        if (namespace === "itineraries") {
+        console.log("afterEnter", data);
+        if (data.next.namespace === "itineraries") {
           gsap.fromTo(
             ".card-list__content",
             {
@@ -92,9 +93,7 @@ barba.init({
 // Navigation scroll
 
 const navBar = document.querySelector(".nav");
-
 const up = gsap.timeline({ paused: true });
-const down = gsap.timeline({ paused: true });
 
 up.to(navBar, {
   yPercent: -100,

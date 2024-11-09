@@ -1,5 +1,4 @@
 import { gsap } from "gsap";
-import barba from "@barba/core";
 
 // ITINERARIES CARD ENTER ANIMATION
 gsap.fromTo(
@@ -18,7 +17,6 @@ gsap.fromTo(
 );
 
 // ITINERARIES ANIMATIONS
-
 const card = document.querySelectorAll(".card-list__content");
 const cardText = document.querySelectorAll(".card-list__content--text");
 
