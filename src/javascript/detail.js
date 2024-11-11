@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
-import { ScrollToPlugin, ScrollTrigger, TextPlugin } from "gsap/all";
-import barba from "@barba/core";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 

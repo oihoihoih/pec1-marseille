@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import { gsap } from "gsap/dist/gsap";
 
 // ITINERARIES CARD ENTER ANIMATION
 gsap.fromTo(
