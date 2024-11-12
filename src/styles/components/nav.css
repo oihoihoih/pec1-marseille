@@ -84,6 +84,7 @@
   display: flex;
   background-color: var(--primary-color-dark);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.3s ease-out;
   will-change: transform;
   z-index: 1;
 }
@@ -153,6 +154,8 @@
 }
 
 /* BARBA ANIMATIONS */
+/* TODO: Cambiar el tipo de animación para cuando se recarga la página */
+
 .barba-once {
   opacity: 0;
 }
@@ -163,4 +166,11 @@
 
 .barba-once-to {
   opacity: 1;
+}
+
+/* A REVISAR */
+.nav__overlay.visible {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: clip-path 0.3s ease-out;
+  z-index: 2;
 }
