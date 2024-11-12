@@ -1,10 +1,9 @@
 .marquee {
-  position: relative;
   color: var(--primary-color-dark);
+  margin-top: var(--spacing-xxl);
+  overflow: hidden;
   padding: var(--spacing-m);
   text-transform: uppercase;
-  overflow: hidden;
-  font-variation-settings: "wght" 400, "slnt" -10, "CASL" 0.3, "CRSV" 0.5;
 }
 
 .marquee__inner {
@@ -14,7 +13,7 @@
 }
 
 .marquee__part {
-  font-size: 6em;
+  font-size: clamp(2rem, -0.56rem + 10.24vw, 6rem);
   display: flex;
   align-items: center;
   flex-shrink: 0;

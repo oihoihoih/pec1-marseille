@@ -130,29 +130,3 @@
     border-left: none;
   }
 }
-
-/* TRANSITIONS BARBA */
-
-.barba-detail-leave {
-  opacity: 1;
-}
-
-.barba-detail-leave-active {
-  transition: opacity 0.3s linear;
-}
-
-.barba-detail-leave-to {
-  opacity: 0;
-}
-
-.barba-detail-enter {
-  opacity: 0;
-}
-
-.barba-detail-enter-active {
-  transition: opacity 0.3s linear;
-}
-
-.barba-detail-enter-to {
-  opacity: 1;
-}

@@ -53,6 +53,7 @@
   overflow: hidden;
 }
 
+/* HEADER SECTION TITLES */
 .section__title {
   height: 40%;
   max-width: 70%;
@@ -65,4 +66,10 @@
 
 .section__text {
   font-size: calc(var(--text-base-size) * (pow(var(--text-scale-ratio), 1.5)));
+}
+
+.home__presentation {
+  color: var(--primary-color-dark);
+  text-align: center;
+  padding: var(--spacing-xxl);
 }

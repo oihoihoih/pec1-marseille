@@ -21,11 +21,11 @@
   </head>
 
   <body data-barba="wrapper">
-    <!-- Header -->
     <!-- Navigation -->
     <include src="navigation.html"></include>
 
     <main data-barba="container" data-barba-namespace="home">
+      <!-- Header -->
       <header class="header h-100">
         <h1 class="header__title">Marseille</h1>
         <h2 class="header__subtitle">tres itinerarios</h2>
@@ -33,100 +33,109 @@
         <a class="header__link" id="scroll-button">Scroll</a>
 
         <!-- Vídeo -->
-        <video autoplay controls loop class="header__video">
-          <source src="../assets/6183626-uhd_3840_2160_30fps.mp4" />
+        <video
+          autoplay
+          muted
+          playsinline
+          loop
+          class="header__video"
+          aria-label="Video de fondo de la cabecera que muestra un paisaje marítimo de Marsella"
+        >
+          <source src="../assets/6183626-uhd_3840_2160_30fps.mp4" type="video/mp4" />
           Tu navegador no soporta el formato de video.
         </video>
       </header>
 
-      <!-- TODO: Valorar si poner algún icono para hacer scroll -->
-
       <!-- Marquee -->
       <section class="marquee">
         <div class="marquee__inner">
-          <div class="marquee__part">Marseille connection&nbsp;</div>
-          <div class="marquee__part">Marseille connection&nbsp;</div>
-          <div class="marquee__part">Marseille connection&nbsp;</div>
+          <div class="marquee__part">Bienvenue à Marseille&nbsp;</div>
+          <div class="marquee__part">Bienvenue à Marseille&nbsp;</div>
+          <div class="marquee__part">Bienvenue à Marseille&nbsp;</div>
         </div>
       </section>
 
+      <section class="home__presentation">
+        <p class="section__text">
+          En esta página web queremos presentar una visión personal de Marsella a través de tres
+          itinerarios. Con ellos, recorriendo tanto paisajes urbanos como naturales, podrás conocer
+          diferentes paisajes de esta ciudad tan interesante y diversa.
+        </p>
+      </section>
+
       <!-- Main section -->
-      <div class="main">
-        <section class="section">
-          <div class="hero hero__index fjc-end">
-            <article class="hero__card">
-              <h3 class="hero__card--title">Nos itinéraires</h3>
-              <ul class="hero__card--list">
-                <li class="hero__card--item" data-image="panier">
-                  <a class="hero__card--link" href="./panier.html"
-                    >Le Panier
-                    <!-- Flecha -->
-                    <svg
-                      width="28"
-                      height="17"
-                      viewBox="0 0 28 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
-                        stroke="currentColor"
-                      ></path>
-                    </svg>
-                  </a>
-                  <figure class="card__figure">
-                    <img class="card__image" src="../assets/panier.jpg" alt="Panier" />
-                  </figure>
-                </li>
+      <section class="section">
+        <article class="home__card">
+          <a href="itineraries.html" class="home__card--title">Notre menu d'itinéraires</a>
+          <ul class="home__card--list">
+            <li class="home__card--item" data-image="panier">
+              <a class="home__card--link" href="./panier.html"
+                >Le Panier
+                <!-- Flecha -->
+                <svg
+                  width="28"
+                  height="17"
+                  viewBox="0 0 28 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
+                    stroke="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <figure class="card__figure">
+                <img class="card__image" src="../assets/panier.jpg" alt="Panier" />
+              </figure>
+            </li>
 
-                <li class="hero__card--item" data-image="vieux-port">
-                  <a class="hero__card--link" href="./vieux-port.html"
-                    >Le Vieux Port
-                    <svg
-                      width="28"
-                      height="17"
-                      viewBox="0 0 28 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
-                        stroke="currentColor"
-                      ></path>
-                    </svg>
-                  </a>
+            <li class="home__card--item" data-image="vieux-port">
+              <a class="home__card--link" href="./vieux-port.html"
+                >Le Vieux Port
+                <svg
+                  width="28"
+                  height="17"
+                  viewBox="0 0 28 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
+                    stroke="currentColor"
+                  ></path>
+                </svg>
+              </a>
 
-                  <figure class="card__figure">
-                    <img class="card__image" src="../assets/vieux-port.jpg" alt="Vieux Port" />
-                  </figure>
-                </li>
+              <figure class="card__figure">
+                <img class="card__image" src="../assets/vieux-port.jpg" alt="Vieux Port" />
+              </figure>
+            </li>
 
-                <li class="hero__card--item" data-image="corniche">
-                  <a class="hero__card--link" href="./corniche.html"
-                    >La corniche
-                    <svg
-                      width="28"
-                      height="17"
-                      viewBox="0 0 28 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
-                        stroke="currentColor"
-                      ></path>
-                    </svg>
-                  </a>
+            <li class="home__card--item" data-image="corniche">
+              <a class="home__card--link" href="./corniche.html"
+                >La corniche
+                <svg
+                  width="28"
+                  height="17"
+                  viewBox="0 0 28 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.000610352 8.77344H27.0006M27.0006 8.77344L18.9824 1.27344M27.0006 8.77344L18.9824 16.2734"
+                    stroke="currentColor"
+                  ></path>
+                </svg>
+              </a>
 
-                  <figure class="card__figure">
-                    <img class="card__image" src="../assets/corniche.jpg" alt="La Canebière" />
-                  </figure>
-                </li>
-              </ul>
-            </article>
-          </div>
-        </section>
-      </div>
+              <figure class="card__figure">
+                <img class="card__image" src="../assets/corniche.jpg" alt="La Canebière" />
+              </figure>
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
 
     <!-- Footer -->

@@ -1,43 +1,43 @@
-.hero__card {
-  margin: var(--spacing-m);
-  width: 500px;
-  height: 70%;
+.home__card {
   background-color: var(--accent-color-light);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  margin: var(--spacing-m);
   padding: var(--spacing-xxl) var(--spacing-xl);
+  padding-bottom: 20vh;
   outline: 4px double var(--primary-color-dark);
   outline-offset: -20px;
   transform: translate(5%, 0%) rotate(-4deg);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 40vw;
 }
 
-.hero__card--title {
+.home__card--title {
+  font-size: clamp(1.8rem, 0.405rem + 2.88vw, 2.25rem);
   font-family: var(--font-family-accent);
   color: var(--primary-color-dark);
   text-align: center;
   margin-bottom: var(--spacing-m);
 }
 
-.hero__card--item {
+.home__card--item {
   border-top: 1px solid var(--primary-color-dark);
   padding: var(--spacing-m);
   cursor: pointer;
   color: var(--primary-color-dark);
 }
 
-.hero__card--item:last-child {
+.home__card--item:last-child {
   border-bottom: 1px solid var(--primary-color-dark);
 }
 
-.hero__card--item:hover {
+.home__card--item:hover {
   background-color: var(--primary-color-dark);
   color: var(--accent-color-light);
 }
 
-.hero__card--link {
-  font-size: 1.8em;
+.home__card--link {
+  font-size: clamp(1.125rem, 0.725rem + 1.6vw, 1.75rem);
   font-variation-settings: "wght" 500, "slnt" -15, "CASL" 0.4, "CRSV" 1;
   color: inherit;
   display: flex;
@@ -45,7 +45,7 @@
   align-items: center;
 }
 
-.hero__card--link svg {
+.home__card--link svg {
   margin-left: var(--spacing-m);
 }
 
@@ -137,4 +137,15 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 769px) {
+  .home__card {
+    margin: 0;
+    width: 80vw;
+  }
+
+  .card__image {
+    display: none;
+  }
 }

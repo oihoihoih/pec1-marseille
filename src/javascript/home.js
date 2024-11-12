@@ -1,20 +1,24 @@
 import { gsap } from "gsap";
-import { gsap } from "gsap/dist/gsap";
+// import { gsap } from "gsap/dist/gsap";
 // import { ScrollToPlugin, TextPlugin } from "gsap/all";
-import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
-import { TextPlugin } from "gsap/dist/TextPlugin";
+// import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(TextPlugin);
 
-// SCROLL TO MAIN
+// SCROLL TO MARQUEE
 const scrollButton = document.querySelector("#scroll-button");
-const main = document.querySelector(".main");
+const marquee = document.querySelector(".marquee");
+
 if (scrollButton) {
   scrollButton.addEventListener("click", () => {
+    const offset = 50;
+
     gsap.to(window, {
-      duration: 1,
-      scrollTo: main,
+      duration: 0.5,
+      scrollTo: { y: marquee, offsetY: offset },
       ease: "power2"
     });
   });
@@ -48,16 +52,37 @@ window.addEventListener("scroll", () => {
 });
 
 // INDEX CARDS IMAGES WITH GSAP
-const listItems = document.querySelectorAll(".hero__card--item");
+const listItems = document.querySelectorAll(".home__card--item");
 
-listItems.forEach((item) => {
-  const image = item.querySelector(".card__image");
+// Showing images on hover only in big screens
+function handleHoverAnimations() {
+  listItems.forEach((item) => {
+    const image = item.querySelector(".card__image");
 
-  item.addEventListener("mouseenter", () => {
-    gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10 });
+    item.removeEventListener("mouseenter", handleMouseEnter);
+    item.removeEventListener("mouseleave", handleMouseLeave);
+
+    if (window.innerWidth > 768) {
+      item.addEventListener("mouseenter", handleMouseEnter);
+      item.addEventListener("mouseleave", handleMouseLeave);
+    } else {
+      gsap.set(image, { autoAlpha: 0 });
+    }
+
+    // On mouse enter
+    function handleMouseEnter() {
+      gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10 });
+    }
+
+    // On mouse leave
+    function handleMouseLeave() {
+      gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
+    }
   });
+}
 
-  item.addEventListener("mouseleave", () => {
-    gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
-  });
-});
+// Ejecutamos la función al cargar la página
+handleHoverAnimations();
+
+// Agregamos un event listener para detectar cambios de tamaño de pantalla
+window.addEventListener("resize", handleHoverAnimations);

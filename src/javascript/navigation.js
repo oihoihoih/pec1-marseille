@@ -1,13 +1,6 @@
 const barba = require("@barba/core");
-const barbaCss = require("@barba/css");
-// import barba from "@barba/core";
-// import { gsap } from "gsap/dist/gsap";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  // gsap.registerPlugin(ScrollTrigger);
   const toggleButton = document.querySelector(".burger");
   let isOpen = false;
   const timeline = gsap.timeline({ paused: true });
