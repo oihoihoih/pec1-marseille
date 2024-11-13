@@ -23,3 +23,7 @@
 .presentation__article--header {
   margin: var(--spacing-m) 0;
 }
+
+.text-column__wrapper {
+  columns: 3 150px;
+}

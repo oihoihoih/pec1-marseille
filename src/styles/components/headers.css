@@ -26,16 +26,17 @@
 }
 
 .header__link {
-  position: absolute;
-  width: 100%;
   bottom: 2rem;
-  text-align: center;
-  font-size: var(--text-base-size);
   color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--text-base-size);
+  font-variation-settings: "wght" 700, "wdth" 151, "opsz" 54;
+  letter-spacing: 0.2em;
+  position: absolute;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  cursor: pointer;
+  width: 100%;
 }
 
 .header__video {

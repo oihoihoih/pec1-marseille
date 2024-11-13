@@ -21,10 +21,12 @@
   text-transform: uppercase;
   font-size: 1rem;
   color: var(--primary-color-dark);
+  line-height: 1;
 }
 
 .nav__logo span {
   display: block;
+  line-height: 1;
 }
 
 .nav__toggle-button {
@@ -119,7 +121,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.nav__overlay--menu-item p {
+.nav__overlay--menu-item a {
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -151,26 +153,4 @@
 .nav__link {
   text-decoration: none;
   color: var(--primary-color);
-}
-
-/* BARBA ANIMATIONS */
-/* TODO: Cambiar el tipo de animación para cuando se recarga la página */
-
-.barba-once {
-  opacity: 0;
-}
-
-.barba-once-active {
-  transition: opacity 1s linear;
-}
-
-.barba-once-to {
-  opacity: 1;
-}
-
-/* A REVISAR */
-.nav__overlay.visible {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  transition: clip-path 0.3s ease-out;
-  z-index: 2;
 }
