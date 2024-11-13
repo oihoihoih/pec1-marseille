@@ -16,6 +16,10 @@ gsap.fromTo(
     stagger: 0.1
   }
 );
+function start() {
+  // Función vacía para probar si se ejecuta correctamente
+  // console.log("prueba función");
+}
 
 // ITINERARIES ANIMATIONS
 const card = document.querySelectorAll(".card-list__content");

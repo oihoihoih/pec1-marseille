@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
 
         async enter(data) {
+          window.scrollTo(0, 0);
           gsap.from(data.next.container, {
             duration: 0.5,
             opacity: 0,
@@ -66,22 +67,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
 
         async afterEnter(data) {
-          console.log("afterEnter", data);
           if (data.next.namespace === "itineraries") {
-            gsap.fromTo(
-              ".card-list__content",
-              {
-                opacity: 0,
-                yPercent: 50
-              },
-              {
-                opacity: 1,
-                yPercent: 0,
-                duration: 0.4,
-                ease: "power2",
-                stagger: 0.1
-              }
-            );
+            start();
           }
         }
       }
