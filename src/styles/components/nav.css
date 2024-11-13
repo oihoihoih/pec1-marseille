@@ -131,11 +131,11 @@
   transition: letter-spacing 0.3s;
 }
 
-.nav__overlay--menu-item p:hover {
+.nav__overlay--menu-item a:hover {
   letter-spacing: 0.075em;
 }
 
-.nav__overlay--menu-item p::after {
+.nav__overlay--menu-item a::after {
   content: "";
   position: absolute;
   top: 45%;
@@ -146,7 +146,7 @@
   height: 6px;
 }
 
-.nav__overlay--menu-item p:hover::after {
+.nav__overlay--menu-item a:hover::after {
   width: 100%;
 }
 

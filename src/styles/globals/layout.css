@@ -26,4 +26,5 @@
 
 .text-column__wrapper {
   columns: 3 150px;
+  column-gap: var(--spacing-xl);
 }
