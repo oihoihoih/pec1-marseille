@@ -80,9 +80,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
           });
         },
         enter(data) {
+          window.scrollTo(0, 0);
           return gsap.to(data.next.container, {
             opacity: 1
           });
+        },
+        afterEnter(data) {
+          initialize();
         }
       }
     ]
