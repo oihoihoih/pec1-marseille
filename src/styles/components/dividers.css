@@ -6,6 +6,9 @@
   padding: var(--spacing-m);
   padding-left: 0;
   text-transform: uppercase;
+  font-size: clamp(1em, 1.125em, 1.25em);
+  font-variation-settings: "wght" 400, "wdth" 120;
+  letter-spacing: 1px;
 }
 
 .spacer {
