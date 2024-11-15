@@ -8,6 +8,8 @@
       name="description"
       content="Un recorrido personal por Marsella, presentado a través de tres itinerarios diferentes"
     />
+    <link rel="icon" type="image/png" href="../assets/faviconMars16x16.png" />
+    <link rel="icon" type="image/png" href="../assets/faviconMars32x32.png" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <!-- Typography -->
     <!-- Roboto Flex - Google Fonts -->
@@ -88,9 +90,22 @@
                   ></path>
                 </svg>
               </a>
-              <figure class="card__figure">
-                <img class="card__image" src="../assets/panier.jpg" alt="Panier" />
-              </figure>
+              <picture class="card__figure">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="../assets/panier.jpg 1x, ../assets/panier_2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="../assets/panier_0.5x.jpg 1x, ../assets/panier.jpg 2x"
+                />
+                <source media="(min-width: 0px)" srcset="../assets/panier_0.5x.jpg 1x" />
+                <img
+                  class="card__image"
+                  src="../assets/panier.jpg"
+                  alt="Una puerta azul rodeada de plantas en una callejuela del Panier"
+                />
+              </picture>
             </li>
 
             <li class="home__card--item" data-image="vieux-port">
@@ -110,9 +125,22 @@
                 </svg>
               </a>
 
-              <figure class="card__figure">
-                <img class="card__image" src="../assets/vieux-port.jpg" alt="Vieux Port" />
-              </figure>
+              <picture class="card__figure">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="../assets/vieux-port.jpg 1x, ../assets/vieux-port_2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="../assets/vieux-port_0.5x.jpg 1x, ../assets/vieux-port.jpg 2x"
+                />
+                <source media="(min-width: 0px)" srcset="../assets/vieux-port_0.5x.jpg 1x" />
+                <img
+                  class="card__image"
+                  src="../assets/vieux-port.jpg"
+                  alt="Mujer vendiendo en un puesto del mercado de pescado del Vieux Port de Marsella"
+                />
+              </picture>
             </li>
 
             <li class="home__card--item" data-image="corniche">
@@ -132,9 +160,25 @@
                 </svg>
               </a>
 
-              <figure class="card__figure">
+              <!-- <figure class="card__figure">
                 <img class="card__image" src="../assets/corniche.jpg" alt="La Canebière" />
-              </figure>
+              </figure> -->
+              <picture class="card__figure">
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="../assets/corniche.jpg 1x, ../assets/corniche_2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="../assets/corniche_0.5x.jpg 1x, ../assets/corniche.jpg 2x"
+                />
+                <source media="(min-width: 0px)" srcset="../assets/corniche_0.5x.jpg 1x" />
+                <img
+                  class="card__image"
+                  src="../assets/corniche.jpg"
+                  alt="Pequeño puerto de Marsella en el que se ven barcos con un Viaducto al fondo"
+                />
+              </picture>
             </li>
           </ul>
         </article>
