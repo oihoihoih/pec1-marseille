@@ -19,6 +19,7 @@ a.home__card--title {
   text-align: center;
   margin-bottom: var(--spacing-m);
   cursor: pointer;
+  line-height: 1.1;
 }
 
 .home__card--title:hover {
@@ -48,6 +49,10 @@ a.home__card--title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.home__card--link:hover {
+  font-variation-settings: "wght" 600, "slnt" -15, "CASL" 0.4, "CRSV" 1;
 }
 
 .home__card--link svg {

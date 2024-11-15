@@ -8,7 +8,7 @@
   text-transform: uppercase;
   font-size: clamp(1em, 1.125em, 1.25em);
   font-variation-settings: "wght" 400, "wdth" 120;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
 }
 
 .spacer {

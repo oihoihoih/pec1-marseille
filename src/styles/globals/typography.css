@@ -1,47 +1,42 @@
+html {
+  font-size: 16px;
+  font-family: var(--font-family-base);
+}
+
 h1 {
-  --font-increase: 6;
+  /* --font-increase: 6; */
+  font-size: clamp(1.625rem, 3vw + 1rem, 3rem);
   font-variation-settings: "wght" 600, "wdth" 151, "GRAD" -78, "XTRA" 551, "YTUC" 651;
   text-transform: uppercase;
 }
 
 h2 {
-  --font-increase: 5;
+  font-size: clamp(1.55rem, 1.5vw + 1rem, 2.25rem);
   font-variation-settings: "wght" 450, "wdth" 110;
 }
 
 h3 {
-  --font-increase: 4;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
   font-variation-settings: "wght" 450, "wdth" 110;
 }
 
 h4 {
-  --font-increase: 3;
+  font-size: clamp(1.313rem, 1vw + 1rem, 2.125rem);
   font-variation-settings: "wght" 400, "wdth" 112.5;
 }
 
 h5 {
-  --font-increase: 2;
+  font-size: clamp(1.25rem, 1vw + 1rem, 1.875rem);
 }
 
 h6 {
-  --font-increase: 1;
+  font-size: clamp(1.125rem, 1vw + 1rem, 1.5rem);
   font-variation-settings: "wght" 400, "wdth" 112.5;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-family-base);
-  font-size: calc(var(--text-base-size) * (pow(var(--text-scale-ratio), var(--font-increase))));
 }
 
 p,
 a {
-  font-size: var(--text-base-size);
+  font-size: 1rem;
   font-variation-settings: "wght" 450, "wdth" 100;
   line-height: 1.5;
 }

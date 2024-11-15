@@ -15,7 +15,7 @@
 
 .etape__postcard {
   background-color: var(--color-white);
-  width: 100%;
+  width: 80%;
   height: 80%;
   display: flex;
   flex-direction: row-reverse;
@@ -135,5 +135,13 @@
 @media screen and (max-width: 769px) {
   .etape__wrapper {
     padding: var(--spacing-m);
+  }
+
+  .etape__postcard {
+    width: 100%;
+  }
+
+  .etape__content--header {
+    padding: var(--spacing-xs) var(--spacing-s);
   }
 }
