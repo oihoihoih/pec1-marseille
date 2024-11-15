@@ -48,10 +48,30 @@
         <article class="card-list__content" data-link="./panier.html">
           <!-- Card image -->
           <div class="card-list__content--img">
-            <img
-              src="../assets/manel-sean-nntdlUK-S4s-unsplash.jpg"
-              alt="Escaleras y puerta de callejuela del Panier"
-            />
+            <picture>
+              <source
+                media="(min-width: 1025px)"
+                srcset="
+                  ../assets/manel-sean-nntdlUK-S4s-unsplash.jpg    1x,
+                  ../assets/manel-sean-nntdlUK-S4s-unsplash_2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../assets/manel-sean-nntdlUK-S4s-unsplash_0.5x.jpg 1x,
+                  ../assets/manel-sean-nntdlUK-S4s-unsplash.jpg      2x
+                "
+              />
+              <source
+                media="(min-width: 0px)"
+                srcset="../assets/manel-sean-nntdlUK-S4s-unsplash_0.5x.jpg 1x"
+              />
+              <img
+                src="../assets/manel-sean-nntdlUK-S4s-unsplash.jpg"
+                alt="Una puerta azul rodeada de plantas en una callejuela del Vieux Port"
+              />
+            </picture>
           </div>
 
           <!-- Card text -->
@@ -66,17 +86,27 @@
             <h4>Le Panier</h4>
             <span class="u-circle">1</span>
           </div>
-          <!-- <a href="./panier.html" class="card-list__link"></a> -->
         </article>
 
         <!-- Vieux Port -->
         <article class="card-list__content">
           <!-- Card image -->
           <div class="card-list__content--img">
-            <img
-              src="../assets/vieux-port.jpg"
-              alt="Puesto de vendedora de pescado en el Vieux Port"
-            />
+            <picture>
+              <source
+                media="(min-width: 1025px)"
+                srcset="../assets/vieux-port.jpg 1x, ../assets/vieux-port_2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="../assets/vieux-port_0.5x.jpg 1x, ../assets/vieux-port.jpg 2x"
+              />
+              <source media="(min-width: 0px)" srcset="../assets/vieux-port_0.5x.jpg 1x" />
+              <img
+                src="../assets/vieux-port.jpg"
+                alt="Mujer vendiendo pescado en un puesto de Vieux Port"
+              />
+            </picture>
           </div>
 
           <!-- Card text -->
@@ -97,14 +127,28 @@
         </article>
 
         <!-- Corniche -->
-
         <article class="card-list__content">
           <!-- Card image -->
           <div class="card-list__content--img">
-            <img
+            <!-- <img
               src="../assets/corniche.jpg"
               alt="Pequeño puerto con barcos y un puente de fondo"
-            />
+            /> -->
+            <picture>
+              <source
+                media="(min-width: 1025px)"
+                srcset="../assets/corniche.jpg 1x, ../assets/corniche_2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="../assets/corniche_0.5x.jpg 1x, ../assets/corniche.jpg 2x"
+              />
+              <source media="(min-width: 0px)" srcset="../assets/corniche_0.5x.jpg 1x" />
+              <img
+                src="../assets/corniche.jpg"
+                alt="Pequeño puerto con barcos y un puente de fondo"
+              />
+            </picture>
           </div>
 
           <!-- Card text -->
