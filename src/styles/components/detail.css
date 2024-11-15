@@ -128,5 +128,12 @@
   .etape__image {
     width: 100%;
     border-left: none;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .etape__wrapper {
+    padding: var(--spacing-m);
   }
 }
