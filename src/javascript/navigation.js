@@ -2,6 +2,7 @@ const barba = require("@barba/core");
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const toggleButton = document.querySelector(".burger");
+  const logo = document.querySelector(".nav__logo");
   let isOpen = false;
   const timeline = gsap.timeline({ paused: true });
 
@@ -43,7 +44,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     transitions: [
       {
         beforeLeave() {
-          console.log("beforeLeave");
           toggleButton.classList.remove("active");
           if (isOpen) {
             timeline.reverse();
@@ -70,6 +70,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
           if (data.next.namespace === "itineraries") {
             start();
           }
+        }
+      },
+      {
+        name: "fade",
+        leave(data) {
+          return gsap.to(data.current.container, {
+            opacity: 0
+          });
+        },
+        enter(data) {
+          return gsap.to(data.next.container, {
+            opacity: 1
+          });
         }
       }
     ]
