@@ -1,13 +1,11 @@
 :root {
-  /* TODO: ESTABLECER COLORES */
   --color-white: #fff;
   --color-black: #222222;
   --primary-color: #91cef1;
-  --primary-color-dark: rgb(25, 82, 128);
+  --primary-color-dark: #19527d;
   --accent-color: #febd8c;
   --accent-color-light: #fee5d3;
   --accent-color-xlight: #ffefe3;
-
   --accent-color-dark: #755741;
   --secondary-accent-color: #d74c4c;
 
@@ -15,7 +13,7 @@
   --font-family-accent: "the-seasons", serif;
 
   --text-base-size: 1em;
-  --text-scale-ratio: 1.2;
+  --text-scale-ratio: 1.125;
   --line-height-base: 1.5;
 
   /* Spacing */
@@ -34,14 +32,14 @@
 @media (min-width: 64rem) {
   /* responsive decision applied to all text elements min-width 1024px */
   :root {
-    --text-base-size: 1.25em;
+    --text-base-size: 1.2em;
     --text-scale-ratio: 1.2;
   }
 }
 
 @media (max-width: 48rem) {
-  /* responsive decision applied to all text elements min-width 1024px */
+  /* responsive decision applied to all text elements max-width 768 */
   :root {
-    --text-scale-ratio: 1.2;
+    --text-scale-ratio: 1.125;
   }
 }

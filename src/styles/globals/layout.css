@@ -28,3 +28,12 @@
   columns: 3 150px;
   column-gap: var(--spacing-xl);
 }
+
+/* Para lectores de pantalla: saltar al contenido principal */
+.skip-main {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
