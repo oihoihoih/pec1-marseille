@@ -4,7 +4,6 @@ html {
 }
 
 h1 {
-  /* --font-increase: 6; */
   font-size: clamp(1.625rem, 3vw + 1rem, 3rem);
   font-variation-settings: "wght" 600, "wdth" 151, "GRAD" -78, "XTRA" 551, "YTUC" 651;
   text-transform: uppercase;

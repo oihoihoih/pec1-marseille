@@ -28,18 +28,3 @@
   --border-l: 2em;
   --border-m: 1em;
 }
-
-@media (min-width: 64rem) {
-  /* responsive decision applied to all text elements min-width 1024px */
-  :root {
-    --text-base-size: 1.2em;
-    --text-scale-ratio: 1.2;
-  }
-}
-
-@media (max-width: 48rem) {
-  /* responsive decision applied to all text elements max-width 768 */
-  :root {
-    --text-scale-ratio: 1.125;
-  }
-}
