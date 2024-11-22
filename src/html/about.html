@@ -45,20 +45,44 @@
       <div class="section-divider">Breve presentación</div>
 
       <div class="hero__secondary">
-        <img
-          src="../assets/elisa-schmidt--jGQaEA3YC0-unsplash_2x.jpg?as=webp"
-          type="image/webp"
-          alt="Vista del puerto de Marsella"
-          class="home-list_image"
-          sizes="(max-width: 479px) 98vw, (max-width: 768px) 96vw, (max-width: 1024px) 94vw, 94vw"
-          srcset="
-            ../assets/elisa-schmidt--jGQaEA3YC0-unsplash.jpg?as=webp&width=500w   500w,
-            ../assets/elisa-schmidt--jGQaEA3YC0-unsplash.jpg?as=webp&width=800w   800w,
-            ../assets/elisa-schmidt--jGQaEA3YC0-unsplash.jpg?as=webp&width=1080w 1080w,
-            ../assets/elisa-schmidt--jGQaEA3YC0-unsplash.jpg?as=webp&width=1600w 1600w,
-            ../assets/elisa-schmidt--jGQaEA3YC0-unsplash.jpg?as=webp&width=1920w 1920w
-          "
-        />
+        <picture>
+          <source
+            srcset="
+              ../assets/grandmere_view.jpg?as=webp&width=500w   500w,
+              ../assets/grandmere_view.jpg?as=webp&width=800w   800w,
+              ../assets/grandmere_view.jpg?as=webp&width=1080w 1080w,
+              ../assets/grandmere_view.jpg?as=webp&width=1600w 1600w,
+              ../assets/grandmere_view.jpg?as=webp&width=1920w 1920w,
+              ../assets/grandmere_view.jpg?as=webp&width=2560w 2560w,
+              ../assets/grandmere_view.jpg?as=webp&width=3840w 3840w
+            "
+            sizes="(max-width: 479px) 98vw, 
+                   (max-width: 768px) 96vw, 
+                   (max-width: 1024px) 94vw, 
+                   (max-width: 1440px) 80vw, 
+                   70vw"
+            type="image/webp"
+          />
+          <img
+            src="../assets/grandmere_view.jpg?width=1920w"
+            alt="Vista del puerto de Marsella"
+            class="home-list_image"
+            srcset="
+              ../assets/grandmere_view.jpg?width=500w   500w,
+              ../assets/grandmere_view.jpg?width=800w   800w,
+              ../assets/grandmere_view.jpg?width=1080w 1080w,
+              ../assets/grandmere_view.jpg?width=1600w 1600w,
+              ../assets/grandmere_view.jpg?width=1920w 1920w,
+              ../assets/grandmere_view.jpg?width=2560w 2560w,
+              ../assets/grandmere_view.jpg?width=3840w 3840w
+            "
+            sizes="(max-width: 479px) 98vw, 
+                   (max-width: 768px) 96vw, 
+                   (max-width: 1024px) 94vw, 
+                   (max-width: 1440px) 80vw, 
+                   70vw"
+          />
+        </picture>
       </div>
 
       <section class="section presentation__wrapper">
