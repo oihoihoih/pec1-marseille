@@ -1,3 +1,7 @@
+.header {
+  height: 5vh;
+}
+
 .section {
   padding: var(--spacing-m);
   width: 100%;
