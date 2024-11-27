@@ -1,3 +1,23 @@
 .footer {
   margin-top: var(--spacing-xxl);
 }
+
+.footer__main {
+  padding: var(--spacing-m);
+  display: flex;
+}
+
+.footer__main--container {
+  line-height: 1rem;
+  width: 100%;
+  padding: 0 var(--spacing-xs);
+}
+
+.footer__animation--container {
+  width: min(20vw, 150px);
+}
+
+.footer__main--title {
+  color: var(--primary-color-dark);
+  margin-bottom: 1rem;
+}

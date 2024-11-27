@@ -25,7 +25,8 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1.25rem, 1vw + 1rem, 1.875rem);
+  font-size: 1rem;
+  font-variation-settings: "wght" 400, "wdth" 112.5;
 }
 
 h6 {
