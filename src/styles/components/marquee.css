@@ -1,6 +1,6 @@
 .marquee {
   color: var(--primary-color-dark);
-  margin-top: var(--spacing-xxl);
+  margin-top: calc(var(--spacing-xxl) * 2);
   overflow: hidden;
   padding: var(--spacing-m);
   text-transform: uppercase;

@@ -14,7 +14,7 @@ const marquee = document.querySelector(".marquee");
 
 if (scrollButton) {
   scrollButton.addEventListener("click", () => {
-    const offset = 50;
+    const offset = 120;
 
     gsap.to(window, {
       duration: 0.5,
