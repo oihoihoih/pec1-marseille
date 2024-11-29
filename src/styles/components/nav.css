@@ -8,10 +8,6 @@
   z-index: 3;
 }
 
-/* .nav > div {
-  flex: 1;
-} */
-
 .nav__logo {
   width: min(20vw, 200px);
 }
@@ -26,7 +22,7 @@
   justify-content: center;
   align-items: center;
   padding: var(--space-m);
-  background-color: rgba(25, 52, 128, 0);
+  background-color: transparent;
   outline: none;
   border: none;
   width: 28px;
