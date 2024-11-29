@@ -8,21 +8,12 @@
   z-index: 3;
 }
 
-.nav__bg {
-  background-color: var(--accent-color-light);
-}
-
-.nav > div {
+/* .nav > div {
   flex: 1;
-}
+} */
 
 .nav__logo {
-  max-width: 20vw;
-}
-
-.nav__logo span {
-  display: block;
-  line-height: 1;
+  width: min(20vw, 200px);
 }
 
 .nav__toggle-button {
@@ -153,11 +144,11 @@
 
 @media screen and (max-width: 768px) {
   .nav__logo {
-    max-width: 35vw;
+    width: min(30vw, 150px);
   }
 }
 @media screen and (max-width: 479px) {
   .nav__logo {
-    max-width: 50vw;
+    width: min(40vw, 150px);
   }
 }
