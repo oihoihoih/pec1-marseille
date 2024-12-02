@@ -12,5 +12,5 @@
 }
 
 .spacer {
-  height: var(--spacing-xxl);
+  height: calc(var(--spacing-xxl) * 2);
 }
