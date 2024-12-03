@@ -148,3 +148,9 @@
     width: min(40vw, 150px);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    padding: var(--spacing-l) var(--spacing-xxl);
+  }
+}
