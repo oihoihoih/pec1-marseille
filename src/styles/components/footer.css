@@ -1,5 +1,5 @@
 .footer {
-  margin-top: var(--spacing-xxl);
+  margin: 0 var(--spacing-l);
 }
 
 .footer__main {
@@ -20,4 +20,10 @@
 .footer__main--title {
   color: var(--primary-color-dark);
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 0 var(--spacing-xxl);
+  }
 }

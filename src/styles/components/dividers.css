@@ -2,7 +2,8 @@
   display: flex;
   max-width: 100%;
   border-top: 1px solid black;
-  margin: var(--spacing-xxl) var(--spacing-m) 0;
+  margin-top: var(--spacing-xxl);
+  margin-bottom: var(--spacing-l);
   padding: var(--spacing-m);
   padding-left: 0;
   text-transform: uppercase;

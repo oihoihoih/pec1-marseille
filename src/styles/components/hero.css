@@ -1,6 +1,6 @@
 /* ITINERARIES */
 .hero__secondary {
-  margin: var(--spacing-l);
+  /* margin: var(--spacing-l); */
   height: 50vh;
   overflow: none;
 }
