@@ -25,9 +25,30 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   font-variation-settings: "wght" 450, "wdth" 210;
+  animation-name: prueba;
+  animation-duration: 1s;
 }
 
 .vintage-divider svg {
-  width: 20vw;
+  width: max(15vw, 100px);
   margin: 0 var(--spacing-m);
+}
+
+@keyframes prueba {
+  0% {
+    clip-path: inset(100% 50% 0 50%);
+  }
+  50% {
+    clip-path: inset(0% 50% 0% 50%);
+  }
+  100% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .vintage-divider {
+    flex-direction: column;
+    gap: var(--spacing-m);
+  }
 }
