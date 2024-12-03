@@ -25,8 +25,6 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   font-variation-settings: "wght" 450, "wdth" 210;
-  animation-name: prueba;
-  animation-duration: 1s;
 }
 
 .vintage-divider svg {
@@ -34,7 +32,11 @@
   margin: 0 var(--spacing-m);
 }
 
-@keyframes prueba {
+.vintage-divider.animation {
+  animation-name: vintage-divider;
+  animation-duration: 1s;
+}
+@keyframes vintage-divider {
   0% {
     clip-path: inset(100% 50% 0 50%);
   }
