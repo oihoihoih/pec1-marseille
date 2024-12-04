@@ -6,9 +6,10 @@
   padding: var(--spacing-xl) 0;
 }
 
-/* .header video {
-  clip-path: inset(20% 2% 1% round 10px);
-} */
+.home__title--container {
+  animation-name: clip-path;
+  animation-duration: 1s;
+}
 
 .home__title {
   font-family: var(--font-family-accent);
@@ -18,6 +19,8 @@
   font-size: clamp(3.5em, 10vw, 30em);
   display: block;
   text-align: center;
+  animation-name: title-reveal;
+  animation-duration: 1s;
 }
 
 .home__subtitle {
@@ -25,6 +28,37 @@
   text-transform: uppercase;
   font-variation-settings: "wght" 400, "wdth" 151, "opsz" 94;
   text-align: center;
+  animation-name: subtitle-reveal;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes title-reveal {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes clip-path {
+  from {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes subtitle-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .scroll-to {
