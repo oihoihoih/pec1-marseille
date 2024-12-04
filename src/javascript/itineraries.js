@@ -43,17 +43,22 @@ card.forEach((item, index) => {
         duration: 0.3
       });
     });
-  });
-});
 
-// LINKS TO DETAIL PAGE
-document.querySelectorAll(".card-list__content").forEach((cardItem) => {
-  cardItem.addEventListener("click", (event) => {
-    event.preventDefault();
-    const link = cardItem.getAttribute("data-link");
+    // LINKS TO DETAIL PAGE
+    item.addEventListener("click", (event) => {
+      event.preventDefault();
+      const link = item.getAttribute("data-link");
 
-    if (link) {
-      window.location.href = link;
-    }
+      // Remove hover animation
+      gsap
+        .timeline()
+        .to(cardText[index], { yPercent: 100, duration: 0.3 })
+        .eventCallback("onComplete", () => {
+          if (link) {
+            console.log(link);
+            window.location.href = link;
+          }
+        });
+    });
   });
 });
