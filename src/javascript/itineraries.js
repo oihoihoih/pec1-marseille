@@ -54,6 +54,7 @@ card.forEach((item, index) => {
         .timeline()
         .to(cardText[index], { yPercent: 100, duration: 0.3 })
         .eventCallback("onComplete", () => {
+          // Go to link
           if (link) {
             console.log(link);
             window.location.href = link;
