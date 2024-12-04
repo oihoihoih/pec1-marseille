@@ -71,7 +71,7 @@ function handleHoverAnimations() {
 
     // On mouse enter
     function handleMouseEnter() {
-      gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10, zIndex: -500 });
+      gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10, zIndex: 500 });
     }
 
     // On mouse leave
