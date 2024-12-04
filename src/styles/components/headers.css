@@ -3,9 +3,12 @@
   flex-direction: column;
   justify-content: center;
   max-width: 100vw;
-  padding: var(--spacing-xl), 0;
-  overflow: hidden;
+  padding: var(--spacing-xl) 0;
 }
+
+/* .header video {
+  clip-path: inset(20% 2% 1% round 10px);
+} */
 
 .home__title {
   font-family: var(--font-family-accent);
@@ -44,11 +47,8 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
   object-fit: cover;
   z-index: -1;
-  overflow-clip-margin: 0px;
-  overflow: hidden;
 }
 
 /* HEADER SECTION TITLES */
