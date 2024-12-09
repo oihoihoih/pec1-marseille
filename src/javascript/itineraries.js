@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import { gsap } from "gsap/dist/gsap";
+const barba = require("@barba/core");
 
 // ITINERARIES CARD ENTER ANIMATION
 gsap.fromTo(
@@ -56,10 +57,55 @@ card.forEach((item, index) => {
         .eventCallback("onComplete", () => {
           // Go to link
           if (link) {
-            console.log(link);
-            window.location.href = link;
+            barba.go(link);
+            toDetailTransition(index);
+            //window.location.href = link;
           }
         });
     });
   });
 });
+
+function toDetailTransition(index) {
+  const leaveAnimation = (container, index) => {
+    const cards = [...container.querySelectorAll(".card-list__content")];
+    const getIndex = index;
+
+    console.log(cards, getIndex);
+
+    const tl = gsap.timeline({
+      defaults: {
+        ease: "expo.inOut",
+        duration: 2
+      }
+    });
+
+    // tl.to();
+
+    return tl;
+  };
+  const enterAnimation = (container) => {
+    console.log(container);
+  };
+
+  barba.init({
+    transitions: [
+      {
+        name: "detail-from-itineraries",
+        from: {
+          namespace: ["itineraries"]
+        },
+        // to: {
+        //   namespace: ["panier"]
+        // },
+        leave({ current }) {
+          return leaveAnimation(current.container, index);
+        },
+        enter({ next }) {
+          // create your amazing enter animation here
+          return enterAnimation(next.container);
+        }
+      }
+    ]
+  });
+}
