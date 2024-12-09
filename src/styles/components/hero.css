@@ -11,3 +11,35 @@
   object-fit: cover;
   border-radius: var(--border-m);
 }
+
+/* DETAIL PAGE */
+.hero-detail__image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  overflow: hidden;
+  border: var(--border-s) solid var(--color-white);
+  border-radius: var(--border-l);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.hero-detail__title {
+  position: absolute;
+  left: 50%;
+  font-variation-settings: "wght" 800, "wdth" 65, "XTRA" 511, "YOPQ" 96;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: clamp(2rem, 6vw + 1rem, 6rem);
+  letter-spacing: 6px;
+  text-shadow: -1px -1px var(--primary-color-dark), 1px -1px var(--primary-color-dark),
+    1px 1px var(--primary-color-dark), 0 1px var(--primary-color-dark),
+    -1px 0 var(--primary-color-dark), -1px 2px var(--primary-color-dark),
+    -2px 1px var(--primary-color-dark), -2px 3px var(--primary-color-dark),
+    -3px 2px var(--primary-color-dark), -3px 4px var(--primary-color-dark),
+    -4px 3px var(--primary-color-dark), -4px 5px var(--primary-color-dark),
+    -5px 4px var(--primary-color-dark), -5px 6px var(--primary-color-dark),
+    -6px 5px var(--primary-color-dark), -6px 7px var(--primary-color-dark),
+    -7px 6px var(--primary-color-dark), -7px 8px var(--primary-color-dark),
+    -8px 7px var(--primary-color-dark);
+  transform: skewY(-4deg) translate(-50%);
+}
