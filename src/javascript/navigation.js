@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let isOpen = false;
   const timeline = gsap.timeline({ paused: true });
 
-  gsap.set(".nav__overlay--menu-item p", { y: 225 });
+  gsap.set(".nav__overlay--menu-item a", { y: 225 });
 
   timeline
     .to(".nav__overlay", {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power4.inOut"
     })
     .to(
-      ".nav__overlay--menu-item p",
+      ".nav__overlay--menu-item a",
       {
         duration: 1.3,
         y: 0,
@@ -41,6 +41,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   barba.init({
     sync: true,
+    prevent: ({ href }) => {
+      // Aquí puedes personalizar qué enlaces Barba debe ignorar.
+      // Por ejemplo, puedes ignorar todos y gestionarlo manualmente:
+      return true; // Esto desactiva todas las capturas automáticas.
+    },
     // debug: true,
     transitions: [
       {
@@ -116,8 +121,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             onComplete: () => enterAnimationToDetail(next.container)
           });
         },
-        leave({ current }) {
-          return leaveAnimationToDetail(current.container);
+        async leave({ current }) {
+          leaveAnimationToDetail(current.container);
         },
         enter({ next }) {
           const header = container.querySelector(".hero-detail__wrapper");

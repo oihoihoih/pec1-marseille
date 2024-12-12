@@ -1,7 +1,6 @@
 const enterAnimationToDetail = (container) => {
   const header = container.querySelector(".hero-detail__wrapper");
   const image = container.querySelector(".hero-detail__image");
-  console.log(header, image);
 
   window.scrollTo(0, 0);
   // Animación título

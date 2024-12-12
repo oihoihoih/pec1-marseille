@@ -57,7 +57,10 @@ card.forEach((item, index) => {
         // TODO: Verificar cómo es cardText[index] y si necesito [index]
         .to(cardText[index], { yPercent: 100, duration: 0.3 })
         .eventCallback("onComplete", () => {
-          barba.go(link);
+          console.log("antes de barba go");
+          setTimeout(() => {
+            barba.go(link);
+          }, 800);
         });
     });
   });
