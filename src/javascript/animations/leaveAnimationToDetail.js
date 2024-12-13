@@ -1,5 +1,4 @@
 const leaveAnimationToDetail = (container) => {
-  console.log("leave animation", container);
   // Elements to hide
   const cards = [...container.querySelectorAll(".card-list__content")];
   const header = container.querySelector(".header");

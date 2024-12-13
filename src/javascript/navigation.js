@@ -42,11 +42,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   barba.init({
     sync: true,
     prevent: ({ href }) => {
-      // Aquí puedes personalizar qué enlaces Barba debe ignorar.
-      // Por ejemplo, puedes ignorar todos y gestionarlo manualmente:
-      return true; // Esto desactiva todas las capturas automáticas.
+      return true;
     },
-    // debug: true,
     transitions: [
       {
         beforeLeave() {
@@ -81,7 +78,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         name: "fade",
         leave(data) {
-          console.log(this.name);
           return gsap.to(data.current.container, {
             opacity: 0
           });
@@ -98,44 +94,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
       {
         name: "from-itineraries-to-detail",
-        // from: {
-        //   namespace: ["itineraries"]
-        // },
         to: {
           namespace: ["panier", "panier", "vieux-port"]
         },
         once({ next }) {
-          // Animación imagen
-          gsap.set(".hero-detail__image", {
-            opacity: 0,
-            yPercent: 201
-          });
-
-          gsap.to(".hero-detail__wrapper", { visibility: "visible", duration: 1 });
-
-          gsap.to(".hero-detail__image", {
-            opacity: 1,
-            yPercent: 0,
-            duration: 1,
-            ease: "power1.out",
-            onComplete: () => enterAnimationToDetail(next.container)
-          });
+          return enterAnimationToDetail(next.container);
         },
-        async leave({ current }) {
-          leaveAnimationToDetail(current.container);
+        leave({ current }) {
+          return leaveAnimationToDetail(current.container);
         },
         enter({ next }) {
-          const header = container.querySelector(".hero-detail__wrapper");
-          const image = container.querySelector(".hero-detail__image");
-          console.log("enter", this.name, next);
-
-          const tl = gsap.timeline();
-
-          tl.fromTo(
-            image,
-            { opacity: 0, yPercent: 101, duration: 5 },
-            { opacity: 1, yPercent: 0, duration: 5 }
-          );
+          return enterAnimationToDetail(next.container);
         }
       }
     ]
