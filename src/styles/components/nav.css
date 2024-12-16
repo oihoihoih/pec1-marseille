@@ -12,6 +12,11 @@
   width: min(20vw, 200px);
 }
 
+.nav__logo:hover {
+  transform: scale(1.02);
+  transition: all 0.1s ease-in-out;
+}
+
 .nav__toggle-button {
   display: flex;
   justify-content: flex-end;
