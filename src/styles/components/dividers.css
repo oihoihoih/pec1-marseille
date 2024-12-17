@@ -36,6 +36,7 @@
   animation-name: vintage-divider;
   animation-duration: 1s;
 }
+
 @keyframes vintage-divider {
   0% {
     clip-path: inset(100% 50% 0 50%);
