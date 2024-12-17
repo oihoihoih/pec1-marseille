@@ -1,4 +1,5 @@
 const barba = require("@barba/core");
+
 import { enterAnimationToDetail, leaveAnimationToDetail } from "./animations";
 
 document.addEventListener("DOMContentLoaded", (event) => {
