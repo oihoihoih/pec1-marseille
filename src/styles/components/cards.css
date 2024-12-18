@@ -261,6 +261,7 @@ a.home__card--title {
 .card-list__content {
   position: relative;
   width: 100%;
+  max-width: 30%;
   height: 45vh;
   overflow: hidden;
   cursor: pointer;

@@ -575,24 +575,45 @@
       <!-- Section Divider -->
       <div class="section-divider">Otros itinerarios</div>
 
-      <!-- Links to other detail pages -->
       <!-- Listado de itinerarios -->
       <section class="card-list">
+
         <!-- Vieux Port -->
-        <article class="card-list__content">
+        <a class="card-list__content" href="./vieux-port.html">
           <!-- Card image -->
-          <div class="card-list__content--img">
-            <img
-              src="../assets/vieux-port.jpg"
-              alt="Puesto de vendedora de pescado en el Vieux Port"
-            />
+          <div class="card-list__content--img-container">
+            <picture>
+              <source
+                srcset="
+                  ../assets/vieux-port-mercado.jpg?as=webp&width=500w   500w,
+                  ../assets/vieux-port-mercado.jpg?as=webp&width=800w   800w,
+                  ../assets/vieux-port-mercado.jpg?as=webp&width=1080w 1080w,
+                  ../assets/vieux-port-mercado.jpg?as=webp&width=1600w 1400w
+                "
+                type="image/webp"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+              />
+              <img
+                src="../assets/vieux-port-mercado.jpg?width=1400w"
+                alt="Mujer vendiendo pescado en un puesto de Vieux Port"
+                class="card-list__image"
+                srcset="
+                  ../assets/vieux-port-mercado.jpg?width=500w   500w,
+                  ../assets/vieux-port-mercado.jpg?width=800w   800w,
+                  ../assets/vieux-port-mercado.jpg?width=1080w 1080w,
+                  ../assets/vieux-port-mercado.jpg?width=1400w 1400w
+                "
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+              />
+            </picture>
           </div>
 
+          <!-- TODO: Valorar si quiero poner este texto en hover -->
           <!-- Card text -->
           <p class="card-list__content--text">
-            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de la
-            Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una de
-            las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
+            Este itinerario tiene como punto de partida el Vieux Port. Desde allí, siguiendo la
+            emblemática calle de la Canebière subiremos hasta la iglesia des Reformés para continuar
+            subiendo hacia el barrio de La Plaine y Cours Julien.
           </p>
 
           <!-- Card content top -->
@@ -600,56 +621,51 @@
             <h4>Vieux Port</h4>
             <span class="u-circle">2</span>
           </div>
+        </a>
 
-          <!-- Card link -->
-          <a href="./vieux-port.html" class="card-list__link"></a>
-        </article>
+       <!-- Corniche -->
+       <a class="card-list__content" href="./corniche.html">
+        <!-- Card image -->
+        <div class="card-list__content--img-container">
+          <picture>
+            <source
+              srcset="
+                ../assets/corniche.jpg?as=webp&width=500w   500w,
+                ../assets/corniche.jpg?as=webp&width=800w   800w,
+                ../assets/corniche.jpg?as=webp&width=1080w 1080w,
+                ../assets/corniche.jpg?as=webp&width=1600w 1400w
+              "
+              type="image/webp"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+            />
+            <img
+              src="../assets/corniche.jpg?width=1400w"
+              alt="Pequeño puerto con barcos y un puente de fondo"
+              class="card-list__image"
+              srcset="
+                ../assets/corniche.jpg?width=500w   500w,
+                ../assets/corniche.jpg?width=800w   800w,
+                ../assets/corniche.jpg?width=1080w 1080w,
+                ../assets/corniche.jpg?width=1400w 1400w
+              "
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+            />
+          </picture>
+        </div>
 
-        <!-- Corniche -->
-        <article class="card-list__content">
-          <!-- Card image -->
-          <div class="card-list__content--img">
-            <picture>
-              <source
-                srcset="
-                  ../assets/corniche.jpg?as=webp&width=500w   500w,
-                  ../assets/corniche.jpg?as=webp&width=800w   800w,
-                  ../assets/corniche.jpg?as=webp&width=1080w 1080w,
-                  ../assets/corniche.jpg?as=webp&width=1600w 1400w
-                "
-                type="image/webp"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-              <img
-                src="../assets/corniche.jpg?width=1400w"
-                alt="Pequeño puerto con barcos y un puente de fondo"
-                srcset="
-                  ../assets/corniche.jpg?width=500w   500w,
-                  ../assets/corniche.jpg?width=800w   800w,
-                  ../assets/corniche.jpg?width=1080w 1080w,
-                  ../assets/corniche.jpg?width=1400w 1400w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-            </picture>
-          </div>
+        <!-- Card text -->
+        <p class="card-list__content--text">
+          En este recorrido disfrutarás de las aguas que bañan la ciudad así como pequeños puertos
+          en barrios con identidades propias. Desde l'Estaque hasta la Baie des Singes, podrás
+          sentir la importancia y conexión con el mar que tiene la ciudad.
+        </p>
 
-          <!-- Card text -->
-          <p class="card-list__content--text">
-            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de la
-            Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una de
-            las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
-          </p>
-
-          <!-- Card top content -->
-          <div class="card-list__content--top">
-            <h4>La corniche</h4>
-            <span class="u-circle">3</span>
-          </div>
-
-          <!-- Card link -->
-          <a href="./corniche.html" class="card-list__link"></a>
-        </article>
+        <!-- Card top content -->
+        <div class="card-list__content--top">
+          <h4>La corniche</h4>
+          <span class="u-circle">3</span>
+        </div>
+      </a>
       </section>
     </aside>
     
