@@ -20,6 +20,7 @@
     <!-- The Seasons - Adobe typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
   </head>
+
   <body data-barba="wrapper">
     <a class="skip-main" href="#main">Ir al contenido principal</a>
 
@@ -32,15 +33,39 @@
     <div class="spacer"></div>
 
     <main id="main" data-barba="container" data-barba-namespace="panier">
-      <header class="header">
-        <section class="header__title">
-          <h1>Le Panier</h1>
-          <p class="header__text">
-            Itinerario que comienza en el Vieux Port y recorrerá el barrio más antiguo de la ciudad.
-            En este recorrido veremos la identidad de esta ciudad cambiante, descubriendo sus caras
-            más tradicional y modernas ligadas siempre al mar.
-          </p>
-        </section>
+      <header class="hero-detail__wrapper">
+         <picture>
+          <source media="(max-width: 478px)" 
+          srcset="../assets/itineraries/hero/panier-xs-mobile.jpg?as=webp 1x,
+              ../assets/itineraries/hero/panier-xs-mobile.jpg?as=webp 2x,"
+              type="image/webp">
+          <source 
+            media="(max-width: 768px)"
+            srcset="../assets/itineraries/hero/panier-s-tablet.jpg?as=webp 1x,
+              ../assets/itineraries/hero/panier-s-tablet.jpg?as=webp 2x,"
+              type="image/webp">
+          <source 
+            media="(max-width: 1024px)"
+            srcset="../assets/itineraries/hero/panier-m-laptop.jpg?as=webp 1x,
+              ../assets/itineraries/hero/panier-m-laptop.jpg?as=webp 2x,"
+              type="image/webp">
+          <source 
+            media="(max-width: 1440px)"
+            srcset="../assets/itineraries/hero/panier-l-desktop.jpg?as=webp 1x,
+            ../assets/itineraries/hero/panier-l-desktop.jpg?as=webp 2x"
+            type="image/webp"
+          >
+          <source
+            media="(min-width: 1441px)"
+            srcset="../assets/itineraries/hero/panier-xl-desktopBig.jpg?as=webp 1x,
+            ../assets/itineraries/hero/panier-xl-desktopBig.jpg?as=webp 2x"
+            type="image/webp">
+          <img src="../assets/itineraries/hero/panier-m-laptop.jpg" alt="Calle del Panier con plantas a la entrada de las casas" class="hero-detail__image">
+      </picture>
+
+       <div class="hero-detail__title-wrapper">       
+       <h1 class="hero-detail__title">Le Panier</h1>
+      </div>
       </header>
 
       <!-- Section Divider -->
@@ -528,6 +553,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script type="module" src="../javascript/navigation.js"></script>
+    <script type="module" src="../javascript/itineraries.js"></script>
     <script type="module" src="../javascript/detail.js"></script>
   </body>
 </html>

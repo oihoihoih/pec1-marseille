@@ -68,14 +68,16 @@
       </div>
       </header>
 
+      <!-- TODO: Valorar si quiero un divider y cómo quiero que sea si es que va -->
       <!-- Section Divider -->
       <div class="section-divider">Itinerario por Le Panier</div>
 
       <article class="itinerary__wrapper">
         <!-- ETAPA 1 -->
         <section class="etape__wrapper">
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 1</span>
                 <h2>Le Vieux Port</h2>
@@ -125,12 +127,39 @@
               </picture>
             </div>
           </div>
+        </div>
+        <div class="etape__lines">
+          <div class="line__wrapper">
+            <div class="vertical-line">
+              <include src="../assets/svgs/vertical-line.svg"></include>
+            </div>
+          </div>
+        </div>
+         
         </section>
+
+
 
         <!-- ETAPA 2. Rue de la Republique -->
         <section class="etape__wrapper">
+          <div class="etape__lines">
+            <div class="line__wrapper">
+              <div class="horizontal-line">
+                <include src="../assets/svgs/horizontal-line.svg"></include>
+              </div>
+              <div class="vertical-line vl-r">
+                <include src="../assets/svgs/vertical-line.svg"></include>
+              </div>
+              <div class="etape__line--texts">
+                <h3 class="etape__line-title-right">Rue de la</h3>
+                <h3 class="vertical-text">République</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 2</span>
                 <h2>Rue de la République</h2>
@@ -184,13 +213,26 @@
               </picture>
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 3. Passage de la Lorette -->
         <!-- TODO: Pensar cómo añadir el Passage de Lorette. Ahora se llama des Folies Bergères -->
         <section class="etape__wrapper">
+          <div class="etape__lines">
+            <div class="line__wrapper">
+              <div class="vertical-line">
+                <include src="../assets/svgs/vertical-line.svg"></include>
+              </div>
+
+              <div class="horizontal-line">
+                <include src="../assets/svgs/horizontal-line.svg"></include>
+              </div>
+            </div>
+          </div>
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 3</span>
                 <h2>Passage de Lorette</h2>
@@ -240,12 +282,30 @@
               </picture>
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 4. Panier -->
         <section class="etape__wrapper">
+
+          <div class="etape__lines">
+            <div class="line__wrapper">
+              <div class="horizontal-line--short">
+                <include src="../assets/svgs/horizontal-line.svg"></include>
+              </div>
+              <div class="line__illustration">
+                <include src="../assets/svgs/escalera.svg"></include>
+              </div>
+              <div class="vertical-line">
+                <include src="../assets/svgs/vertical-line.svg"></include>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 4</span>
                 <h2>Le Panier</h2>
@@ -298,12 +358,28 @@
               </picture>
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 5. La Vieille Charité -->
         <section class="etape__wrapper">
+          <div class="etape__lines">
+            <div class="line__wrapper">
+              <div class="horizontal-line">
+                <include src="../assets/svgs/horizontal-line.svg"></include>
+              </div>
+              <div class="vertical-line vl-r">
+                <include src="../assets/svgs/vertical-line.svg"></include>
+              </div>
+              <div class="etape__line--texts">
+                <h3 class="etape__line-title-right">savon de Marseille</h3>
+                <h3 class="vertical-text">72% Pétanque</h3>
+              </div>
+            </div>
+          </div>
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 5</span>
                 <h2>La Vieille Charité</h2>
@@ -353,12 +429,28 @@
               </picture>
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 6. Mucem -->
         <section class="etape__wrapper">
+          <div class="etape__lines">
+            <div class="line__wrapper">
+              <div class="horizontal-line--short-right">
+                <include src="../assets/svgs/horizontal-line.svg"></include>
+              </div>
+              <div class="vertical-line vl-r">
+                <include src="../assets/svgs/vertical-line.svg"></include>
+              </div>
+              <div class="etape__line--texts">
+                <h3 class="etape__line-title-right">Cathédrale de La Major</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 6</span>
                 <h2>Mucem</h2>
@@ -406,12 +498,25 @@
               </picture>
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 7. Fort Saint Jean -->
         <section class="etape__wrapper">
+          <div class="etape__lines">
+            <div class="line__wrapper">
+              <div class="vertical-line">
+                <include src="../assets/svgs/vertical-line.svg"></include>
+              </div>
+
+              <div class="horizontal-line">
+                <include src="../assets/svgs/horizontal-line.svg"></include>
+              </div>
+            </div>
+          </div>
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 7</span>
                 <h2>Fort Saint-Jean</h2>
@@ -461,6 +566,7 @@
               
             </div>
           </div>
+        </div>
         </section>
       </article>
     </main>

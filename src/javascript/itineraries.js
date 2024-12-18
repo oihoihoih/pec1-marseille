@@ -1,5 +1,4 @@
 import { gsap } from "gsap";
-// import { gsap } from "gsap/dist/gsap";
 
 const barba = require("@barba/core");
 
@@ -57,7 +56,6 @@ card.forEach((item, index) => {
         // TODO: Verificar cómo es cardText[index] y si necesito [index] with
         .to(cardText[index], { yPercent: 100, duration: 0.3 })
         .eventCallback("onComplete", () => {
-          console.log("antes de barba go");
           setTimeout(() => {
             barba.go(link);
           }, 800);
