@@ -39,6 +39,6 @@ aside {
 @media screen and (min-width: 1024px) {
   #main,
   aside {
-    margin: var(--spacing-l) var(--spacing-xxl);
+    margin: var(--spacing-l) 15vw;
   }
 }
