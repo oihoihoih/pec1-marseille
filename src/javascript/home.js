@@ -1,7 +1,4 @@
 import { gsap } from "gsap";
-// import { gsap } from "gsap/dist/gsap";
-// import { ScrollToPlugin, TextPlugin } from "gsap/all";
-// import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { TextPlugin } from "gsap/TextPlugin";
 
