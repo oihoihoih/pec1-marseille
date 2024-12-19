@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         name: "from-itineraries-to-detail",
         to: {
-          namespace: ["panier", "panier", "vieux-port"]
+          namespace: ["panier", "corniche", "vieux-port"]
         },
         once({ next }) {
           return enterAnimationToDetail(next.container);
@@ -106,6 +106,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
         enter({ next }) {
           return enterAnimationToDetail(next.container);
+        },
+        afterEnter(data) {
+          initialize();
         }
       }
     ]
