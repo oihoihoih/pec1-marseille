@@ -15,6 +15,7 @@
 
 .etape__wrapper {
   width: 100%;
+  height: 100vh;
   position: relative;
   padding: 10vh 0;
 }
@@ -36,63 +37,16 @@
 
 .etape__lines {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10vh;
+  left: var(--spacing-xl);
   width: 100%;
-  height: 100%;
+  height: 80vh;
+
   /* padding-left: 120px;
   padding-right: 120px; */
 }
 
-.line__wrapper {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.vertical-line {
-  position: absolute;
-  display: inline-block;
-  height: 100%;
-  width: 6px;
-  /* display: flex; */
-  overflow: hidden;
-}
-
-.vl-r {
-  right: 0;
-}
-
-.horizontal-line {
-  position: absolute;
-  display: inline-block;
-  top: -8px;
-  left: 0px;
-  transform-origin: right;
-  overflow: hidden;
-  width: 100%;
-}
-
-.horizontal-line--short {
-  width: 100%;
-  clip-path: polygon(0% 0, 30% 0, 30% 100%, 0% 100%);
-}
-
-.horizontal-line--short-right {
-  width: 100%;
-  clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
-}
-
-.line__illustration {
-  position: absolute;
-  left: 33%;
-  top: 0;
-  transform: translateY(-50%);
-  width: 8%;
-}
-
-.etape__line-title-right,
+/* .etape__line-title-right,
 .vertical-text {
   position: absolute;
   font-variation-settings: "wght" 600, "wdth" 65, "XTRA" 511, "YOPQ" 96;
@@ -106,7 +60,7 @@
 .vertical-text {
   transform: rotate(90deg) translate(50%, -102%);
   padding-top: 89px;
-}
+} */
 
 .etape__postcard {
   background-color: var(--color-white);
