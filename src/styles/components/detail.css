@@ -27,24 +27,8 @@
   justify-content: center;
 }
 
-#vertical-line {
-  height: 100%;
-}
-
-#horizontal-line {
-  width: 100%;
-}
-
-.etape__lines {
-  position: absolute;
-  top: 10vh;
-  left: var(--spacing-xl);
-  width: 100%;
-  height: 80vh;
-
-  /* padding-left: 120px;
+/* padding-left: 120px;
   padding-right: 120px; */
-}
 
 /* .etape__line-title-right,
 .vertical-text {
@@ -79,7 +63,8 @@
   flex-direction: column;
   padding: var(--spacing-l);
   padding-bottom: 0;
-  width: 50%;
+  /* width: 50%; */
+  width: 100%;
   border-left: 2px solid var(--primary-color-dark);
 }
 
@@ -142,9 +127,10 @@
   position: relative;
   overflow: hidden;
   margin-right: var(--spacing-m);
-  width: 50%;
+  min-width: 50%;
   border-radius: var(--border-m);
   mix-blend-mode: multiply;
+  aspect-ratio: 1/1;
 }
 
 .etape__image img {
@@ -187,6 +173,14 @@
 
   .etape__postcard {
     width: 100%;
+  }
+
+  .etape__postcard--content {
+    border: none;
+  }
+
+  .etape__image {
+    aspect-ratio: 4/3;
   }
 
   .etape__content--header {
