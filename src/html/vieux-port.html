@@ -36,301 +36,352 @@
     <div class="spacer"></div>
 
     <main id="main" data-barba="container" data-barba-namespace="vieux-port">
-      <header class="header">
-        <section class="header__title">
-          <h1>Le Vieux Port</h1>
-          <p class="header__text">
-            Este itinerario comienza en el Vieux Port y te llevará por el centro de Marsella hasta
-            un barrio joven y dinámico llamado La Plaine. En este recorrido, verás contrastes donde
-            Francia y el Magreb se mezclan en un crisol de culturas.
-          </p>
-        </section>
-      </header>
-
       <!-- Section Divider -->
       <div class="section-divider">Itinerario desde el Vieux Port</div>
+      <header class="hero-detail__wrapper">
+        <picture>
+          <source
+            media="(max-width: 478px)"
+            srcset="
+              ../assets/itineraries/hero/vieux-port-xs-mobile.jpg?as=webp 1x,
+              ../assets/itineraries/hero/vieux-port-xs-mobile.jpg?as=webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ../assets/itineraries/hero/vieux-port-s-tablet.jpg?as=webp 1x,
+              ../assets/itineraries/hero/vieux-port-s-tablet.jpg?as=webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1024px)"
+            srcset="
+              ../assets/itineraries/hero/vieux-port-m-laptop.jpg?as=webp 1x,
+              ../assets/itineraries/hero/vieux-port-m-laptop.jpg?as=webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1440px)"
+            srcset="
+              ../assets/itineraries/hero/vieux-port-l-desktop.jpg?as=webp 1x,
+              ../assets/itineraries/hero/vieux-port-l-desktop.jpg?as=webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1441px)"
+            srcset="
+              ../assets/itineraries/hero/vieux-port-xl-desktopBig.jpg?as=webp 1x,
+              ../assets/itineraries/hero/vieux-port-xl-desktopBig.jpg?as=webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="../assets/itineraries/hero/vieux-port-m-laptop.jpg"
+            alt="Vendedora de pescado en el mercado de pescado del Vieux-Port"
+            class="hero-detail__image"
+          />
+        </picture>
 
+        <div class="hero-detail__title-wrapper">
+          <h1 class="hero-detail__title">Vieux-Port</h1>
+        </div>
+      </header>
       <article class="itinerary__wrapper">
         <!-- ETAPA 1 -->
         <section class="etape__wrapper">
-          <div class="etape__postcard">
-            <div class="etape__content">
-              <header class="etape__content--header">
-                <span class="detail">Etapa 1</span>
-                <h2>Le Vieux Port</h2>
-              </header>
-              <main class="etape__content--description">
-                <p>
-                  Este itinerario comenzará en el Vieux Port. Si vas pronto por la mañana, podrás
-                  ver cómo llegan los barcos llenos de pescado y los venden en la orilla. Si tienes
-                  ocasión de cocinar, es un buen lugar donde comprar pescado fresquísimo.
-                </p>
-              </main>
-              <footer class="etape__content--footer">
-                <p>Puedes aprovechar para reservar una excursión inolvidable en un velero</p>
-                <p class="detail--link">
-                  Más información:
-                  <a href="https://www.goelette-alliance.com/le-voilier/" target="_blank"
-                    >La Goélette Alliance</a
-                  >
-                </p>
-              </footer>
-            </div>
+          <div class="etape__inner">
+            <div class="etape__postcard">
+              <div class="etape__postcard--content">
+                <header class="etape__content--header">
+                  <span class="detail">Etapa 1</span>
+                  <h2>Le Vieux Port</h2>
+                </header>
+                <main class="etape__content--description">
+                  <p>
+                    Este itinerario comenzará en el Vieux Port. Si vas pronto por la mañana, podrás
+                    ver cómo llegan los barcos llenos de pescado y los venden en la orilla. Si
+                    tienes ocasión de cocinar, es un buen lugar donde comprar pescado fresquísimo.
+                  </p>
+                </main>
+                <footer class="etape__content--footer">
+                  <p>Puedes aprovechar para reservar una excursión inolvidable en un velero</p>
+                  <p class="detail--link">
+                    Más información:
+                    <a href="https://www.goelette-alliance.com/le-voilier/" target="_blank"
+                      >La Goélette Alliance</a
+                    >
+                  </p>
+                </footer>
+              </div>
 
-            <div class="etape__image">
-              <picture>
-                <source
-                  srcset="
-                    ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=500w   500w,
-                    ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=800w   800w,
-                    ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=1080w 1080w,
-                    ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=1600w 1600w
-                  "
-                  type="image/webp"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-                <img
-                  src="../assets/itineraries/un_puerto_lleno.jpg?width=1600w"
-                  alt="Rue de la République de Marsella visto desde arriba, desde la plaza Sadi Carnot"
-                  class=""
-                  srcset="
-                    ../assets/itineraries/un_puerto_lleno.jpg?width=500w   500w,
-                    ../assets/itineraries/un_puerto_lleno.jpg?width=800w   800w,
-                    ../assets/itineraries/un_puerto_lleno.jpg?width=1080w 1080w,
-                    ../assets/itineraries/un_puerto_lleno.jpg?width=1600w 1600w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-              </picture>
+              <div class="etape__image">
+                <picture>
+                  <source
+                    srcset="
+                      ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=500w   500w,
+                      ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=800w   800w,
+                      ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=1080w 1080w,
+                      ../assets/itineraries/un_puerto_lleno.jpg?as=webp&width=1600w 1600w
+                    "
+                    type="image/webp"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                  <img
+                    src="../assets/itineraries/un_puerto_lleno.jpg?width=1600w"
+                    alt="Rue de la République de Marsella visto desde arriba, desde la plaza Sadi Carnot"
+                    class=""
+                    srcset="
+                      ../assets/itineraries/un_puerto_lleno.jpg?width=500w   500w,
+                      ../assets/itineraries/un_puerto_lleno.jpg?width=800w   800w,
+                      ../assets/itineraries/un_puerto_lleno.jpg?width=1080w 1080w,
+                      ../assets/itineraries/un_puerto_lleno.jpg?width=1600w 1600w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- ETAPA 2. La Canebière -->
-        <!-- TODO: Dirección de arte -->
         <section class="etape__wrapper">
-          <div class="etape__postcard">
-            <div class="etape__content">
-              <header class="etape__content--header">
-                <span class="detail">Etapa 2</span>
-                <h2>La Canebière</h2>
-              </header>
-              <main class="etape__content--description">
-                <p>
-                  La Canebière es la avenida más famosa de Marsella. Ha sido el eje central desde el
-                  que se ha medido la ciudad. Se considera Marsella norte (más pobre) todo lo que
-                  está al norte de esta calle, y Marsella sur (más rico) todo lo que está al sur.
-                </p>
-              </main>
-              <footer class="etape__content--footer">
-                <p>En esta calle hay un buen cine dedicado al cine de autor e independiente.</p>
-                <p class="detail--link">
-                  Ubicación:
-                  <a href="https://maps.app.goo.gl/soFzknmwpBE4tfkQ6" target="_blank"
-                    >Cinéma Les Varietés</a
-                  >
-                </p>
-              </footer>
-            </div>
+          <div class="etape__inner">
+            <div class="etape__postcard">
+              <div class="etape__postcard--content">
+                <header class="etape__content--header">
+                  <span class="detail">Etapa 2</span>
+                  <h2>La Canebière</h2>
+                </header>
+                <main class="etape__content--description">
+                  <p>
+                    La Canebière es la avenida más famosa de Marsella. Ha sido el eje central desde
+                    el que se ha medido la ciudad. Se considera Marsella norte (más pobre) todo lo
+                    que está al norte de esta calle, y Marsella sur (más rico) todo lo que está al
+                    sur.
+                  </p>
+                </main>
+                <footer class="etape__content--footer">
+                  <p>En esta calle hay un buen cine dedicado al cine de autor e independiente.</p>
+                  <p class="detail--link">
+                    Ubicación:
+                    <a href="https://maps.app.goo.gl/soFzknmwpBE4tfkQ6" target="_blank"
+                      >Cinéma Les Varietés</a
+                    >
+                  </p>
+                </footer>
+              </div>
 
-            <div class="etape__image">
-              <picture>
-                <source
-                  srcset="
-                    ../assets/itineraries/canebiere.jpg?as=webp&width=500w   500w,
-                    ../assets/itineraries/canebiere.jpg?as=webp&width=800w   800w,
-                    ../assets/itineraries/canebiere.jpg?as=webp&width=1080w 1080w,
-                    ../assets/itineraries/canebiere.jpg?as=webp&width=1600w 1600w
-                  "
-                  type="image/webp"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-                <img
-                  src="../assets/itineraries/canebiere.jpg?width=1600w"
-                  alt="Rue de la République de Marsella visto desde arriba, desde la plaza Sadi Carnot"
-                  class=""
-                  srcset="
-                    ../assets/itineraries/canebiere.jpg?width=500w   500w,
-                    ../assets/itineraries/canebiere.jpg?width=800w   800w,
-                    ../assets/itineraries/canebiere.jpg?width=1080w 1080w,
-                    ../assets/itineraries/canebiere.jpg?width=1600w 1600w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-              </picture>
+              <div class="etape__image">
+                <picture>
+                  <source
+                    srcset="
+                      ../assets/itineraries/canebiere.jpg?as=webp&width=500w   500w,
+                      ../assets/itineraries/canebiere.jpg?as=webp&width=800w   800w,
+                      ../assets/itineraries/canebiere.jpg?as=webp&width=1080w 1080w,
+                      ../assets/itineraries/canebiere.jpg?as=webp&width=1600w 1600w
+                    "
+                    type="image/webp"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                  <img
+                    src="../assets/itineraries/canebiere.jpg?width=1600w"
+                    alt="Rue de la République de Marsella visto desde arriba, desde la plaza Sadi Carnot"
+                    class=""
+                    srcset="
+                      ../assets/itineraries/canebiere.jpg?width=500w   500w,
+                      ../assets/itineraries/canebiere.jpg?width=800w   800w,
+                      ../assets/itineraries/canebiere.jpg?width=1080w 1080w,
+                      ../assets/itineraries/canebiere.jpg?width=1600w 1600w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- ETAPA 3. Noailles -->
         <section class="etape__wrapper">
-          <div class="etape__postcard">
-            <div class="etape__content">
-              <header class="etape__content--header">
-                <span class="detail">Etapa 3</span>
-                <h2>Noailles</h2>
-              </header>
-              <main class="etape__content--description">
-                <p>
-                  Noailles es un barrio popular y multicultural. En sus calles encontrarás mercados
-                  y tiendas donde poder comprar productos y especias directamente de sus países de
-                  origen. Te sentirás en un zoco.
-                </p>
-              </main>
-              <footer class="etape__content--footer">
-                <p>Aprovecha para comprar frutas y verduras frescas en el Marché des Capucins</p>
-                <p class="detail--link">
-                  Ubicación:
-                  <a href="https://maps.app.goo.gl/kUC53v4uGq9CkYRq6" target="_blank"
-                    >Marché des Capucins</a
-                  >
-                </p>
-              </footer>
-            </div>
+          <div class="etape__inner">
+            <div class="etape__postcard">
+              <div class="etape__postcard--content">
+                <header class="etape__content--header">
+                  <span class="detail">Etapa 3</span>
+                  <h2>Noailles</h2>
+                </header>
+                <main class="etape__content--description">
+                  <p>
+                    Noailles es un barrio popular y multicultural. En sus calles encontrarás
+                    mercados y tiendas donde poder comprar productos y especias directamente de sus
+                    países de origen. Te sentirás en un zoco.
+                  </p>
+                </main>
+                <footer class="etape__content--footer">
+                  <p>Aprovecha para comprar frutas y verduras frescas en el Marché des Capucins</p>
+                  <p class="detail--link">
+                    Ubicación:
+                    <a href="https://maps.app.goo.gl/kUC53v4uGq9CkYRq6" target="_blank"
+                      >Marché des Capucins</a
+                    >
+                  </p>
+                </footer>
+              </div>
 
-            <div class="etape__image">
-              <picture>
-                <source
-                  srcset="
-                    ../assets/itineraries/noailles-especes.jpg?as=webp&width=500w   500w,
-                    ../assets/itineraries/noailles-especes.jpg?as=webp&width=800w   800w,
-                    ../assets/itineraries/noailles-especes.jpg?as=webp&width=1080w 1080w,
-                    ../assets/itineraries/noailles-especes.jpg?as=webp&width=1600w 1600w
-                  "
-                  type="image/webp"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-                <img
-                  src="../assets/itineraries/noailles-especes.jpg?width=1600w"
-                  alt="Especies en una de las tiendas del barrio de Noailles"
-                  class=""
-                  srcset="
-                    ../assets/itineraries/noailles-especes.jpg?width=500w   500w,
-                    ../assets/itineraries/noailles-especes.jpg?width=800w   800w,
-                    ../assets/itineraries/noailles-especes.jpg?width=1080w 1080w,
-                    ../assets/itineraries/noailles-especes.jpg?width=1600w 1600w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-              </picture>
+              <div class="etape__image">
+                <picture>
+                  <source
+                    srcset="
+                      ../assets/itineraries/noailles-especes.jpg?as=webp&width=500w   500w,
+                      ../assets/itineraries/noailles-especes.jpg?as=webp&width=800w   800w,
+                      ../assets/itineraries/noailles-especes.jpg?as=webp&width=1080w 1080w,
+                      ../assets/itineraries/noailles-especes.jpg?as=webp&width=1600w 1600w
+                    "
+                    type="image/webp"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                  <img
+                    src="../assets/itineraries/noailles-especes.jpg?width=1600w"
+                    alt="Especies en una de las tiendas del barrio de Noailles"
+                    class=""
+                    srcset="
+                      ../assets/itineraries/noailles-especes.jpg?width=500w   500w,
+                      ../assets/itineraries/noailles-especes.jpg?width=800w   800w,
+                      ../assets/itineraries/noailles-especes.jpg?width=1080w 1080w,
+                      ../assets/itineraries/noailles-especes.jpg?width=1600w 1600w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- ETAPA 4. Les Reformés -->
         <section class="etape__wrapper">
-          <div class="etape__postcard">
-            <div class="etape__content">
-              <header class="etape__content--header">
-                <span class="detail">Etapa 4</span>
-                <h2>Les Réformés</h2>
-              </header>
-              <main class="etape__content--description">
-                <p>
-                  El barrio de Les Reformés toma el nombre de la iglesia de estilo neogótico que se
-                  encuentra al final de la calle de la Canebière. Es una zona emblemática de
-                  Marsella, puede que por su ubicación, por el ambiente tranquilo que hay, pero
-                  alrededor de la plaza donde está el café des Danaïdes es un lugar de encuentro
-                  común de sus habitantes.
-                </p>
-              </main>
-              <footer class="etape__content--footer">
-                <p>
-                  Hay una cantina asociativa y solidaria donde se come muy bien en un ambiente
-                  único.
-                </p>
-                <p class="detail--link">
-                  Más información:
-                  <a href="https://maps.app.goo.gl/15xfHeZDMdzNyDo47" target="_blank"
-                    >Casa Consolat</a
-                  >
-                </p>
-              </footer>
-            </div>
+          <div class="etape__inner">
+            <div class="etape__postcard">
+              <div class="etape__postcard--content">
+                <header class="etape__content--header">
+                  <span class="detail">Etapa 4</span>
+                  <h2>Les Réformés</h2>
+                </header>
+                <main class="etape__content--description">
+                  <p>
+                    El barrio de Les Reformés toma el nombre de la iglesia de estilo neogótico que
+                    se encuentra al final de la calle de la Canebière. Es una zona emblemática de
+                    Marsella, puede que por su ubicación, por el ambiente tranquilo que hay, pero
+                    alrededor de la plaza donde está el café des Danaïdes es un lugar de encuentro
+                    común de sus habitantes.
+                  </p>
+                </main>
+                <footer class="etape__content--footer">
+                  <p>
+                    Hay una cantina asociativa y solidaria donde se come muy bien en un ambiente
+                    único.
+                  </p>
+                  <p class="detail--link">
+                    Más información:
+                    <a href="https://maps.app.goo.gl/15xfHeZDMdzNyDo47" target="_blank"
+                      >Casa Consolat</a
+                    >
+                  </p>
+                </footer>
+              </div>
 
-            <div class="etape__image">
-              <picture>
-                <source
-                  srcset="
-                    ../assets/itineraries/reformes.jpg?as=webp&width=500w   500w,
-                    ../assets/itineraries/reformes.jpg?as=webp&width=800w   800w,
-                    ../assets/itineraries/reformes.jpg?as=webp&width=1080w 1080w,
-                    ../assets/itineraries/reformes.jpg?as=webp&width=1600w 1600w
-                  "
-                  type="image/webp"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-                <img
-                  src="../assets/itineraries/reformes.jpg?width=1600w"
-                  alt="La iglesia des Reformés con un monumento delante"
-                  class=""
-                  srcset="
-                    ../assets/itineraries/reformes.jpg?width=500w   500w,
-                    ../assets/itineraries/reformes.jpg?width=800w   800w,
-                    ../assets/itineraries/reformes.jpg?width=1080w 1080w,
-                    ../assets/itineraries/reformes.jpg?width=1600w 1600w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-              </picture>
+              <div class="etape__image">
+                <picture>
+                  <source
+                    srcset="
+                      ../assets/itineraries/reformes.jpg?as=webp&width=500w   500w,
+                      ../assets/itineraries/reformes.jpg?as=webp&width=800w   800w,
+                      ../assets/itineraries/reformes.jpg?as=webp&width=1080w 1080w,
+                      ../assets/itineraries/reformes.jpg?as=webp&width=1600w 1600w
+                    "
+                    type="image/webp"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                  <img
+                    src="../assets/itineraries/reformes.jpg?width=1600w"
+                    alt="La iglesia des Reformés con un monumento delante"
+                    class=""
+                    srcset="
+                      ../assets/itineraries/reformes.jpg?width=500w   500w,
+                      ../assets/itineraries/reformes.jpg?width=800w   800w,
+                      ../assets/itineraries/reformes.jpg?width=1080w 1080w,
+                      ../assets/itineraries/reformes.jpg?width=1600w 1600w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- ETAPA 5. La Plaine -->
         <section class="etape__wrapper">
-          <div class="etape__postcard">
-            <div class="etape__content">
-              <header class="etape__content--header">
-                <span class="detail">Etapa 5</span>
-                <h2>La Plaine y Cours Julien</h2>
-              </header>
-              <main class="etape__content--description">
-                <p>
-                  Este barrio está dividio en dos partes, la Plaine y Cours Julien. Aunque están uno
-                  al lado del otro, se podría decir que la Plain es más familiar, tranquilo y
-                  residencial, mientras que Cours Julien es más animado y juvenil además de ser el
-                  barrio más grande dedicado al Street Art.
-                </p>
-              </main>
-              <footer class="etape__content--footer">
-                <p>
-                  Hay una panadería deliciosa donde tanto el pan como la bollería merecen la pena
-                </p>
-                <p class="detail--link">
-                  Ubicación:
-                  <a href="https://maps.app.goo.gl/BCjKy9GeWxsYHhBq9" target="_blank"
-                    >House of Pain</a
-                  >
-                </p>
-              </footer>
-            </div>
+          <div class="etape__inner">
+            <div class="etape__postcard">
+              <div class="etape__postcard--content">
+                <header class="etape__content--header">
+                  <span class="detail">Etapa 5</span>
+                  <h2>La Plaine y Cours Julien</h2>
+                </header>
+                <main class="etape__content--description">
+                  <p>
+                    Este barrio está dividio en dos partes, la Plaine y Cours Julien. Aunque están
+                    uno al lado del otro, se podría decir que la Plain es más familiar, tranquilo y
+                    residencial, mientras que Cours Julien es más animado y juvenil además de ser el
+                    barrio más grande dedicado al Street Art.
+                  </p>
+                </main>
+                <footer class="etape__content--footer">
+                  <p>
+                    Hay una panadería deliciosa donde tanto el pan como la bollería merecen la pena
+                  </p>
+                  <p class="detail--link">
+                    Ubicación:
+                    <a href="https://maps.app.goo.gl/BCjKy9GeWxsYHhBq9" target="_blank"
+                      >House of Pain</a
+                    >
+                  </p>
+                </footer>
+              </div>
 
-            <div class="etape__image">
-              <picture>
-                <source
-                  srcset="
-                    ../assets/itineraries/cours-julien.jpg?as=webp&width=500w   500w,
-                    ../assets/itineraries/cours-julien.jpg?as=webp&width=800w   800w,
-                    ../assets/itineraries/cours-julien.jpg?as=webp&width=1080w 1080w,
-                    ../assets/itineraries/cours-julien.jpg?as=webp&width=1600w 1600w
-                  "
-                  type="image/webp"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-                <img
-                  src="../assets/itineraries/cours-julien.jpg?width=1600w"
-                  alt="Graffiti de tres gatos amarillos en una pared de un edificio"
-                  class=""
-                  srcset="
-                    ../assets/itineraries/cours-julien.jpg?width=500w   500w,
-                    ../assets/itineraries/cours-julien.jpg?width=800w   800w,
-                    ../assets/itineraries/cours-julien.jpg?width=1080w 1080w,
-                    ../assets/itineraries/cours-julien.jpg?width=1600w 1600w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-                />
-              </picture>
+              <div class="etape__image">
+                <picture>
+                  <source
+                    srcset="
+                      ../assets/itineraries/cours-julien.jpg?as=webp&width=500w   500w,
+                      ../assets/itineraries/cours-julien.jpg?as=webp&width=800w   800w,
+                      ../assets/itineraries/cours-julien.jpg?as=webp&width=1080w 1080w,
+                      ../assets/itineraries/cours-julien.jpg?as=webp&width=1600w 1600w
+                    "
+                    type="image/webp"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                  <img
+                    src="../assets/itineraries/cours-julien.jpg?width=1600w"
+                    alt="Graffiti de tres gatos amarillos en una pared de un edificio"
+                    class=""
+                    srcset="
+                      ../assets/itineraries/cours-julien.jpg?width=500w   500w,
+                      ../assets/itineraries/cours-julien.jpg?width=800w   800w,
+                      ../assets/itineraries/cours-julien.jpg?width=1080w 1080w,
+                      ../assets/itineraries/cours-julien.jpg?width=1600w 1600w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </section>
@@ -344,9 +395,9 @@
       <!-- Listado de itinerarios -->
       <section class="card-list">
         <!-- Le Panier -->
-        <article class="card-list__content" data-link="./panier.html">
+        <a class="card-list__content" href="./panier.html">
           <!-- Card image -->
-          <div class="card-list__content--img">
+          <div class="card-list__content--img-container">
             <picture>
               <source
                 srcset="
@@ -361,7 +412,7 @@
               <img
                 src="../assets/panier.jpg?width=1400w"
                 alt="Calle del Panier con plantas a la entrada de las casas"
-                class=""
+                class="card-list__image"
                 srcset="
                   ../assets/panier.jpg?width=500w   500w,
                   ../assets/panier.jpg?width=800w   800w,
@@ -373,20 +424,24 @@
             </picture>
           </div>
 
+          <!-- Card text Panier-->
+          <p class="card-list__content--text">
+            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
+            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
+            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
+          </p>
+
           <!-- Card content top -->
           <div class="card-list__content--top">
             <h4>Le Panier</h4>
             <span class="u-circle">1</span>
           </div>
-
-          <!-- Card link -->
-          <a href="./panier.html" class="card-list__link"></a>
-        </article>
+        </a>
 
         <!-- Corniche -->
-        <article class="card-list__content" data-link="./corniche.html">
+        <a class="card-list__content" href="./corniche.html">
           <!-- Card image -->
-          <div class="card-list__content--img">
+          <div class="card-list__content--img-container">
             <picture>
               <source
                 srcset="
@@ -401,6 +456,7 @@
               <img
                 src="../assets/corniche.jpg?width=1400w"
                 alt="Pequeño puerto con barcos y un puente de fondo"
+                class="card-list__image"
                 srcset="
                   ../assets/corniche.jpg?width=500w   500w,
                   ../assets/corniche.jpg?width=800w   800w,
@@ -412,15 +468,19 @@
             </picture>
           </div>
 
-          <!-- Card link -->
-          <a href="./corniche.html" class="card-list__link"></a>
+          <!-- Card text -->
+          <p class="card-list__content--text">
+            En este recorrido disfrutarás de las aguas que bañan la ciudad así como pequeños puertos
+            en barrios con identidades propias. Desde l'Estaque hasta la Baie des Singes, podrás
+            sentir la importancia y conexión con el mar que tiene la ciudad.
+          </p>
 
           <!-- Card top content -->
           <div class="card-list__content--top">
             <h4>La corniche</h4>
             <span class="u-circle">3</span>
           </div>
-        </article>
+        </a>
       </section>
     </aside>
 
