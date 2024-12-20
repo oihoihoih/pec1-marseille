@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   barba.init({
     sync: true,
-    debug: true,
+    // debug: true,
     prevent: ({ href }) => {
       return true;
     },

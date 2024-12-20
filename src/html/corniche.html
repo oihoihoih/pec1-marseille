@@ -31,16 +31,6 @@
     <div class="spacer"></div>
 
     <main id="main" data-barba="container" data-barba-namespace="corniche">
-      <!-- <header class="header">
-        <section class="header__title">
-          <h1>La Corniche</h1>
-          <p class="header__text">
-            Este recorrido plantea un paseo por toda la costa urbana de Marsella. Empezando en
-            L'Estaque y terminando en la Baie des Singes. Se recomienda utilizar transporte público
-            o bicicleta, ya que algunas distancias son largas.
-          </p>
-        </section>
-      </header> -->
       <header class="hero-detail__wrapper">
         <picture>
          <source media="(max-width: 478px)" 
@@ -82,8 +72,9 @@
       <article class="itinerary__wrapper">
         <!-- ETAPA 1 -->
         <section class="etape__wrapper">
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 1</span>
                 <h2>L'Estaque</h2>
@@ -137,12 +128,14 @@
               </picture>
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 2. Vallon des Auffes -->
         <section class="etape__wrapper">
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 2</span>
                 <h2>Vallon des Auffes</h2>
@@ -195,12 +188,14 @@
               
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 3. Malmousque -->
         <section class="etape__wrapper">
+          <div class="etape__inner">
           <div class="etape__postcard">
-            <div class="etape__content">
+            <div class="etape__postcard--content">
               <header class="etape__content--header">
                 <span class="detail">Etapa 3</span>
                 <h2>Malmousque</h2>
@@ -250,6 +245,7 @@
               
             </div>
           </div>
+        </div>
         </section>
 
         <!-- ETAPA 4. Les Reformés -->
@@ -380,9 +376,9 @@
       <!-- Listado de itinerarios -->
       <section class="card-list">
         <!-- Le Panier -->
-        <article class="card-list__content" data-link="./panier.html">
+        <a class="card-list__content" href="./panier.html">
           <!-- Card image -->
-          <div class="card-list__content--img">
+          <div class="card-list__content--img-container">
             <picture>
               <source
                 srcset="
@@ -397,7 +393,7 @@
               <img
                 src="../assets/panier.jpg?width=1400w"
                 alt="Calle del Panier con plantas a la entrada de las casas"
-                class=""
+                class="card-list__image"
                 srcset="
                   ../assets/panier.jpg?width=500w   500w,
                   ../assets/panier.jpg?width=800w   800w,
@@ -409,20 +405,24 @@
             </picture>
           </div>
 
+          <!-- Card text Panier-->
+          <p class="card-list__content--text">
+            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
+            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
+            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
+          </p>
+
           <!-- Card content top -->
           <div class="card-list__content--top">
             <h4>Le Panier</h4>
             <span class="u-circle">1</span>
           </div>
-
-          <!-- Card link -->
-          <a href="./panier.html" class="card-list__link"></a>
-        </article>
+        </a>
 
         <!-- Vieux Port -->
-        <article class="card-list__content">
+        <a class="card-list__content" href="./vieux-port.html">
           <!-- Card image -->
-          <div class="card-list__content--img">
+          <div class="card-list__content--img-container">
             <picture>
               <source
                 srcset="
@@ -437,7 +437,7 @@
               <img
                 src="../assets/vieux-port-mercado.jpg?width=1400w"
                 alt="Mujer vendiendo pescado en un puesto de Vieux Port"
-                class=""
+                class="card-list__image"
                 srcset="
                   ../assets/vieux-port-mercado.jpg?width=500w   500w,
                   ../assets/vieux-port-mercado.jpg?width=800w   800w,
@@ -449,15 +449,19 @@
             </picture>
           </div>
 
+          <!-- Card text -->
+          <p class="card-list__content--text">
+            Este itinerario tiene como punto de partida el Vieux Port. Desde allí, siguiendo la
+            emblemática calle de la Canebière subiremos hasta la iglesia des Reformés para continuar
+            subiendo hacia el barrio de La Plaine y Cours Julien.
+          </p>
+
           <!-- Card content top -->
           <div class="card-list__content--top">
             <h4>Vieux Port</h4>
             <span class="u-circle">2</span>
           </div>
-
-          <!-- Card link -->
-          <a href="./vieux-port.html" class="card-list__link"></a>
-        </article>
+        </a>
       </section>
     </aside>
     <!-- Footer -->
