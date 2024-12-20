@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   barba.init({
     sync: true,
-    // debug: true,
     prevent: ({ href }) => {
       return true;
     },
@@ -51,12 +50,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         name: "navigation",
         once({ next }) {
-          console.log("once", next);
           timeline.reverse();
           fadeEnterAnimation(next.container);
         },
         beforeLeave() {
-          console.log("before leave");
           toggleButton.classList.remove("active");
           if (isOpen) {
             timeline.reverse();
@@ -64,7 +61,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
           }
         },
         async leave({ current }) {
-          console.log("leave", current);
           const done = this.async();
           timeline.reverse();
           await delay(1000);
@@ -72,7 +68,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
 
         async enter({ next }) {
-          console.log("enter", next);
           window.scrollTo(0, 0);
           gsap.from(next.container, {
             duration: 0.5,
@@ -87,7 +82,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
           namespace: "home"
         },
         once({ next }) {
-          console.log("once");
           fadeEnterAnimation(next.container);
         },
         leave({ current }) {
@@ -105,19 +99,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
           namespace: ["panier", "corniche", "vieux-port"]
         },
         once({ next }) {
-          console.log("once", next);
           enterAnimationToDetail(next.container);
         },
         leave({ current }) {
-          console.log("leave");
           leaveAnimationToDetail(current.container);
         },
         enter({ next }) {
-          console.log("enter");
           enterAnimationToDetail(next.container);
         },
         afterEnter({ next }) {
-          console.log("afterEnter", next);
           enterAnimationToDetail(next.container);
         }
       }
