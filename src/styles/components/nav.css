@@ -10,11 +10,11 @@
 
 .nav__logo {
   width: min(20vw, 200px);
+  transition: transform 0.1s ease-in-out;
 }
 
 .nav__logo:hover {
   transform: scale(1.02);
-  transition: all 0.1s ease-in-out;
 }
 
 .nav__toggle-button {
