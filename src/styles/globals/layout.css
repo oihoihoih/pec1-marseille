@@ -3,6 +3,12 @@ aside {
   margin: var(--spacing-l);
 }
 
+@media screen and (max-height: 670px) {
+  aside {
+    margin-top: 20vh;
+  }
+}
+
 /* ABOUT PAGE */
 
 .presentation__wrapper {
