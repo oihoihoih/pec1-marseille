@@ -25,10 +25,16 @@
   text-transform: uppercase;
   font-variation-settings: "wght" 400, "wdth" 151, "opsz" 94;
   text-align: center;
-  animation-name: subtitle-reveal;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
+  animation: subtitle-reveal 1s ease-in-out 1s both;
+}
+
+@keyframes subtitle-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .home__title {
@@ -49,15 +55,6 @@
   }
   to {
     transform: translateY(0);
-  }
-}
-
-@keyframes subtitle-reveal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 

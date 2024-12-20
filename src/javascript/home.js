@@ -22,9 +22,6 @@ if (scrollButton) {
 }
 
 // MARQUEE ANIMATION
-const currentScroll = 0;
-let isScrollingDown = true;
-
 const tween = gsap
   .to(".marquee__part", {
     xPercent: -100,
@@ -35,17 +32,8 @@ const tween = gsap
   .totalProgress(0.5);
 
 gsap.set(".marquee__inner", { xPercent: -50 });
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > currentScroll) {
-    isScrollingDown = true;
-  } else {
-    isScrollingDown = false;
-  }
-
-  gsap.to(tween, {
-    timeScale: isScrollingDown ? 1 : -1
-  });
+gsap.to(tween, {
+  timeScale: isScrollingDown ? 1 : -1
 });
 
 // INDEX CARDS IMAGES WITH GSAP

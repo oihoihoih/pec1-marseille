@@ -33,8 +33,7 @@
 }
 
 .vintage-divider.animation {
-  animation-name: vintage-divider;
-  animation-duration: 1s;
+  animation: vintage-divider 1s ease-in-out;
 }
 
 @keyframes vintage-divider {
