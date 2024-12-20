@@ -31,7 +31,7 @@
     <div class="spacer"></div>
 
     <main id="main" data-barba="container" data-barba-namespace="corniche">
-      <header class="header">
+      <!-- <header class="header">
         <section class="header__title">
           <h1>La Corniche</h1>
           <p class="header__text">
@@ -40,7 +40,41 @@
             o bicicleta, ya que algunas distancias son largas.
           </p>
         </section>
-      </header>
+      </header> -->
+      <header class="hero-detail__wrapper">
+        <picture>
+         <source media="(max-width: 478px)" 
+         srcset="../assets/itineraries/hero/corniche-xs-mobile.jpg?as=webp 1x,
+             ../assets/itineraries/hero/corniche-xs-mobile.jpg?as=webp 2x,"
+             type="image/webp">
+         <source 
+           media="(max-width: 768px)"
+           srcset="../assets/itineraries/hero/corniche-s-tablet.jpg?as=webp 1x,
+             ../assets/itineraries/hero/corniche-s-tablet.jpg?as=webp 2x,"
+             type="image/webp">
+         <source 
+           media="(max-width: 1024px)"
+           srcset="../assets/itineraries/hero/corniche-m-laptop.jpg?as=webp 1x,
+             ../assets/itineraries/hero/corniche-m-laptop.jpg?as=webp 2x,"
+             type="image/webp">
+         <source 
+           media="(max-width: 1440px)"
+           srcset="../assets/itineraries/hero/corniche-l-desktop.jpg?as=webp 1x,
+           ../assets/itineraries/hero/corniche-l-desktop.jpg?as=webp 2x"
+           type="image/webp"
+         >
+         <source
+           media="(min-width: 1441px)"
+           srcset="../assets/itineraries/hero/corniche-xl-desktopBig.jpg?as=webp 1x,
+           ../assets/itineraries/hero/corniche-xl-desktopBig.jpg?as=webp 2x"
+           type="image/webp">
+         <img src="../assets/itineraries/hero/corniche-m-laptop.jpg" alt="Calle del Panier con plantas a la entrada de las casas" class="hero-detail__image">
+     </picture>
+
+      <div class="hero-detail__title-wrapper">       
+      <h1 class="hero-detail__title">La corniche</h1>
+     </div>
+     </header>
 
       <!-- Section Divider -->
       <div class="section-divider">La Corniche</div>
