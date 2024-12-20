@@ -19,7 +19,7 @@ postcards.forEach((postcard, index) => {
     });
 
   ScrollTrigger.create({
-    // markers: true,
+    markers: true,
     trigger: postcard,
     start: "center 50%",
     pin: true,

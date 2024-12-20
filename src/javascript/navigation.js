@@ -1,6 +1,7 @@
 const barba = require("@barba/core");
-
 import { enterAnimationToDetail, fadeEnterAnimation, leaveAnimationToDetail } from "./animations";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const toggleButton = document.querySelector(".burger");
@@ -104,17 +105,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
           namespace: ["panier", "corniche", "vieux-port"]
         },
         once({ next }) {
-          return enterAnimationToDetail(next.container);
+          console.log("once", next);
+          enterAnimationToDetail(next.container);
         },
         leave({ current }) {
-          return leaveAnimationToDetail(current.container);
+          console.log("leave");
+          leaveAnimationToDetail(current.container);
         },
         enter({ next }) {
-          return enterAnimationToDetail(next.container);
+          console.log("enter");
+          enterAnimationToDetail(next.container);
+        },
+        afterEnter({ next }) {
+          console.log("afterEnter", next);
+          enterAnimationToDetail(next.container);
         }
-        // afterEnter(data) {
-        //   initialize();
-        // }
       }
     ]
   });

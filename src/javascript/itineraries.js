@@ -55,7 +55,7 @@ card.forEach((item, index) => {
         .to(cardText[index], { yPercent: 100, duration: 0.3 })
         .eventCallback("onComplete", () => {
           setTimeout(() => {
-            barba.go(link);
+            window.location.href = link;
           }, 800);
         });
     });
