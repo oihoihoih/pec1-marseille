@@ -31,11 +31,6 @@ const tween = gsap
   })
   .totalProgress(0.5);
 
-gsap.set(".marquee__inner", { xPercent: -50 });
-gsap.to(tween, {
-  timeScale: isScrollingDown ? 1 : -1
-});
-
 // INDEX CARDS IMAGES WITH GSAP
 const listItems = document.querySelectorAll(".home__card--item");
 

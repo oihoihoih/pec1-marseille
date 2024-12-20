@@ -8,8 +8,6 @@ const postcards = document.querySelectorAll(".etape__postcard");
 const totalHeight = document.querySelector(".itinerary__wrapper").offsetHeight;
 
 postcards.forEach((postcard, index) => {
-  // animation.clear();
-  const prueba = postcard.querySelector(".etape__postcard");
   const tl = gsap
     .timeline()
     .from(postcard, {
@@ -21,13 +19,12 @@ postcards.forEach((postcard, index) => {
     });
 
   ScrollTrigger.create({
-    markers: true,
+    // markers: true,
     trigger: postcard,
     start: "center 50%",
     pin: true,
     end: () =>
       `+=${totalHeight - wrapper[index].offsetHeight * index - wrapper[index].offsetHeight}`,
-    animation: tl,
-    pinSpacing: false
+    animation: tl
   });
 });

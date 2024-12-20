@@ -1,5 +1,4 @@
 import { gsap } from "gsap";
-
 const barba = require("@barba/core");
 
 // ITINERARIES CARD ENTER ANIMATION
@@ -53,7 +52,6 @@ card.forEach((item, index) => {
       // Remove hover animation
       gsap
         .timeline()
-        // TODO: Verificar cómo es cardText[index] y si necesito [index] with
         .to(cardText[index], { yPercent: 100, duration: 0.3 })
         .eventCallback("onComplete", () => {
           setTimeout(() => {
