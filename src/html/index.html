@@ -10,7 +10,517 @@
     />
     <link rel="icon" type="image/png" href="../assets/faviconMars16x16.png" />
     <link rel="icon" type="image/png" href="../assets/faviconMars32x32.png" />
-    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!-- Critical css -->
+    <style>
+      .card__image {
+        object-fit: cover;
+        border: 10px solid var(--color-white);
+        opacity: 0;
+        visibility: hidden;
+        clip-path: polygon(
+          1% 0.5%,
+          2.5% 0.1%,
+          3.9% 0.7%,
+          4.5% 0.6%,
+          6.3% 0.3%,
+          8.3% 0.4%,
+          10.7% 0.3%,
+          13.1% 0.4%,
+          15.6% 0.5%,
+          16.2% 0.2%,
+          19.7% 0.8%,
+          22.3% 0.3%,
+          24.7% 0.2%,
+          27.3% 0.3%,
+          30.2% 0.4%,
+          31.2% 0%,
+          34.3% 0.4%,
+          35.9% 0.3%,
+          38.6% 0.4%,
+          40.6% 0.5%,
+          43.1% 0.4%,
+          45.6% 0.3%,
+          47.1% 0.2%,
+          49.6% 0.3%,
+          49.9% 1%,
+          52.3% 0.3%,
+          53.8% 0.5%,
+          56.3% 0.4%,
+          58.7% 0.3%,
+          62.2% 0.4%,
+          63.7% 0.3%,
+          66.3% 0.4%,
+          67.3% 0.2%,
+          68.4% 0.2%,
+          70.3% 0.3%,
+          72.3% 0.4%,
+          75.8% 0.4%,
+          78.5% 1%,
+          80.3% 0.3%,
+          84% 0.6%,
+          86.3% 0.3%,
+          88.3% 0.4%,
+          91.1% 0.5%,
+          93.6% 0.4%,
+          95.3% 0.3%,
+          97.3% 0.5%,
+          98% 0.6%,
+          99.1% 0.4%,
+          99.3% 0.5%,
+          99.6% 0.6%,
+          99.3% 1.4px,
+          99.8% 3.6%,
+          99.5% 5.2%,
+          99.9% 7.3%,
+          99.3% 8.5%,
+          99.8% 9.3%,
+          99.2% 11.4%,
+          99.6% 15.5%,
+          99.3% 17.8%,
+          99.8% 20.5%,
+          99.4% 24.9%,
+          99.7% 27.4%,
+          99.3% 28.5%,
+          99.4% 31.3%,
+          99.7% 34.1%,
+          99.6% 35.7%,
+          99.3% 41.3%,
+          99.8% 41.9%,
+          99.3% 45.7%,
+          99.3% 49.1%,
+          99.4% 50.9%,
+          99.3% 53.3%,
+          99.7% 57.4%,
+          99.3% 59.8%,
+          99.6% 60.4%,
+          99.3% 64%,
+          99.4% 66.6%,
+          99.2% 69.5%,
+          99.3% 72.1%,
+          99.6% 76.7%,
+          99.4% 77.1%,
+          99.2% 78.2%,
+          99.1% 82.3%,
+          99.9% 83.5%,
+          99.3% 86.3%,
+          99.3% 90.5%,
+          99.2% 91.5%,
+          99% 94.3%,
+          99.3% 95.3%,
+          99.3% 97.4%,
+          99% 98.6%,
+          98% 99.6%,
+          99.6% 99.4%,
+          97.5% 99.2%,
+          95.3% 99.6%,
+          91.1% 99.3%,
+          90.3% 99.9%,
+          88.3% 99.2%,
+          86.8% 99.3%,
+          84.3% 99.5%,
+          82.3% 99.3%,
+          78.6% 99.5%,
+          76.4% 99.2%,
+          72.3% 99.3%,
+          69.7% 99.8%,
+          64.2% 99.3%,
+          61.8% 99.2%,
+          59.8% 99.3%,
+          57.2% 99.1%,
+          53.3% 99.3%,
+          50.9% 99.4%,
+          49.1% 99.3%,
+          48.7% 99.6%,
+          46.8% 99.5%,
+          44.7% 99.3%,
+          41.3% 99.8%,
+          39.6% 99.9%,
+          35.7% 99.3%,
+          33.8% 99.2%,
+          28.2% 99.4%,
+          27% 99.3%,
+          24.9% 99.7%,
+          22.1% 99.6%,
+          20.5% 99.3%,
+          17.4% 99.2%,
+          15.5% 99.3%,
+          13.1% 99.1%,
+          9.6% 99.3%,
+          8.7% 99.8%,
+          5.5% 99.6%,
+          3.7% 99.9%,
+          1.4% 99.2%,
+          0.7% 99.3%,
+          0.3% 97.4%,
+          0.6% 98.2%,
+          0.1% 94.3%,
+          0.7% 91.5%,
+          0.4% 90.5%,
+          0.1% 88.3%,
+          0.9% 86.3%,
+          0.7% 83.5%,
+          0.9% 82.3%,
+          0.2% 78.2%,
+          0.4% 76.7%,
+          0.7% 74.1%,
+          0.2% 72.1%,
+          0.7% 69.5%,
+          0.9% 66.6%,
+          0.7% 64%,
+          0.9% 60.4%,
+          0.4% 59.8%,
+          0.2% 57.3%,
+          0.7% 53.3%,
+          0.9% 50.9%,
+          0.3% 49.1%,
+          0.7% 45.7%,
+          0.9% 44.7%,
+          0.9% 41.3%,
+          0.7% 38.6%,
+          0.8% 35.7%,
+          0.7% 34.1%,
+          0.9% 31.3%,
+          0.8% 28.5%,
+          0.7% 27.4%,
+          0.8% 24.9%,
+          0.7% 20.5%,
+          0.8% 17.8%,
+          0.3% 17.4%,
+          0.7% 15.5%,
+          0.8% 13.1%,
+          0.7% 11.4%,
+          0.5% 8.6%,
+          0.7% 6.5%,
+          0.1% 5.5%
+        );
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        transform: rotate(4deg);
+      }
+      @media screen and (max-width: 769px) {
+        .card__image {
+          display: none;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        outline: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+      body,
+      html {
+        overflow-x: hidden;
+      }
+      h1,
+      h2 {
+        font-weight: 400;
+      }
+      a,
+      a img,
+      img {
+        border: none;
+      }
+      body {
+        background: var(--accent-color-xlight);
+        color: var(--color-black);
+        line-height: 1;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        color: inherit;
+      }
+      :root {
+        --color-white: #fff;
+        --color-black: #222;
+        --color-black-light: #666;
+        --primary-color: #91cef1;
+        --primary-color-dark: #19527d;
+        --accent-color: #febd8c;
+        --accent-color-light: #fee5d3;
+        --accent-color-xlight: #ffefe3;
+        --accent-color-dark: #755741;
+        --secondary-accent-color: #e5332a;
+        --font-family-base: "Roboto Flex", sans-serif;
+        --font-family-accent: "the-seasons", serif;
+        --text-base-size: 1em;
+        --text-scale-ratio: 1.125;
+        --line-height-base: 1.5;
+        --spacing-xxl: 4em;
+        --spacing-xl: 3em;
+        --spacing-l: 2em;
+        --spacing-m: 1em;
+        --spacing-s: 0.5em;
+        --spacing-xs: 0.25em;
+        --border-l: 2em;
+        --border-m: 1em;
+        --border-s: 0.5em;
+      }
+      html {
+        font-size: 16px;
+        font-family: var(--font-family-base);
+      }
+      h1 {
+        font-variation-settings: "wght" 600, "wdth" 151, "GRAD" -78, "XTRA" 551, "YTUC" 651;
+        text-transform: uppercase;
+        font-size: clamp(1.625rem, 3vw + 1rem, 3rem);
+      }
+      h2 {
+        font-variation-settings: "wght" 450, "wdth" 110;
+        font-size: clamp(1.55rem, 1.5vw + 1rem, 2.25rem);
+      }
+      a {
+        font-variation-settings: "wght" 450, "wdth" 100;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .skip-main {
+        clip-path: inset(50%);
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        overflow: hidden;
+      }
+      .header {
+        padding: var(--spacing-xl) 0;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+        display: flex;
+      }
+      .home__title--container {
+        animation-name: clip-path;
+        animation-duration: 1s;
+      }
+      @keyframes clip-path {
+        0% {
+          clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+        }
+        to {
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+      }
+      .home__subtitle {
+        color: var(--color-white);
+        text-transform: uppercase;
+        font-variation-settings: "wght" 400, "wdth" 151, "opsz" 94;
+        text-align: center;
+        animation: 1s ease-in-out 1s both subtitle-reveal;
+      }
+      @keyframes subtitle-reveal {
+        0% {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .home__title {
+        font-family: var(--font-family-accent);
+        color: var(--color-white);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: clamp(3.5em, 10vw, 30em);
+        font-weight: 300;
+        animation-name: title-reveal;
+        animation-duration: 1s;
+        display: block;
+      }
+      @keyframes title-reveal {
+        0% {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      .scroll-wrapper {
+        width: 100%;
+        height: 15vh;
+        padding: 1em;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+      }
+      #hand-svg {
+        width: 3vh;
+        height: auto;
+        animation: 2s linear infinite bounce-1;
+      }
+      @keyframes bounce-1 {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(15px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      .scroll-to {
+        color: var(--color-white);
+        font-size: var(--text-base-size);
+        font-variation-settings: "wght" 700, "wdth" 151, "opsz" 54;
+        letter-spacing: 0.2em;
+        text-align: center;
+        text-transform: uppercase;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+      }
+      .header__video {
+        object-fit: cover;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .nav {
+        padding: var(--spacing-l);
+        z-index: 3;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        position: fixed;
+      }
+      .nav__logo {
+        width: min(20vw, 200px);
+      }
+      .nav__toggle-button {
+        justify-content: flex-end;
+        display: flex;
+      }
+      .burger {
+        padding: var(--space-m);
+        background-color: #0000;
+        border: none;
+        outline: 0;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 20px;
+        display: flex;
+      }
+      .burger:after,
+      .burger:before {
+        content: "";
+        background-color: var(--primary-color-dark);
+        will-change: transform;
+        width: 40px;
+        height: 2px;
+        position: absolute;
+      }
+      .burger:before {
+        transform: translateY(-3px);
+      }
+      .burger:after {
+        transform: translateY(3px);
+      }
+      .nav__overlay {
+        background-color: var(--primary-color-dark);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .nav__overlay--menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .nav__overlay--menu-item {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        display: flex;
+      }
+      .nav__overlay--menu-item a {
+        text-align: center;
+        text-transform: uppercase;
+        font-variation-settings: "wght" 500, "wdth" 131, "GRAD" -78, "XTRA" 551, "YTUC" 651;
+        font-size: 5vw;
+        line-height: 120%;
+        position: relative;
+      }
+      .nav__overlay--menu-item a:after {
+        content: "";
+        transform-style: translateY(-50%);
+        background-color: var(--accent-color);
+        width: 0;
+        height: 6px;
+        position: absolute;
+        top: 45%;
+        left: 0;
+      }
+      .nav__link {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+      @media screen and (max-width: 768px) {
+        .nav__logo {
+          width: min(30vw, 150px);
+        }
+      }
+      @media screen and (max-width: 479px) {
+        .nav__logo {
+          width: min(40vw, 150px);
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .nav {
+          padding: var(--spacing-l) var(--spacing-xxl);
+        }
+      }
+      .h-100 {
+        height: 100vh;
+      }
+      .logo-linea {
+        fill: #e5332a;
+      }
+      .logo-texto {
+        fill: #312782;
+      }
+      @media (max-width: 479px) {
+        .logo-linea {
+          opacity: 0;
+        }
+      }
+    </style>
+
+    <link
+      rel="preload"
+      href="../styles/styles.css"
+      type="text/css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet';"
+    />
+
     <!-- Typography -->
     <!-- Roboto Flex - Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
