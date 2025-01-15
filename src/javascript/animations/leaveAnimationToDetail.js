@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 const leaveAnimationToDetail = (container) => {
   // Elements to hide
   const cards = [...container.querySelectorAll(".card-list__content")];
