@@ -1,5 +1,3 @@
-// import { gsap } from "gsap";
-
 function scrollAnimation(selector) {
   let elements = document.querySelectorAll(selector);
   elements = Array.from(elements);

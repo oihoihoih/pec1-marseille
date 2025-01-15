@@ -1,4 +1,3 @@
-// import { gsap } from "gsap";
 const barba = require("@barba/core");
 import { enterAnimationToDetail, fadeEnterAnimation, leaveAnimationToDetail } from "./animations";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -1,4 +1,3 @@
-// import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { TextPlugin } from "gsap/TextPlugin";
 
