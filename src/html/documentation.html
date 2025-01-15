@@ -3,49 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marseille, tres itinerarios | Itinerarios</title>
-    <meta name="description" content="Página donde se presentan los tres itinerarios de Marsella" />
-    <link rel="icon" type="image/png" href="../assets/faviconMars16x16.png" />
-    <link rel="icon" type="image/png" href="../assets/faviconMars32x32.png" />
+    <title>Marseille, tres itinerarios | Documentación</title>
+    <meta
+      name="documentation"
+      content="En esta página se documentan los recursos utilizados para la creación de la web" />
+      <link rel="icon" type="image/png" href="../assets/faviconMars16x16.png" />
+      <link rel="icon" type="image/png" href="../assets/faviconMars32x32.png" />
     <link rel="stylesheet" href="../styles/styles.css" />
 
-    <!-- Typography -->
     <!-- Roboto Flex - Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,151,1000,150,603,135,854,-119,788,570,760&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
-      fetchpriority="high"
-    />
-    <!-- no-JS fallback -->
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,151,1000,150,603,135,854,-119,788,570,760&display=swap"
-      />
-    </noscript>
+      rel="stylesheet" />
     <!-- The Seasons - Adobe typekit -->
-    <link
-      rel="stylesheet"
-      href="https://use.typekit.net/rzr7rih.css"
-      rel="stylesheet"
-      media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
-      fetchpriority="high"
-    />
-    <!-- no-JS fallback -->
-    <noscript>
-      <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
-    </noscript>
+    <link rel="stylesheet" href="https://use.typekit.net/rzr7rih.css" />
   </head>
 
   <body data-barba="wrapper">
     <a class="skip-main" href="#main">Ir al contenido principal</a>
-
-    <!-- Header -->
     <header>
       <!-- Navigation -->
       <include src="navigation.html"></include>
@@ -53,154 +30,164 @@
 
     <div class="spacer"></div>
 
-    <main id="main" data-barba="container" data-barba-namespace="itineraries">
+    <main id="main" data-barba="container" data-barba-namespace="documentation">
+
       <header class="header">
         <section class="header__title">
-          <h1>Itinerarios</h1>
+          <h1>Documentación</h1>
           <p class="header__text">
-            Marsella es una ciudad llena de contrastes que cuenta con paisajes naturales y humanos
-            diversos. Te proponemos 3 itinerarios donde poder descubrir la ciudad desde la óptica
-            personal de alguien que ha disfrutado mucho de ella. ¡Buen viaje!
+            Para crear este sitio he utilizado diferentes recursos. Los textos
+            han sido creados por
+            mi, pero he recurrido a muchos sitios web para conseguir imágenes y
+            vídeos. En esta
+            página encontrarás una recopilación con atribuciones y enlaces a las
+            fuentes originales
+            utilizadas.
           </p>
         </section>
       </header>
 
       <!-- Section Divider -->
-      <div class="section-divider">Itinerarios</div>
+      <div class="section-divider">
+        Fuentes
+      </div>
 
-      <!-- Listado de itinerarios -->
-      <section class="card-list">
-        <!-- Panier -->
-        <a class="card-list__content" href="./panier.html">
-          <!-- Card image -->
-          <div class="card-list__content--img-container">
-            <picture>
-              <source
-                srcset="
-                  ../assets/panier.jpg?as=webp&width=500w   500w,
-                  ../assets/panier.jpg?as=webp&width=800w   800w,
-                  ../assets/panier.jpg?as=webp&width=1080w 1080w,
-                  ../assets/panier.jpg?as=webp&width=1600w 1400w
-                "
-                type="image/webp"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-              <img
-                src="../assets/panier.jpg?width=1400w"
-                alt="Calle del Panier con plantas a la entrada de las casas"
-                class="card-list__image"
-                srcset="
-                  ../assets/panier.jpg?width=500w   500w,
-                  ../assets/panier.jpg?width=800w   800w,
-                  ../assets/panier.jpg?width=1080w 1080w,
-                  ../assets/panier.jpg?width=1400w 1400w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-            </picture>
-          </div>
+      <!-- Listado de fuentes -->
+      <section class="text-column__wrapper">
+        <h4 class="text-column__title">Vídeos</h4>
+        <ul class="text-column__list">
+          <li>
+            <a
+              href="https://www.pexels.com/es-es/video/mar-vista-aerea-naturaleza-francia-6183626/"
+              target="_blank"
+              rel="noopener">Vídeo de Kab Visuals</a>
+          </li>
+        </ul>
+        <h4 class="text-column__title">Fotografías</h4>
+        <ul class="text-column__list">
+          <li>
+            <a
+              href="https://www.pexels.com/es-es/foto/mar-paisaje-playa-vacaciones-27627937/"
+              target="_blank"
+              rel="noopener">Foto de Uiliam Nörnberg</a>
+          </li>
+          <li>
 
-          <!-- Card text Panier-->
-          <p class="card-list__content--text">
-            Un itinerario circular que parte del Vieux Port, cruzando el boulevard haussmaniano de
-            la Republique para llegar al antiguo barrio de pescadores del Panier. Para acabar en una
-            de las recientes construcciones más emblemáticas de la ciudad, el museo MUCEM.
-          </p>
+            <a
+              href="https://unsplash.com/es/@andreikoscina?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">Andrei koscina</a> <a
+              href="https://unsplash.com/es/fotos/automoviles-estacionados-en-la-acera-entre-edificios-durante-el-dia-Syxjd6sKMD4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">en Unsplash</a>
+          </li>
+          <li>
+            <a
+              href="https://unsplash.com/es/@nguyendhn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">Nguyen Dang Hoang Nhu</a> <a
+              href="https://unsplash.com/es/fotos/mujer-con-camisa-gris-de-manga-larga-sentada-en-un-bote-durante-el-dia-wOxTPlr3qpY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">en Unsplash</a>
 
-          <!-- Card content top -->
-          <div class="card-list__content--top">
-            <h4>Le Panier</h4>
-            <span class="u-circle">1</span>
-          </div>
-        </a>
+          </li>
+          <li>
+            <a
+              href="https://unsplash.com/es/@manelandsean?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">Manel & Sean</a> <a
+              href="https://unsplash.com/es/fotos/un-edificio-con-plantas-y-una-puerta-azul-nntdlUK-S4s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">en Unsplash</a>
 
-        <!-- Vieux Port -->
-        <a class="card-list__content" href="./vieux-port.html">
-          <!-- Card image -->
-          <div class="card-list__content--img-container">
-            <picture>
-              <source
-                srcset="
-                  ../assets/vieux-port-mercado.jpg?as=webp&width=500w   500w,
-                  ../assets/vieux-port-mercado.jpg?as=webp&width=800w   800w,
-                  ../assets/vieux-port-mercado.jpg?as=webp&width=1080w 1080w,
-                  ../assets/vieux-port-mercado.jpg?as=webp&width=1600w 1400w
-                "
-                type="image/webp"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-              <img
-                src="../assets/vieux-port-mercado.jpg?width=1400w"
-                alt="Mujer vendiendo pescado en un puesto de Vieux Port"
-                class="card-list__image"
-                srcset="
-                  ../assets/vieux-port-mercado.jpg?width=500w   500w,
-                  ../assets/vieux-port-mercado.jpg?width=800w   800w,
-                  ../assets/vieux-port-mercado.jpg?width=1080w 1080w,
-                  ../assets/vieux-port-mercado.jpg?width=1400w 1400w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-            </picture>
-          </div>
+          </li>
+          <li>
+            <a
+              href="https://commons.m.wikimedia.org/wiki/File:Marseille_Quai_des_Belges_3.jpg#filelinks"
+              target="_blank" rel="noopener">"Marseille Quai des Belges 3" By
+              Zairon (Own work) [CC-BY-SA-3.0], via Wikimedia Commons.</a>
+          </li>
 
-          <!-- Card text -->
-          <p class="card-list__content--text">
-            Este itinerario tiene como punto de partida el Vieux Port. Desde allí, siguiendo la
-            emblemática calle de la Canebière subiremos hasta la iglesia des Reformés para continuar
-            subiendo hacia el barrio de La Plaine y Cours Julien.
-          </p>
+          <li>
+            <a href="https://www.pexels.com/es-es/foto/ciudad-carretera-francia-calle-16874229/"
+              target="_blank" rel="noopener">Rue de la République, foto de Emre Gencer, via Pexels</a>
+          </li>
 
-          <!-- Card content top -->
-          <div class="card-list__content--top">
-            <h4>Vieux Port</h4>
-            <span class="u-circle">2</span>
-          </div>
-        </a>
+          <li>
+            <a href="https://www.flickr.com/photos/mildiou/90265526"
+              target="_blank" rel="noopener">"Passage de Lorette, Marseille" By
+              mildiou (imagen modificada) [CC-BY-SA-3.0], via Flickr</a>
+          </li>
 
-        <!-- Corniche -->
-        <a class="card-list__content" href="./corniche.html">
-          <!-- Card image -->
-          <div class="card-list__content--img-container">
-            <picture>
-              <source
-                srcset="
-                  ../assets/corniche.jpg?as=webp&width=500w   500w,
-                  ../assets/corniche.jpg?as=webp&width=800w   800w,
-                  ../assets/corniche.jpg?as=webp&width=1080w 1080w,
-                  ../assets/corniche.jpg?as=webp&width=1600w 1400w
-                "
-                type="image/webp"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-              <img
-                src="../assets/corniche.jpg?width=1400w"
-                alt="Pequeño puerto con barcos y un puente de fondo"
-                class="card-list__image"
-                srcset="
-                  ../assets/corniche.jpg?width=500w   500w,
-                  ../assets/corniche.jpg?width=800w   800w,
-                  ../assets/corniche.jpg?width=1080w 1080w,
-                  ../assets/corniche.jpg?width=1400w 1400w
-                "
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 35vw"
-              />
-            </picture>
-          </div>
+          <li>
+            <a
+              href="https://unsplash.com/es/@andreikoscina?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">Andrei koscina</a> <a
+              href="https://unsplash.com/es/fotos/plantas-verdes-en-escaleras-de-hormigon-marron-Qn_ot1LHFng?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank" rel="noopener">en Unsplash</a>
+          </li>
 
-          <!-- Card text -->
-          <p class="card-list__content--text">
-            En este recorrido disfrutarás de las aguas que bañan la ciudad así como pequeños puertos
-            en barrios con identidades propias. Desde l'Estaque hasta la Baie des Singes, podrás
-            sentir la importancia y conexión con el mar que tiene la ciudad.
-          </p>
+          <li>
+            <a href="https://www.flickr.com/photos/francoisaix/33138668011"
+              target="_blank" rel="noopener">"La vieille-Charité" de François
+              Schwarz (Own work) [CC-BY-SA-3.0], via Flickr</a>
+          </li>
 
-          <!-- Card top content -->
-          <div class="card-list__content--top">
-            <h4>La corniche</h4>
-            <span class="u-circle">3</span>
-          </div>
-        </a>
+          <li>
+            <a href="https://pixabay.com/photos/mucem-marseille-sea-553275/"
+              target="_blank" rel="noopener">Mucem, Marseille, Sea image, via
+              Pixabay</a>
+          </li>
+          <li>
+            <a href="https://pixabay.com/photos/mucem-marseille-sea-553275/"
+              target="_blank" rel="noopener">Fort Saint-Jean in Marseille de
+              Elona Agug, via Pexels</a>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.flickr.com/photos/jmenj/22082045470"
+            target="_blank" rel="noopener">"M. Chat x 3" By Jeanne Menjoulet
+            (Own work) [CC-BY-SA-3.0], via Flickr</a>
+        </li>
+
+        <li>
+          <a href="https://www.flickr.com/photos/129231073@N06/16257765478"
+            target="_blank" rel="noopener">"Marseille - Église Saint-Vincent-de-Paul" By Fred Romero
+            (Own work) [CC-BY-SA-3.0], via Flickr</a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.flickr.com/photos/charles79/53959655606/in/photolist-Z35aW-2qsKMrc-Gb3uN6-pibQGu-ah3TEx-RRVco4-Xt7DPt-2k9NuQ7-2k9NwsW-2iUQTTU-3YuoZv-2qcVE8r-2qcXixn-2qcXixC-2qcXiyz-2qd9L63-2qdgFpZ-2qdekFL-2qcR4Qc-2qcXiwf-2qcXiB5-3t7hfn-2qcWWaB-2qdekHj-2qd9L68"
+            target="_blank" rel="noopener">"Partial view of the neighbourhood of L'Estaque as we depart the port of Marseille, France" By
+            Charles (Own work) [CC BY 2.0], via Flickr.</a>
+        </li>
+        <li>
+          <a
+            href="https://www.flickr.com/photos/ivan_herman/33972364580"
+            target="_blank" rel="noopener">"Anse de Malmousque, Marseille" By
+            Ivan Herman (Own work) [CC BY-NC-ND 2.0], via Flickr.</a>
+        </li>
+
+        <li>
+          <a href="https://unsplash.com/es/fotos/un-puerto-lleno-de-barcos-al-lado-de-una-ciudad-y2nSO2ASM3M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank"> "Un puerto lleno de barcos al lado de una ciudad" de Meg von Haartman en Unsplash</a>
+        </li> 
+
+        <li>
+          <a href="https://unsplash.com/es/fotos/carrusel-con-luces-encendidas-durante-la-noche-h5QdhCk4ROg" target="_blank"> "Carrusel con luces encendidas durante la noche" de Lara Schipperen en Unsplash</a>
+        </li> 
+
+        <li>
+          <a href="https://www.pexels.com/es-es/foto/especias-variadas-en-un-mercado-de-marsella-28942648/" target="_blank"> "Especias Variadas En Un Mercado De Marsella" foto de Mika du Bosquet Small grove</a>
+        </li> 
+      
+
+      </ul>
+
+      <h4 class="text-column__title">Tipografías</h4>
+      <ul class="text-column__list">
+        <li>
+          <a href="https://fonts.google.com/specimen/Roboto+Flex"
+            target="_blank" rel="noopener">Roboto Flex</a>
+        </li>
+        <li>
+          <a href="https://fonts.adobe.com/fonts/the-seasons" target="_blank"
+            rel="noopener">The Seasons</a>
+        </li>
       </section>
     </main>
 
@@ -208,8 +195,33 @@
     <include src="footer.html"></include>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script type="module" src="../javascript/navigation.js"></script>
-    <script type="module" src="../javascript/itineraries.js"></script>
+    <!-- Script to avoid Parcel/Gsap/Barba.js error -->
+    <script type="module" src="../javascript/errorfix.js"></script>
   </body>
 </html>
+
+<!-- J4:
+ https://unsplash.com/es/fotos/un-grupo-de-personas-sentadas-en-una-pared-junto-a-un-cuerpo-de-agua-PxV_-NDeEys -->
+
+
+ <!-- Enlaces svg images:
+  https://12daysofweb.dev/2023/responsive-svgs/
+  https://jakearchibald.github.io/svgomg/ -->
+
+  <!-- ENLACES STORYTELLING:
+   https://decriminalizepoverty.org/present2/
+   https://genocide.greatarmenia.org/
+   https://www.awwwards.com/sites/kalso
+   https://www.zendetta.com/es 
+   *****
+   *****
+   https://www.thequestofevolution.com/
+   *****
+   *****
+   https://100.hanwag.de/
+   https://www.youtube.com/watch?v=-ISvtF4wUrs
+   
+   -->
