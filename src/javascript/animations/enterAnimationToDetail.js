@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 const enterAnimationToDetail = (container) => {
   const header = container.querySelector(".hero-detail__wrapper");
   const image = container.querySelector(".hero-detail__image");
@@ -17,7 +19,7 @@ const enterAnimationToDetail = (container) => {
 
   const tl = gsap.timeline();
 
-  tl.to(header, { visibility: "visible", duration: 1 })
+  tl.to(header, { visibility: "visible", duration: 0.6 })
     .to(".hero-detail__image", {
       opacity: 1,
       yPercent: 0,
@@ -27,7 +29,7 @@ const enterAnimationToDetail = (container) => {
     .to(".hero-detail__title-wrapper h1", {
       visibility: "visible",
       translateY: 0,
-      duration: 3.5,
+      duration: 1,
       ease: "power4.out"
     });
 };
