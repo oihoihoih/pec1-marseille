@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 const fadeEnterAnimation = (container) => {
   window.scrollTo(0, 0);

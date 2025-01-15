@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 const enterAnimationToDetail = (container) => {
   const header = container.querySelector(".hero-detail__wrapper");

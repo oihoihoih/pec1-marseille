@@ -1,4 +1,4 @@
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 const barba = require("@barba/core");
 
 // ITINERARIES CARD ENTER ANIMATION
