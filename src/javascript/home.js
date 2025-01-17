@@ -87,8 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
     videoMp4 = new URL("../assets/marseille-intro_1024px.mp4", import.meta.url).toString();
   } else {
     // Escritorio
-    videoWebm = new URL("../assets/marseille-intro.webm", import.meta.url).toString();
-    videoMp4 = new URL("../assets/marseille-intro.mp4", import.meta.url).toString();
+    videoWebm = new URL("../assets/marseille_intro.webm", import.meta.url).toString();
+    videoMp4 = new URL("../assets/marseille_intro.mp4", import.meta.url).toString();
   }
 
   sourceWebm.src = videoWebm;
