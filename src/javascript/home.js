@@ -65,3 +65,34 @@ handleHoverAnimations();
 
 // Agregamos un event listener para detectar cambios de tamaño de pantalla
 window.addEventListener("resize", handleHoverAnimations);
+
+// Para cargar el vídeo correcto según el tamaño de la pantalla
+
+document.addEventListener("DOMContentLoaded", () => {
+  const screenWidth = window.innerWidth;
+  const video = document.getElementById("responsive-video");
+  const sourceWebm = document.getElementById("video-source-webm");
+  const sourceMp4 = document.getElementById("video-source-mp4");
+
+  let videoWebm = "";
+  let videoMp4 = "";
+
+  if (screenWidth <= 478) {
+    // Dispositivos móviles
+    videoWebm = new URL("../assets/marseille-intro_430px.webm", import.meta.url).toString();
+    videoMp4 = new URL("../assets/marseille-intro_430px.mp4", import.meta.url).toString();
+  } else if (screenWidth <= 1024) {
+    // Tablets
+    videoWebm = new URL("../assets/marseille-intro_1024px.webm", import.meta.url).toString();
+    videoMp4 = new URL("../assets/marseille-intro_1024px.mp4", import.meta.url).toString();
+  } else {
+    // Escritorio
+    videoWebm = new URL("../assets/marseille-intro.webm", import.meta.url).toString();
+    videoMp4 = new URL("../assets/marseille-intro.mp4", import.meta.url).toString();
+  }
+
+  sourceWebm.src = videoWebm;
+  sourceMp4.src = videoMp4;
+
+  video.onload();
+});
