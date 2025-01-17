@@ -94,5 +94,5 @@ document.addEventListener("DOMContentLoaded", () => {
   sourceWebm.src = videoWebm;
   sourceMp4.src = videoMp4;
 
-  video.onload();
+  video.load();
 });
