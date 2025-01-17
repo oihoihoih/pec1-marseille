@@ -68,7 +68,7 @@
   padding: 1em;
 }
 
-#hand-svg {
+.hand-svg {
   width: 3vh;
   height: auto;
   animation: bounce-1 2s linear infinite;
