@@ -34,31 +34,74 @@ const tween = gsap
 const listItems = document.querySelectorAll(".home__card--item");
 
 // Showing images on hover only in big screens
+// function handleHoverAnimations() {
+//   listItems.forEach((item) => {
+//     const image = item.querySelector(".card__image");
+//
+//     item.removeEventListener("mouseenter", handleMouseEnter);
+//     item.removeEventListener("mouseleave", handleMouseLeave);
+//
+//     if (window.innerWidth > 768) {
+//       item.addEventListener("mouseenter", handleMouseEnter);
+//       item.addEventListener("mouseleave", handleMouseLeave);
+//     } else {
+//       gsap.set(image, { autoAlpha: 0 });
+//     }
+//
+//     // On mouse enter
+//     function handleMouseEnter() {
+//       gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10, zIndex: 500 });
+//     }
+//
+//     // On mouse leave
+//     function handleMouseLeave() {
+//       gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
+//     }
+//   });
+// }
+
 function handleHoverAnimations() {
+  const listItems = document.querySelectorAll(".item"); // Asegúrate de que todos los items estén definidos
   listItems.forEach((item) => {
     const image = item.querySelector(".card__image");
 
-    item.removeEventListener("mouseenter", handleMouseEnter);
-    item.removeEventListener("mouseleave", handleMouseLeave);
-
-    if (window.innerWidth > 768) {
-      item.addEventListener("mouseenter", handleMouseEnter);
-      item.addEventListener("mouseleave", handleMouseLeave);
+    // Asegúrate de que la imagen esté cargada antes de animarla
+    const lazyLoadImage = image.getAttribute("loading");
+    if (lazyLoadImage) {
+      image.onload = () => initHoverAnimations(item, image);
     } else {
-      gsap.set(image, { autoAlpha: 0 });
-    }
-
-    // On mouse enter
-    function handleMouseEnter() {
-      gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10, zIndex: 500 });
-    }
-
-    // On mouse leave
-    function handleMouseLeave() {
-      gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
+      initHoverAnimations(item, image);
     }
   });
 }
+
+function initHoverAnimations(item, image) {
+  // Eliminar event listeners previos en caso de que ya existan
+  item.removeEventListener("mouseenter", handleMouseEnter);
+  item.removeEventListener("mouseleave", handleMouseLeave);
+
+  // Agregar event listeners solo si la ventana es grande
+  if (window.innerWidth > 768) {
+    item.addEventListener("mouseenter", handleMouseEnter);
+    item.addEventListener("mouseleave", handleMouseLeave);
+  } else {
+    // Asegurarse de que las imágenes estén ocultas en pantallas pequeñas y no se animen
+    gsap.set(image, { autoAlpha: 0 });
+  }
+
+  // Función de mouse enter
+  function handleMouseEnter() {
+    gsap.to(image, { autoAlpha: 1, xPercent: 100, scale: 1, rotate: 10, zIndex: 500 });
+  }
+
+  // Función de mouse leave
+  function handleMouseLeave() {
+    gsap.to(image, { autoAlpha: 0, xPercent: 0, scale: 0.3, rotate: 0 });
+  }
+}
+
+// Ejecutar solo una vez cuando la página esté cargada
+window.addEventListener("load", handleHoverAnimations);
 
 // Ejecutamos la función al cargar la página
 handleHoverAnimations();
@@ -67,7 +110,6 @@ handleHoverAnimations();
 window.addEventListener("resize", handleHoverAnimations);
 
 // Para cargar el vídeo correcto según el tamaño de la pantalla
-
 document.addEventListener("DOMContentLoaded", () => {
   const screenWidth = window.innerWidth;
   const video = document.getElementById("responsive-video");
